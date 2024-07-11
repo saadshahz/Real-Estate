@@ -1,11 +1,7 @@
-import Button from './Components/ButtonColor/Button.jsx';
-import './App.css'
-
 function App() {
 
   return (
     <>
-      <Button />
     </>
   )
 }
