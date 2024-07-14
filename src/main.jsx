@@ -5,6 +5,7 @@ import Layout from './Layout.jsx'
 import Home from './Components/Home/Home.jsx'
 import Service from './Components/Service/Service.jsx'
 import About from './Components/About/About.jsx'
+import Properties from './Components/properties/Properties.jsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
       {
         path: 'service',
         element: <Service />,
+      },
+      {
+        path: 'properties',
+        element: <Properties />,
       },
       {
         path: 'about',
