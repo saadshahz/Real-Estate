@@ -2,6 +2,7 @@
 import { NavLink } from 'react-router-dom'
 import Logo from '../../assets/svg/Logo.jsx'
 import './style.css'
+import Cancel from './svg/Cancel.jsx';
 
 export default function Navbar() {
 
@@ -21,7 +22,12 @@ export default function Navbar() {
 
     return (
         <>
-            <header className="nav-bar text-white px-4 py-2 flex justify-between items-center" style={{ backgroundColor: 'rgba(38, 38, 38, 1)' }}>
+            <div className='header'>
+                <p>✨Discover Your Dream Property with Estatein <span>Learn More</span></p>
+                <Cancel />
+            </div>
+            <header className="nav-bar h-13 text-white px-4 py-2 flex justify-between items-center" style={{ backgroundColor: 'rgba(38, 38, 38, 1)' }}>
+
                 <div className="logo-section w-1/4 h-full flex justify-center items-center">
                     <Logo />
                 </div>

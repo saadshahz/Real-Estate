@@ -39,7 +39,7 @@
     width: 300px;
     height: 40px;
     display: flex;
-    justify-content: space-between;
+    justify-content: stretch;
     align-items: center;
     padding: 18px 24px 18px 24px;
     gap: 10px;
@@ -59,12 +59,10 @@
 }
 
 .emailButton {
-    padding: 10px;
-    border-radius: 0 4px 4px 0;
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
 }
 
 .linksSection {
@@ -130,8 +128,8 @@
 }
 
 .socialIcon {
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     margin-left: 10px;
     background: rgb(0, 0, 0);
     border-radius: 50%;

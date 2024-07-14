@@ -3,3 +3,24 @@
 * {
     font-family: "Urbanist", sans-serif;
 }
+
+.header {
+    color: white;
+    font-size: 13px;
+    width: 100%;
+    height: 40px;
+    background-color: black;
+    background-image: url(./svg/BackgroundSVG.jsx);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header p span {
+    text-decoration: underline;
+    cursor: pointer;
+    margin-left: 5px;
+}
