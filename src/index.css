@@ -1,3 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-style: normal;
+}
+/* width of the entire scrollbar */
+body::-webkit-scrollbar {
+  width: 5px;
+}
+body::-webkit-scrollbar:hover {
+  border: 1px solid #703bf7;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(38, 38, 38); /* color of the tracking area */
+  width: 6px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #703bf7; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}

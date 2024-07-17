@@ -1,0 +1,25 @@
+.service-card {
+    padding: 40px 20px;
+    border: 1px solid #1A1A1A;
+    border-radius: 5px;
+    color: #ffff;
+    position: relative;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.service-card p{
+    padding: 20px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+.icon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.icon svg{
+    width: 16px;
+}
