@@ -8,11 +8,22 @@ import HomeIcon from "../../../assets/svg/HomeIcon.jsx";
 import CaptureIcon from "../../../assets/svg/CaptureIcon.jsx";
 import PropertyIcon from "../../../assets/svg/PropertyIcon.jsx";
 import SunriseIcon from "../../../assets/svg/SunriseIcon.jsx";
+import StarsIcon from "../../../assets/svg/StarsIcon.jsx";
+import ProductSlider from "../../ProductSlider/ProductSlider.jsx";
+import getProperty from "../../../action/getProperty.js";
 
 export default function Home() {
   const [customer, setCustomer] = useState(1);
   const [client, setClient] = useState(1);
   const [experience, setExperience] = useState(1);
+  const [propertyData, setPropertyData] = useState();
+
+  useEffect(() => {
+
+      // This is dummy functon to get dummy data
+    const res = getProperty();
+    setPropertyData(res);
+  }, [propertyData]);
 
   useEffect(() => {
     if (customer < 200) {
@@ -115,6 +126,30 @@ export default function Home() {
       </div>
 
       {/* Service Section End */}
+
+      {/* Features Section Start */}
+      <div className="features-section">
+        <StarsIcon />
+        <h2>Featured Properties</h2>
+        <Row className="justify-between">
+          <Col>
+            <p>
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click "View Details" for more
+              information.
+            </p>
+          </Col>
+          <Col>
+            <a href="#">View All Properties</a>
+          </Col>
+        </Row>
+
+        <div className="py-6">
+          <ProductSlider data = {propertyData}  />
+        </div>
+      </div>
+      {/* Features Section End */}
     </>
   );
 }

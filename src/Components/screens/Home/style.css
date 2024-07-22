@@ -50,22 +50,22 @@
   margin-left: 10px;
   border: 1px solid #262626;
 }
-.banner-content .feature{
+.banner-content .feature {
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
 }
-.banner-content .feature .card{
+.banner-content .feature .card {
   border: 1px solid #262626;
-  border-radius: 5PX;
+  border-radius: 5px;
   padding: 10px 30px;
-  background-color: #1A1A1A;
-}   
-.banner-content .feature .card h6{
+  background-color: #1a1a1a;
+}
+.banner-content .feature .card h6 {
   font-size: 40px;
   font-weight: 600;
 }
-.banner-content .feature .card p{
+.banner-content .feature .card p {
   padding: 0;
   font-size: 18px;
   color: #999;
@@ -119,10 +119,37 @@
 	}
 } */
 
-.service-section{
+.service-section {
   padding: 20px 10px;
   background-color: #141414;
 }
-.service-section .ant-col-6{
+.service-section .ant-col-6 {
   padding: 10px;
+}
+
+.features-section {
+  padding: 20px 162px 20px 162px;
+  background-color: #141414;
+  color: #fff;
+}
+.features-section h2 {
+  font-size: 42px;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+.features-section p {
+  color: #4d4d4d;
+  font-size: 16px;
+}
+.features-section a {
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: 1px solid #262626;
+  transition: 0.5s;
+  font-size: 16px;
+}
+.features-section a:hover {
+  border: 1px solid #703bf7;
+  background-color: #703bf7;
+  color: #fff;
 }
