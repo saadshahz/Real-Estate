@@ -1,0 +1,51 @@
+.review-card {
+    padding: 50px;
+    border: 1px solid #262626;
+    border-radius: 5px;
+}
+
+.reviews-check {
+    display: flex;
+    width: 260px;
+    height: 44px;
+    gap: 10px;
+    opacity: 0px;
+}
+
+.client-content {
+    width: 412px;
+    height: 158px;
+    gap: 14px;
+    opacity: 0px;
+    color: white;
+}
+
+.client-content h5 {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.client-content p {
+    font-size: 16px;
+    color: #707070;
+}
+
+.client-info {
+    width: 412px;
+    height: 60px;
+    gap: 12px;
+    opacity: 0px;
+}
+
+.client-info img {
+    width: 60px;
+    height: 60px;
+    gap: 0px;
+    opacity: 0px;
+    border-radius: 50%;
+}
+
+.place {
+    color: #707070;
+
+}

@@ -8,9 +8,9 @@ import "swiper/css";
 import "./style.css";
 
 // import required modules
-import ProductCard from "./ProductCard";
+import ProductCard from "./Review.jsx";
 
-export default function ProductSlider(props) {
+export default function ReviewSlider(props) {
 
   const { data } = { ...props };
 
@@ -29,9 +29,9 @@ export default function ProductSlider(props) {
                 <ProductCard
                   title={item.title}
                   desc={item.desc}
-                  feature={item.features}
-                  price={item.price}
-                  id={item.id}
+                  name={item.clientsInfo.name}
+                  country={item.clientsInfo.country}
+                  city={item.clientsInfo.city}
                 />{" "}
               </SwiperSlide>
             );

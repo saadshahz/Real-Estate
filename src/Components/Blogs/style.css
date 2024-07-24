@@ -1,0 +1,39 @@
+.blog-card {
+    padding: 50px;
+    border: 1px solid #262626;
+    border-radius: 5px;
+    gap: 10px;
+    opacity: 0px;
+}
+
+.blog-card h5 {
+    width: 412px;
+    height: 42px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.blog-card p {
+    width: 412px;
+    height: 54px;
+    gap: 0px;
+    opacity: 0px;
+    color: #4d4d4d;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.blog-card a {
+    width: 130px;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #4d4d4d;
+    color: #fff;
+    font-size: 18px;
+}
+
+.blog-card a:hover {
+    background-color: #703bf7;
+}

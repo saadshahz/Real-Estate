@@ -1,5 +1,5 @@
 import { Col, Flex, Row } from "antd";
-import React from "react";
+// import React from "react";
 import productCardDummy from "../../assets/productCardDummy.png";
 import BedroomIcon from "../../assets/svg/BedroomIcon";
 import VillaIcon from "../../assets/svg/VillaIcon";
@@ -38,8 +38,8 @@ export default function ProductCard(props) {
             <p>$ {price}</p>
           </Col>
           <Col>
-            {/* <a href={`/property/detail/${id}`}>View Property Details</a> */}
-            <a href="#">View Property Details</a>
+            <a href={`/property/detail/${id}`}>View Property Details</a>
+            {/* <a href="#">View Property Details</a> */}
           </Col>
         </Row>
       </div>

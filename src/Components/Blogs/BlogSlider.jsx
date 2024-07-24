@@ -8,9 +8,9 @@ import "swiper/css";
 import "./style.css";
 
 // import required modules
-import ProductCard from "./ProductCard";
+import Blogs from "./Blog.jsx";
 
-export default function ProductSlider(props) {
+export default function BlogSlider(props) {
 
   const { data } = { ...props };
 
@@ -26,12 +26,9 @@ export default function ProductSlider(props) {
           data.map((item, idx) => {
             return (
               <SwiperSlide key={idx}>
-                <ProductCard
+                <Blogs
                   title={item.title}
                   desc={item.desc}
-                  feature={item.features}
-                  price={item.price}
-                  id={item.id}
                 />{" "}
               </SwiperSlide>
             );

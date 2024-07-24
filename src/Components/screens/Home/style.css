@@ -23,9 +23,6 @@
   padding: 40px 0;
 }
 
-.banner-content .banner-btn {
-}
-
 .banner-content .banner-btn button {
   padding: 10px 20px;
   border-radius: 5px;
@@ -50,26 +47,31 @@
   margin-left: 10px;
   border: 1px solid #262626;
 }
+
 .banner-content .feature {
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
 }
+
 .banner-content .feature .card {
   border: 1px solid #262626;
   border-radius: 5px;
   padding: 10px 30px;
   background-color: #1a1a1a;
 }
+
 .banner-content .feature .card h6 {
   font-size: 40px;
   font-weight: 600;
 }
+
 .banner-content .feature .card p {
   padding: 0;
   font-size: 18px;
   color: #999;
 }
+
 .hero-section .banner-image {
   background-image: url("../../assets/banner-bg.png");
   background-size: 100% 100%;
@@ -82,6 +84,7 @@
   width: 100%;
   height: 100%;
 }
+
 /* .rotator{
 
 }
@@ -123,24 +126,28 @@
   padding: 20px 10px;
   background-color: #141414;
 }
+
 .service-section .ant-col-6 {
   padding: 10px;
 }
 
-.features-section {
+.features-section, .review-section, .blog-section {
   padding: 20px 162px 20px 162px;
   background-color: #141414;
   color: #fff;
 }
+
 .features-section h2 {
   font-size: 42px;
   font-weight: 600;
   padding-bottom: 10px;
 }
+
 .features-section p {
   color: #4d4d4d;
   font-size: 16px;
 }
+
 .features-section a {
   padding: 10px 20px;
   border-radius: 5px;
@@ -148,6 +155,7 @@
   transition: 0.5s;
   font-size: 16px;
 }
+
 .features-section a:hover {
   border: 1px solid #703bf7;
   background-color: #703bf7;
