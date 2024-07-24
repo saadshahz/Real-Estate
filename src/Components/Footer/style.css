@@ -11,19 +11,24 @@
     justify-content: center;
     align-items: center;
     background-color: #141414;
+    background-image: url(./svg/RightDesign.svg);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: bottom right;
 }
 
 .promotion-tagline {
     width: 80%;
-    height: 80%;
-    padding: 50px 200px;
+    height: 100%;
+    padding: 0px 200px 0px 200px; 
     background-image: url(./svg/LeftDesign.svg);
     background-repeat: no-repeat;
     background-size: auto;
     background-position: bottom left;
     display: flex;
     flex-direction: column;
-
+    justify-content: center;
+    align-items: start;
 }
 
 .promotion-tagline h2 {
@@ -44,10 +49,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(./svg/RightDesign.svg);
-    background-repeat: no-repeat;
-    background-size: auto;
-    background-position: bottom right;
 }
 
 .button-section a {
