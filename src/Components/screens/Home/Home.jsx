@@ -20,7 +20,7 @@ export default function Home() {
   const [customer, setCustomer] = useState(1);
   const [client, setClient] = useState(1);
   const [experience, setExperience] = useState(1);
-  const [propertyData, setPropertyData] = useState();
+  const [propertyData, setPropertyData] = useState([]);
   const [reviewData, setReviewData] = useState();
   const [blogData, setBlogData] = useState();
 
@@ -29,21 +29,21 @@ export default function Home() {
     // This is dummy functon to get dummy data
     const res = getProperty();
     setPropertyData(res);
-  }, [propertyData]);
+  }, []);
 
   useEffect(() => {
 
     // This is dummy function to get dummy reviews
     const rev = getReview();
     setReviewData(rev);
-  }, [reviewData])
+  }, [])
 
   useEffect(() => {
 
     // This is dummy function to get dummy blogs
     const blog = getBlogs();
     setBlogData(blog);
-  }, [blogData])
+  }, [])
 
   useEffect(() => {
     if (customer < 200) {

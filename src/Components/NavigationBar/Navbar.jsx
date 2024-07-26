@@ -20,12 +20,17 @@ export default function Navbar() {
         color: 'white',
     };
 
+    const removeHeader = () => {
+        document.querySelector('.header').style.display = 'none';
+    }
+
     return (
         <>
             <div className='header'>
                 <p>✨Discover Your Dream Property with Estatein <span>Learn More</span></p>
-                <Cancel />
+                <Cancel onClick= {removeHeader} />
             </div>
+
             <header className="nav-bar h-13 text-white px-4 py-2 flex justify-between items-center" style={{ backgroundColor: 'rgba(38, 38, 38, 1)' }}>
 
                 <div className="logo-section w-1/4 h-full flex justify-center items-center">
