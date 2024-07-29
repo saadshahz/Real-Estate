@@ -80,10 +80,10 @@
 
 .right-section .row {
     width: 100%;
-    height: 50%;  
+    height: 50%;
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center;
 }
 
 .right-section .row .col {
@@ -137,7 +137,7 @@
 }
 
 .achievement-section h2 {
-    font-size: 72px;    
+    font-size: 72px;
 }
 
 .achievement-section p {
@@ -147,4 +147,270 @@
 
 .achievement-card {
     box-shadow: 0px 0px 0px 8px rgba(25, 25, 25, 1);
+}
+
+.experience-section {
+    padding: 20px 162px 20px 162px;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.experience-section .container {
+    margin-top: 40px;
+    width: 100%;
+    display: block;
+}
+
+.experience-section h2 {
+    font-size: 72px;
+}
+
+.experience-section p {
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+.cards-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.experience-card {
+    width: 512px;
+    height: 329px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.experience-card h6 {
+    width: 512px;
+    height: 62px;
+    padding: 16px 20px 16px 20px;
+    gap: 10px;
+    opacity: 0px;
+    border-left: 1px solid rgba(112, 59, 247, 1);
+}
+
+.experience-card .content {
+    width: 512px;
+    height: 267px;
+    padding: 50px;
+    gap: 20px;
+    border-radius: 0px 12px 12px 12px;
+    opacity: 0px;
+    background: linear-gradient(120.79deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 13.65%);
+    border: 1px solid linear-gradient(120.79deg, #703BF7 -49.01%, #4d4d4d 13.65%);
+    border-image-source: linear-gradient(0deg, #262626, #262626),
+        linear-gradient(117.89deg, #703BF7 0%, rgba(112, 59, 247, 0) 24%);
+}
+
+.team-section {
+    padding: 20px 162px 20px 162px;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-section .container {
+    width: 100%;
+    display: block;
+    height: 80%;
+    margin-top: 40px;
+}
+
+.team-section h2 {
+    font-size: 72px;
+}
+
+.team-section p {
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+.team-section .cards-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.profile-card {
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    width: 280px;
+    padding: 20px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.profile-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-social {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.social-icon {
+    background-color: #9d00ff;
+    border-radius: 50%;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    fill: #ffffff;
+}
+
+h2 {
+    margin: 10px 0 5px 0;
+    font-size: 1.5em;
+}
+
+h3 {
+    margin: 0 0 20px 0;
+    font-weight: normal;
+    color: #cccccc;
+}
+
+.message-button {
+    background-color: #333333;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.message-icon {
+    margin-left: 10px;
+    fill: #9d00ff;
+    width: 20px;
+    height: 20px;
+}
+
+.message-button:hover {
+    background-color: #444444;
+}
+
+.valued-client-section {
+    padding: 20px 162px 20px 162px;
+    background-color: #141414;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.valued-client-section .container {
+    width: 100%;
+    display: block;
+    height: 80%;
+    margin-top: 40px;
+}
+
+.valued-client-section h2 {
+    font-size: 72px;
+}
+
+.valued-client-section p {
+    font-size: 18px;
+    color: #4d4d4d;
+}
+
+.client-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.client-container {
+    width: 773.5px;
+    height: 478px;
+    padding: 50px;
+    gap: 40px;
+    border-radius: 12px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    opacity: 0px;
+    box-shadow: 0px 0px 0px 8px rgba(25, 25, 25, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.client-container .heading-section {
+    width: 100%;
+    height: 78px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.client-container .domain-section {
+    width: 100%;
+    height: 65px;
+    gap: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.domain-section .margin {
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.client-container .domain-section .features {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.client-container .domain-section .head {
+    display: flex;
+}
+
+.head span {
+    color: #4d4d4d;
+    margin-left: 10px;
+}
+
+.client-container .comment-section {
+    width: 100%;
+    height: 155px;
+    padding: 30px ;
+    gap: 14px;
+    border-radius: 12px ;
+    border: 1px solid rgba(38, 38, 38, 1);
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.client-container .comment-section h6 {
+    color: rgba(153, 153, 153, 1);
+
+}
+
+.client-container .comment-section p {
+    color: white;
 }
