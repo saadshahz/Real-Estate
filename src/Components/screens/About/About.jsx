@@ -243,13 +243,15 @@ export default function About() {
             </Col>
           </Row>
 
-          <div className="py-8 flex gap-6 cards-content">
+          <div className="py-8  cards-content">
             <div className="profile-card">
-              <img
-                src="../../../assets/DummyProfile.png" // Replace with the actual path to the image
-                alt="Max Mitchell"
-                className="profile-image"
-              />
+              <div className="profile-image-section">
+                <img
+                  src="./Images/Founder.jpg" // Replace with the actual path to the image
+                  alt="Max Mitchell"
+                  className="profile-image"
+                />
+              </div>
               <div className="profile-info">
                 <div className="profile-social">
                   <Twitter className="social-icon" />
@@ -257,18 +259,22 @@ export default function About() {
                 <h5>Max Mitchell</h5>
                 <p>Founder</p>
                 <button className="message-button">
-                  Say Hello <span role="img" aria-label="wave">👋</span>
-                  <Send className="message-icon" />
+                  <span role="img" aria-label="wave">Say Hello 👋</span>
+                  <div className="message-icon">
+                    <Send />
+                  </div>
                 </button>
               </div>
             </div>
 
             <div className="profile-card">
-              <img
-                src="../../../assets/DummyProfile.png" // Replace with the actual path to the image
-                alt="Max Mitchell"
-                className="profile-image"
-              />
+            <div className="profile-image-section">
+                <img
+                  src="./Images/Founder.jpg" // Replace with the actual path to the image
+                  alt="Max Mitchell"
+                  className="profile-image"
+                />
+              </div>
               <div className="profile-info">
                 <div className="profile-social">
                   <Twitter className="social-icon" />
@@ -276,18 +282,22 @@ export default function About() {
                 <h5>Max Mitchell</h5>
                 <p>Founder</p>
                 <button className="message-button">
-                  Say Hello <span role="img" aria-label="wave">👋</span>
-                  <Send className="message-icon" />
+                  <span role="img" aria-label="wave">Say Hello 👋</span>
+                  <div className="message-icon">
+                    <Send />
+                  </div>
                 </button>
               </div>
             </div>
 
             <div className="profile-card">
-              <img
-                src="../../../assets/DummyProfile.png" // Replace with the actual path to the image
-                alt="Max Mitchell"
-                className="profile-image"
-              />
+            <div className="profile-image-section">
+                <img
+                  src="./Images/Founder.jpg" // Replace with the actual path to the image
+                  alt="Max Mitchell"
+                  className="profile-image"
+                />
+              </div>
               <div className="profile-info">
                 <div className="profile-social">
                   <Twitter className="social-icon" />
@@ -295,18 +305,22 @@ export default function About() {
                 <h5>Max Mitchell</h5>
                 <p>Founder</p>
                 <button className="message-button">
-                  Say Hello <span role="img" aria-label="wave">👋</span>
-                  <Send className="message-icon" />
+                  <span role="img" aria-label="wave">Say Hello 👋</span>
+                  <div className="message-icon">
+                    <Send />
+                  </div>
                 </button>
               </div>
             </div>
 
             <div className="profile-card">
-              <img
-                src="../../../assets/DummyProfile.png" // Replace with the actual path to the image
-                alt="Max Mitchell"
-                className="profile-image"
-              />
+            <div className="profile-image-section">
+                <img
+                  src="./Images/Founder.jpg" // Replace with the actual path to the image
+                  alt="Max Mitchell"
+                  className="profile-image"
+                />
+              </div>
               <div className="profile-info">
                 <div className="profile-social">
                   <Twitter className="social-icon" />
@@ -314,8 +328,10 @@ export default function About() {
                 <h5>Max Mitchell</h5>
                 <p>Founder</p>
                 <button className="message-button">
-                  Say Hello <span role="img" aria-label="wave">👋</span>
-                  <Send className="message-icon" />
+                  <span role="img" aria-label="wave">Say Hello 👋</span>
+                  <div className="message-icon">
+                    <Send />
+                  </div>
                 </button>
               </div>
             </div>
@@ -356,7 +372,7 @@ export default function About() {
               </div>
               <div className="domain-section">
                 <div className="features">
-                <div className="head">
+                  <div className="head">
                     <Domain /> <span>Domain</span>
                   </div>
                   <h5>Commercial Real Estate</h5>
@@ -387,7 +403,7 @@ export default function About() {
               </div>
               <div className="domain-section">
                 <div className="features">
-                <div className="head">
+                  <div className="head">
                     <Domain /> <span>Domain</span>
                   </div>
                   <h5>Commercial Real Estate</h5>
