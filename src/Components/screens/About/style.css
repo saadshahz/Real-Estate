@@ -241,7 +241,7 @@
 .profile-card {
     background-color: #1e1e1e;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(38, 38, 38, 1);
     width: 23%;
     padding: 20px;
     text-align: center;
@@ -253,9 +253,9 @@
     height: 250px;
 }
 
-.profile-image {
+.image {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 10px;
 }
 
@@ -267,6 +267,10 @@
 }
 
 .profile-social {
+    width: 70px;
+    height: 50px;
+    background-color: #9d00ff;
+    border-radius: 43px;
     display: flex;
     justify-content: center;
     align-items: center;

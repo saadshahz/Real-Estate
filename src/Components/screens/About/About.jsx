@@ -249,7 +249,7 @@ export default function About() {
                 <img
                   src="./Images/Founder.jpg" // Replace with the actual path to the image
                   alt="Max Mitchell"
-                  className="profile-image"
+                  className="image"
                 />
               </div>
               <div className="profile-info">
