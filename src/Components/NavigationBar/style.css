@@ -1,14 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
-
 * {
     font-family: "Urbanist", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-.header {
+.banner {
     color: white;
     font-size: 13px;
     width: 100%;
-    height: 40px;
+    height: 60px;
     background-color: black;
     background-image: url(./svg/BackgroundSVG.svg);
     background-repeat: no-repeat;
@@ -19,8 +20,229 @@
     justify-content: center;
 }
 
-.header p span {
+.banner p {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.banner p span {
     text-decoration: underline;
     cursor: pointer;
     margin-left: 5px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    color: white;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(38, 38, 38, 1);
+    position: fixed;
+    top: 0;
+}
+
+.header .logo-section {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .facility-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.facility-section .links {
+    margin: 0 5px;
+    font-size: 18px;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.header .menu-icon {
+    display: none;
+}
+
+.header .button-section {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-button {
+    color: white;
+    padding: 16px 24px;
+    border-radius: 10px;
+    outline: none;
+    background-color: rgba(20, 20, 20, 1);
+    border: 1px solid rgba(20, 20, 20);
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.5s ease-in-out;
+    font-weight: 500;
+}
+
+.contact-button:hover {
+    background-color: #703bf7;
+    border: 1px solid #703bf7;
+}
+
+.sidebar {
+    display: none;
+}
+
+.main-Menu {
+    transition: background-color 0.3s ease;
+}
+
+.main-Menu:active {
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 1);
+    border-radius: 50%;
+}
+
+.close-button {
+    transition: background-color 0.3s ease;
+}
+
+.close-button:active {
+    cursor: pointer;
+    background-color: rgba(20, 20, 20, 1);
+    border-radius: 50%;
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+
+    .banner {
+        height: 40px;
+    }
+
+    .banner p {
+        font-size: 14px;
+    }
+
+    .header {
+        height: 77px;
+    }
+
+    .facility-section .links {
+        margin: 0 5px;
+        font-size: 14px;
+        color: white;
+        padding: 12px 20px;
+        border-radius: 8px;
+        font-weight: 500;
+    }
+
+    .contact-button {
+        font-size: 14px;
+        padding: 12px 20px;
+    }
+
+}
+
+@media (max-width: 799px) {
+
+    .banner {
+        justify-content: start;
+        padding-left: 10px;
+    }
+
+    .banner p {
+        font-size: 12px;
+    }
+
+    .header {
+        height: 67px;
+        justify-content: space-between;
+    }
+
+    .header .facility-section {
+        display: none;
+    }
+
+    .facility-section .links {
+        display: none;
+    }
+
+    .header .menu-icon {
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .menu-icon .close-button {
+        display: none;
+    }
+
+    .header .button-section {
+        display: none;
+    }
+
+    .button-section .contact-button {
+        display: none;
+    }
+
+    .sidebar {
+        display: block;
+        width: 60%;
+        padding: 0 1rem;
+        position: fixed;
+        top: 0;
+        right: -60%;
+        height: 100vh;
+        z-index: 999;
+        background-color: rgba(38, 38, 38, 1);
+        color: white;
+        box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+        transition: right 0.5s ease-out;
+        /* transition the right property */
+    }
+
+    .sidebar.visible {
+        right: 0;
+        /* move to the initial position */
+    }
+
+    .sidebar.hidden {
+        right: -60%;
+        /* move back to the outside position */
+    }
+
+    .sidebar .menu-close-icon {
+        width: 100%;
+        cursor: pointer;
+        height: 67px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin: 0 0 10px 0;
+    }
+
+    .sidebar .links {
+        font-size: 14px;
+        width: 100%;
+        height: 60px;
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 1rem;
+        border-radius: 10px;
+    }
+
 }

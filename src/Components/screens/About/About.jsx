@@ -8,7 +8,7 @@ import StarsIcon from "../../../assets/svg/StarsIcon";
 import StarIcon from './svg/StarIcon';
 import ExcelenceIcon from './svg/ExcelenceIcon';
 import ClientIcon from './svg/CLientIcon';
-import Twitter from '../../Footer/svg/Twitter';
+import Twitter from './svg/Twitter';
 import Send from '../../Footer/svg/Send'
 import Domain from "./svg/Domain";
 import Category from "./svg/Category";
@@ -247,7 +247,7 @@ export default function About() {
             <div className="profile-card">
               <div className="profile-image-section">
                 <img
-                  src="./Images/Founder.jpg" // Replace with the actual path to the image
+                  src='./Images/Founder.jpg'
                   alt="Max Mitchell"
                   className="image"
                 />
@@ -269,11 +269,7 @@ export default function About() {
 
             <div className="profile-card">
             <div className="profile-image-section">
-                <img
-                  src="./Images/Founder.jpg" // Replace with the actual path to the image
-                  alt="Max Mitchell"
-                  className="profile-image"
-                />
+                <img className="image" src="./Images/Sarah.png" alt="Sarah" />
               </div>
               <div className="profile-info">
                 <div className="profile-social">
@@ -315,11 +311,7 @@ export default function About() {
 
             <div className="profile-card">
             <div className="profile-image-section">
-                <img
-                  src="./Images/Founder.jpg" // Replace with the actual path to the image
-                  alt="Max Mitchell"
-                  className="profile-image"
-                />
+                <img className="image" src="./Images/Sarah.png" alt="" />
               </div>
               <div className="profile-info">
                 <div className="profile-social">
@@ -427,7 +419,6 @@ export default function About() {
       </div>
 
       {/* Valued Client Section End */}
-
 
     </>
   )

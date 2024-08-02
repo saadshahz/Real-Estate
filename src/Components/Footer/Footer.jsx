@@ -23,7 +23,7 @@ const Footer = () => {
         {/* <RightDesign className='rightside'/> */}
       </div>
       <footer className="footer">
-        <div className="container">
+        <div className="footer-top">
           <div className="newsletter">
             <div className="logoSection">
               <Logo />
@@ -47,7 +47,7 @@ const Footer = () => {
                 <li className="link">FAQs</li>
               </ul>
             </div>
-            <div className="column">
+            <div className="column border-left">
               <h3 className="columnTitle">About Us</h3>
               <ul className="linkList">
                 <li className="link">Our Story</li>
@@ -57,14 +57,23 @@ const Footer = () => {
                 <li className="link">Our Clients</li>
               </ul>
             </div>
-            <div className="column">
+            <div className='double-column '>
+            <div className="column col">
               <h3 className="columnTitle">Properties</h3>
               <ul className="linkList">
                 <li className="link">Portfolio</li>
                 <li className="link">Categories</li>
               </ul>
             </div>
-            <div className="column">
+            <div className="column col">
+              <h3 className="columnTitle">Contact Us</h3>
+              <ul className="linkList">
+                <li className="link">Contact Form</li>
+                <li className="link">Our Offices</li>
+              </ul>
+            </div>
+            </div>
+            <div className="column  border-left">
               <h3 className="columnTitle">Services</h3>
               <ul className="linkList">
                 <li className="link">Valuation Mastery</li>
@@ -72,13 +81,6 @@ const Footer = () => {
                 <li className="link">Negotiation Wizardry</li>
                 <li className="link">Closing Success</li>
                 <li className="link">Property Management</li>
-              </ul>
-            </div>
-            <div className="column">
-              <h3 className="columnTitle">Contact Us</h3>
-              <ul className="linkList">
-                <li className="link">Contact Form</li>
-                <li className="link">Our Offices</li>
               </ul>
             </div>
           </div>

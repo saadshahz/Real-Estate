@@ -1,62 +1,78 @@
-// import { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import Logo from '../../assets/svg/Logo.jsx'
+// import React from 'react'
+import { useState } from 'react';
+import { NavLink } from 'react-router-dom';
+
 import './style.css'
-import Cancel from './svg/Cancel.jsx';
+
+// import Cancel from './svg/Cancel'
+import Logo from '../../assets/svg/Logo.jsx'
+import MenuBar from './svg/Menu.jsx';
+import MainMenuClose from './svg/MainMenuClose.jsx';
 
 export default function Navbar() {
+
+    const [sidebarVisible, setSidebarVisible] = useState(false);
+
+    const toggleSidebar = () => {
+        setSidebarVisible(prev => !prev);
+    };
 
     const activeStyle = {
         backgroundColor: 'rgba(20, 20, 20, 1)',
         border: '1px solid rgba(38, 38, 38, 1)',
-        color: 'white',
-        padding: '8px 16px',
-        borderRadius: '7px',
     };
 
     const inactiveStyle = {
         border: '1px solid transparent',
-        padding: '8px 16px',
-        color: 'white',
     };
-
-    const removeHeader = () => {
-        document.querySelector('.header').style.display = 'none';
-    }
 
     return (
         <>
-            <div className='header'>
+            {/* <header className="banner">
                 <p>✨Discover Your Dream Property with Estatein <span>Learn More</span></p>
-                <Cancel onClick= {removeHeader} />
-            </div>
+                <Cancel className="cancel-button" />
+            </header> */}
 
-            <header className="nav-bar h-13 text-white px-4 py-2 flex justify-between items-center" style={{ backgroundColor: 'rgba(38, 38, 38, 1)' }}>
-
-                <div className="logo-section w-1/4 h-full flex justify-center items-center">
+            <nav className='header'>
+                <div className='logo-section'>
                     <Logo />
                 </div>
-                <div className="facility-section w-2/4 h-full flex justify-center">
-                    <nav className="w-3/4 h-full flex justify-evenly items-center">
-                        <NavLink to="/"
-                            style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
-                            className={({ isActive }) => (isActive ? 'text-gray-400' : 'text-white')}>Home</NavLink>
-                        <NavLink to="/about"
-                            style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
-                            className={({ isActive }) => (isActive ? 'text-gray-400' : 'text-white')}>About Us</NavLink>
-                        <NavLink to="/properties"
-                            style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
-                            className={({ isActive }) => (isActive ? 'text-gray-400' : 'text-white')}>Properties</NavLink>
-                        <NavLink to="/service"
-                            style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
-                            className={({ isActive }) => (isActive ? 'text-gray-400' : 'text-white')}
-                        >Services</NavLink>
-                    </nav>
+                <div className="facility-section">
+                    <NavLink to="/"
+                        style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
+                        className="links"
+                    >Home</NavLink>
+                    <NavLink to="/about"
+                        style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
+                        className="links"
+                    >About Us</NavLink>
+                    <NavLink to="/properties"
+                        style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
+                        className="links"
+                    >Properties</NavLink>
+                    <NavLink to="/service"
+                        style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)}
+                        className="links"
+                    >Services</NavLink>
                 </div>
-                <div className="button-section w-1/4 h-full flex justify-center items-center">
-                    <button className="button text-white py-2 px-4 rounded-md focus:outline-none" style={{ backgroundColor: 'rgba(20, 20, 20, 1)', border: '1px solid rgba(38, 38, 38, 1)', borderRadius: '7px' }}>Contact Us</button>
+                <div className='menu-icon' onClick={toggleSidebar}>
+                    <MenuBar />
                 </div>
-            </header>
+                <div className={`sidebar ${sidebarVisible ? 'visible' : 'hidden'}`}>
+                    <div className='menu-close-icon' onClick={toggleSidebar}>
+                        <MainMenuClose />
+                    </div>
+                    <NavLink to="/" style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)} className="links">Home</NavLink>
+                    <NavLink to="/about" style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)} className="links">About Us</NavLink>
+                    <NavLink to="/properties" style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)} className="links">Properties</NavLink>
+                    <NavLink to="/service" style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)} className="links">Services</NavLink>
+                    <NavLink to="/contact" style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)} className="links">Contact Us</NavLink>
+                </div>
+                <div className='button-section'>
+                    <NavLink to='/contact' className="contact-button">Contact Us</NavLink>
+                </div>
+            </nav>
+
         </>
     )
-}   
+}

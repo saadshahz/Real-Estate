@@ -1,0 +1,72 @@
+.message-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.send-logo {
+    width: 30px;
+    height: 30px;
+}
+
+.facebook-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.twitter-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.linkedIn-logo {
+    width: 24px;
+    height: 24px;
+}
+
+.youtube-logo {
+    width: 24px;
+    height: 24px;
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+
+    .message-logo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .send-logo {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .facebook-logo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .twitter-logo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .linkedIn-logo {
+        width: 20px;
+        height: 20px;
+    }
+    
+    .youtube-logo {
+        width: 20px;
+        height: 20px;
+    }
+
+}
+
+@media (max-width: 799px) {
+
+    .send-logo {
+        height: 24px;
+        width: 24px;
+    }
+
+}
