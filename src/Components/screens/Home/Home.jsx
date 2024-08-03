@@ -3,17 +3,17 @@ import { useEffect, useState } from "react";
 import HomeBanner from "../../../assets/HomeBanner.png";
 import "./style.css";
 // import Arrow from "../../../assets/svg/Arrow.jsx";
-import ServiceCard from "../../ServiceCard/ServiceCard.jsx";
+import ServiceCard from "../../serviceCard/ServiceCard.jsx";
 import HomeIcon from "../../../assets/svg/HomeIcon.jsx";
 import CaptureIcon from "../../../assets/svg/CaptureIcon.jsx";
 import PropertyIcon from "../../../assets/svg/PropertyIcon.jsx";
 import SunriseIcon from "../../../assets/svg/SunriseIcon.jsx";
 import StarsIcon from "../../../assets/svg/StarsIcon.jsx";
-import ProductSlider from "../../ProductSlider/ProductSlider.jsx";
+import ProductSlider from "../../productSlider/ProductSlider.jsx";
 import getProperty from "../../../action/getProperty.js";
-import ReviewSlider from "../../Reviews/ReviewSlider.jsx";
+import ReviewSlider from "../../reviews/ReviewSlider.jsx";
 import getReview from "../../../action/getReview.js";
-import BlogSlider from "../../Blogs/BlogSlider.jsx";
+import BlogSlider from "../../blogs/BlogSlider.jsx";
 import getBlogs from "../../../action/getBlogs.js"
 
 export default function Home() {
