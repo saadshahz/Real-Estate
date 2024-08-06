@@ -12,7 +12,7 @@ export default function getProperty() {
           no_of_bathroom: 2,
           type: "Villa",
         },
-        price: 500,
+        price: '500.000',
       },
       {
         id: 2,

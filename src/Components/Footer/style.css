@@ -126,10 +126,12 @@
 }
 
 .linksSection {
-    display: flex;
+    display: grid;
+    
     justify-content: space-evenly;
     width: 50%;
     margin-bottom: 20px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .column {
@@ -165,7 +167,7 @@
 }
 
 .bottomLeft {
-    width: 50%;
+    width: 25%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -186,7 +188,7 @@
 
 .socialMediaSection {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     width: 40%;
     align-items: center;
 }
@@ -252,6 +254,14 @@
     .link {
         font-size: 16px;
     }
+    
+    .footerBottom {
+        justify-content: space-between;
+    }
+
+    .bottomLeft {
+        width: 40%;
+    }
 
     .bottomLeft :nth-child(1) {
         font-size: 14px;
@@ -259,6 +269,11 @@
 
     .bottomLeft :nth-child(2) {
         font-size: 14px;
+    }
+
+    .socialMediaSection {
+        width: 25%;
+        justify-content: center;
     }
 
     .socialIcon {
@@ -349,9 +364,29 @@
     }
 
     .column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         flex: 1;
         margin: 10px 20px 10px 20px;
         border-bottom: 1px solid rgba(38, 38, 38, 1);
+    }
+
+    /* .linksSection .column:nth-child(even) {
+        border-left: 1px solid rgba(38, 38, 38, 1);
+    } */
+
+    .double-column .column {
+        margin: 0;
+        width: 100%; 
+    }
+
+    .double-column .column .linkList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .col {
@@ -364,6 +399,13 @@
 
     .link {
         font-size: 14px;
+    }
+
+    .linkList {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     .footerBottom {
@@ -397,6 +439,12 @@
     .socialIcon {
         width: 40px;
         height: 40px;
+    }
+
+    .horizontal-line {
+        width: 80%;
+        height: 1px;
+        background-color: 1px solid rgba(38, 38, 38, 1);
     }
 
 }

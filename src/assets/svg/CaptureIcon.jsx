@@ -1,8 +1,8 @@
-import React from 'react'
+import './style.css';
 
 export default function CaptureIcon() {
   return (
-    <svg width="82" height="82" viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className='capture-icon' viewBox="0 0 82 82" fill="none" xmlns="http://www.w3.org/2000/svg">
         <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint0_linear_121_1900)"/>
         <rect x="0.5" y="0.5" width="81" height="81" rx="40.5" stroke="url(#paint1_linear_121_1900)"/>
         <rect x="10.5" y="10.5" width="61" height="61" rx="30.5" stroke="url(#paint2_linear_121_1900)"/>
