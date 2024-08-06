@@ -158,10 +158,10 @@ export default function Home() {
 
       {/* Service Section Start */}
       <div className="service-section">
-        <Row className="justify-evenly">
+        <Row style={{display: 'flex', gridTemplateColumns: '(4, 1fr)'}}>
           {services.map((item, idx) => {
             return (
-              <Col className="card" key={idx}>
+              <Col className="card" style={{}} key={idx}>
                 <ServiceCard title={item.title} icon={item.icon} />
               </Col>
             );
