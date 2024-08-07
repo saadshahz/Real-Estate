@@ -1,9 +1,9 @@
-import Facebook from './svg/Facebook.jsx';
-import Twitter from './svg/Twitter.jsx';
-import Youtube from './svg/Youtube.jsx';
-import LinkedIn from './svg/LinkedIn.jsx';
-import Send from './svg/Send.jsx';
-import Message from './svg/Message.jsx';
+import Facebook from './svg/Facebook';
+import Twitter from './svg/Twitter';
+import Youtube from './svg/Youtube';
+import LinkedIn from './svg/LinkedIn';
+import Send from './svg/Send';
+import Message from './svg/Message';
 import Logo from '../../assets/svg/Logo.jsx';
 import './style.css'
 

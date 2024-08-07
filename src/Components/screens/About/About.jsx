@@ -9,7 +9,7 @@ import StarIcon from './svg/StarIcon';
 import ExcelenceIcon from './svg/ExcelenceIcon';
 import ClientIcon from './svg/CLientIcon';
 import Twitter from './svg/Twitter';
-import Send from '../../footer/svg/Send'
+import Send from '../../Footer/svg/Send'
 import Domain from "./svg/Domain";
 import Category from "./svg/Category";
 export default function About() {
