@@ -1,4 +1,4 @@
-
+import React from "react";
 import "./style.css";
 import Arrow from "../../assets/svg/Arrow";
 

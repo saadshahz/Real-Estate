@@ -10,45 +10,16 @@
     align-items: center;
     flex-direction: column;
 }
-
 .service-card p{
     padding: 20px 0;
     font-size: 18px;
     font-weight: 500;
 }
-
 .icon{
     position: absolute;
     top: 10px;
     right: 10px;
 }
-
 .icon svg{
     width: 16px;
-}
-
-@media (min-width: 768px) and (max-width: 1440px) {
-
-    .service-card {
-        width: 347.5px;
-        height: 160px;
-        padding: 40px 20px;
-        position: relative;
-    }
-    
-    .service-card p{
-        font-size: 16px;
-        font-weight: 500;
-    }
-    
-    .icon{
-        position: absolute;
-        top: 10px;
-        right: 10px;
-    }
-    
-    .icon svg{
-        width: 16px;
-    }
-
 }

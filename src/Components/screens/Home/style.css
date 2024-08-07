@@ -1,17 +1,5 @@
 .hero-section {
   background-color: #1a1a1a;
-  /* background-color: rgba(20, 20, 20, 1); */
-  margin: 100px 0 0 0;
-}
-
-.heroTag-section {
-  width: 175px;
-  height: 175px;
-  position: absolute;
-  top: 27%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
 }
 
 .banner-content {
@@ -22,7 +10,7 @@
   height: 100%;
   color: #fff;
   background-color: #141414;
-  padding: 0 60px 0 100px;
+  padding: 0 60px 0 200px;
 }
 
 .banner-content h1 {
@@ -33,7 +21,6 @@
 .banner-content p {
   font-size: 18px;
   padding: 40px 0;
-  color: rgba(153, 153, 153, 1);
 }
 
 .banner-content .banner-btn button {
@@ -62,15 +49,12 @@
 }
 
 .banner-content .feature {
-  width: 758px;
   display: flex;
   justify-content: space-between;
   padding: 40px 0;
 }
 
 .banner-content .feature .card {
-  width: 239.33px;
-  height: 121px;
   border: 1px solid #262626;
   border-radius: 5px;
   padding: 10px 30px;
@@ -141,26 +125,16 @@
 .service-section {
   padding: 20px 10px;
   background-color: #141414;
-  border: 1px solid rgba(38, 38, 38, 1);
 }
 
-.service-section .card {
-  width: 450px;
+.service-section .ant-col-6 {
+  padding: 10px;
 }
 
-.sections {
-  width: 100%;
-  background-color: #141414;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-}
-
-.features-section {
-  width: 100%;
+.features-section, .review-section, .blog-section , .values-section {
   padding: 20px 162px 20px 162px;
-  color: #fff;
   background-color: #141414;
+  color: #fff;
 }
 
 .features-section h2 {
@@ -177,7 +151,6 @@
 .features-section a {
   padding: 10px 20px;
   border-radius: 5px;
-  background: rgba(26, 26, 26, 1);
   border: 1px solid #262626;
   transition: 0.5s;
   font-size: 16px;
@@ -187,123 +160,4 @@
   border: 1px solid #703bf7;
   background-color: #703bf7;
   color: #fff;
-}
-
-.center-banner {
-  width: 175px;
-  height: 175px;
-}
-
-@media (min-width: 800px) and (max-width: 1440px) {
-
-  .hero-section {
-    margin: 77px 0 0 0;
-  }
-
-  .heroTag-section {
-    width: 129px;
-    height: 129px;
-  }
-
-  .center-banner {
-    width: 129px;
-    height: 129px;
-  }
-
-  .banner-content {
-    padding: 0 0 0 80px;
-  }
-
-  .banner-content h1 {
-    width: 610px;
-    font-size: 46px;
-  }
-
-  .banner-content p {
-    width: 610px;
-    font-size: 16px;
-  }
-
-  .banner-content .banner-btn {
-    width: 610px;
-  }
-
-  .banner-content .banner-btn button {
-    padding: 14px 20px;
-    font-size: 14px;
-  }
-
-
-  .banner-content .feature {
-    width: 610px;
-    height: 99px;
-    justify-content: space-between;
-  }
-
-  .banner-content .feature .card {
-    width: 192.67px;
-    height: 99px;
-    padding: 14px 20px;
-  }
-
-  .banner-content .feature .card h6 {
-    font-size: 30px;
-  }
-
-  .banner-content .feature .card p {
-    font-size: 16px;
-    padding: 0;
-  }
-
-  .service-section {
-    padding: 10px;
-    height: 180px;
-  }
-
-  .service-section .card {
-    width: 340px;
-  }
-
-  .features-section {
-    width: 1280px;
-    padding: 20px 0;
-  }
-  
-  .features-section h2 {
-    width: 1280px;
-    font-size: 38px;
-  }
-  
-  .features-section p {
-    font-size: 16px;
-    width: 975px;
-  }
-  
-  .features-section a {
-    padding: 10px 20px;
-    font-size: 14px;
-  }
-  
-  .features-section a:hover {
-    border: 1px solid #703bf7;
-    background-color: #703bf7;
-    color: #fff;
-  }
-
-
-
-
-}
-
-@media (max-width: 799px) {
-
-  .hero-section {
-    margin: 67px 0 0 0;
-  }
-
-  .center-banner {
-    width: 117px;
-    height: 117px;
-  }
-
 }

@@ -57,7 +57,7 @@ const Footer = () => {
                 <li className="link">Our Clients</li>
               </ul>
             </div>
-            <div className='double-column column'>
+            <div className='double-column '>
             <div className="column col">
               <h3 className="columnTitle">Properties</h3>
               <ul className="linkList">
