@@ -13,7 +13,7 @@ import ProductSlider from "../../ProductSlider/ProductSlider.jsx";
 import getProperty from "../../../action/getProperty.js";
 import ReviewSlider from "../../Reviews/ReviewSlider.jsx";
 import getReview from "../../../action/getReview.js";
-import BlogSlider from "../../blogs/BlogSlider.jsx";
+import BlogSlider from "../../Blogs/BlogSlider.jsx";
 import getBlogs from "../../../action/getBlogs.js";
 // import centerBanner from './svg/centerBanner.jsx';
 
@@ -213,8 +213,6 @@ export default function Home() {
         </div>
       </div>
       {/* Blog Section End */}
-      
-
     </>
   );
 }
