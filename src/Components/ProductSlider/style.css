@@ -16,10 +16,12 @@
 .product-card .product-content h5 {
   font-size: 22px;
   font-weight: 500;
+  color: #fff;
 }
 
 .product-card .product-content p {
   font-size: 16px;
+  color: #4d4d4d;
 }
 
 .product-card .product-content span {
@@ -28,6 +30,7 @@
   border: 1px solid #4d4d4d;
   background-color: #1a1a1a;
   font-size: 14px;
+  color: #fff;
 }
 
 .product-card .product-content span svg {
@@ -56,6 +59,7 @@
   width: 250px;
   padding: 10px;
   text-align: center;
+  border-radius: 10px;
   display: block;
   background-color: #703bf7;
   color: #fff;
