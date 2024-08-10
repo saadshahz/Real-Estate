@@ -9,7 +9,7 @@ export default function ProductCard(props) {
   const { title, desc, feature, price, id } = { ...props };
   
   const words = desc.split(" ");
-  const truncatedText = words.slice(0, 20).join(" ");
+  const truncatedText = words.slice(0, 12).join(" ");
 
   return (
     <div className="product-card">
@@ -18,9 +18,9 @@ export default function ProductCard(props) {
       </div>
       <div className="product-content">
         <h5>{title}</h5>
-        <p className="py-4">{truncatedText} ...</p>
+        <p className="py-4">{truncatedText} ...Read More</p>
         <Flex gap="middle">
-          <span className="flex items-center ">
+          <span className="flex items-start ">
             <BedroomIcon /> {feature.no_of_bedroom}-Bedroom
           </span>
           <span className="flex items-center ">
@@ -32,14 +32,13 @@ export default function ProductCard(props) {
             {feature.type}
           </span>
         </Flex>
-        <Row className="justify-between price mt-6 ">
-          <Col>
+        <Row className="price flex">
+          <Col className="h-full flex flex-col">
             <span>Price</span>
             <p>$ {price}</p>
           </Col>
-          <Col>
+          <Col className="h-full">
             <a href={`/property/detail/${id}`}>View Property Details</a>
-            {/* <a href="#">View Property Details</a> */}
           </Col>
         </Row>
       </div>

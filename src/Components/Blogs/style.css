@@ -21,6 +21,7 @@
     color: #4d4d4d;
     font-size: 16px;
     margin-bottom: 20px;
+    padding: 1rem 0;
 }
 
 .blog-card a {
@@ -36,4 +37,52 @@
 
 .blog-card a:hover {
     background-color: #703bf7;
+}
+
+@media (min-width: 800px) and (max-width: 1440px) {
+
+    .blog-card {
+        border: 1px solid #262626;
+        border-radius: 10px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+        padding: 30px;
+    }
+
+    .blog-card h5 {
+        width: 90%;
+        height: 30%;
+        gap: 0px;
+        opacity: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 40px;  
+        text-align: left;
+        padding: 0;
+    }
+
+    .blog-card p {
+        width: 90%;
+        height: 40%;
+        gap: 0px;
+        opacity: 0px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.006em;
+        text-align: left;
+        padding: 0;
+    }
+
+    .blog-card a {
+        width: 107px;
+        height: 20%;
+        background-color: rgba(26, 26, 26, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        font-size: 14px;
+    }
+
 }

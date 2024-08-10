@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./style.css";
 import SearchIcon from "../../../assets/svg/SearchIcon";
-import { Flex, Form, Input, Select } from "antd";
+import { Flex, Form, Select } from "antd";
 import getProperty from "../../../action/getProperty";
 import ProductSlider from "../../ProductSlider/ProductSlider";
 import StarsIcon from "../../../assets/svg/StarsIcon.jsx";
@@ -95,7 +95,7 @@ export default function Properties() {
                     // onChange={(e) => {
                     //   setLocation(e.target.value);
                     // }}
-                    onSelect={(value, e) => {
+                    onSelect={(value) => {
                       form.setFieldValue(value);
                     }}
                     placeholder="Location..."
@@ -110,7 +110,7 @@ export default function Properties() {
                     // onChange={(e) => {
                     //   setLocation(e.target.value);
                     // }}
-                    onSelect={(value, e) => {
+                    onSelect={(value) => {
                       form.setFieldValue(value);
                     }}
                     placeholder="Property Type..."
@@ -125,7 +125,7 @@ export default function Properties() {
                     // onChange={(e) => {
                     //   setLocation(e.target.value);
                     // }}
-                    onSelect={(value, e) => {
+                    onSelect={(value) => {
                       form.setFieldValue(value);
                     }}
                     placeholder="Pricing Range..."
@@ -140,7 +140,7 @@ export default function Properties() {
                     // onChange={(e) => {
                     //   setLocation(e.target.value);
                     // }}
-                    onSelect={(value, e) => {
+                    onSelect={(value) => {
                       form.setFieldValue(value);
                     }}
                     placeholder="Property Size..."
@@ -165,11 +165,11 @@ export default function Properties() {
 
       <div className="book-property">
         <StarsIcon />
-        <h2>Let's Make it Happen</h2>
+        <h2>Let`s Make it Happen</h2>
         <p className="pb-4">
           Ready to take the first step toward your dream property? Fill out the
           form below, and our real estate wizards will work their magic to find
-          your perfect match. Don't wait; let's embark on this exciting journey
+          your perfect match. Don`t wait; let`s embark on this exciting journey
           together.
         </p>
 

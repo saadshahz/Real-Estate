@@ -26,11 +26,11 @@ export default function Review(props) {
             </div>
             
             <div className='client-info'>    
-                <Row className="price mt-6 ">
+                <Row className="price ">
                     <Col>
                         <img src={ProfileImg} alt="Client Img" />
                     </Col>
-                    <Col className='ml-4 mt-2'>
+                    <Col className='ml-4'>
                         <Row className='name'>{name}</Row>
                         <Row className='place'>{country}, {city}</Row>
                     </Col>

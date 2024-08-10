@@ -18,7 +18,7 @@ export default function BlogSlider(props) {
     <>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
+        spaceBetween={15}
         loop={true}
         className="mySwiper"
       >

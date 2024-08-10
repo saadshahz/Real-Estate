@@ -3,22 +3,65 @@
     height: 48px;
 }
 
+.home-icon,
+.capture-icon,
+.property-icon,
+.sunrise-icon {
+    width: 82px;
+    height: 82px;
+}
+
+.villa-icon,
+.bathroom-icon,
+.bedroom-icon {
+    width: 24px;
+    height: 24px;
+}
+
 @media (min-width: 800px) and (max-width: 1440px) {
-    
+
     .main-Logo {
         width: 113.33px;
         height: 34px;
     }
 
+    .home-icon,
+    .capture-icon,
+    .property-icon,
+    .sunrise-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    .villa-icon,
+    .bathroom-icon,
+    .bedroom-icon {
+        width: 20px;
+        height: 20px;
+    }
+
 }
 
 @media (max-widht: 767px) {
-    
+
     .main-Logo {
         width: 93.33px;
         height: 28px;
     }
 
-    
+    .home-icon,
+    .capture-icon,
+    .property-icon,
+    .sunrise-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    .villa-icon,
+    .bathroom-icon,
+    .bedroom-icon {
+        width: 20px;
+        height: 20px;
+    }
 
 }

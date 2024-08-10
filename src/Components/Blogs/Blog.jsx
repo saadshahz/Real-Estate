@@ -9,7 +9,7 @@ export default function Blogs(props) {
 
         <div className="blog-card">
             <h5>{title}</h5>
-            <p className="py-4">{desc}</p>
+            <p>{desc}</p>
             <a href='#'>Read More</a>
         </div>
     )

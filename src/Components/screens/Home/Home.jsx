@@ -15,7 +15,7 @@ import ReviewSlider from "../../Reviews/ReviewSlider.jsx";
 import getReview from "../../../action/getReview.js";
 import BlogSlider from "../../Blogs/BlogSlider.jsx";
 import getBlogs from "../../../action/getBlogs.js";
-// import centerBanner from './svg/centerBanner.jsx';
+import BannerTag from "./svg/BannerTag.jsx";
 
 export default function Home() {
   const [customer, setCustomer] = useState(1);
@@ -84,7 +84,11 @@ export default function Home() {
     <>
       {/* Hero Section Start */}
       <div className="hero-section ">
-        <Row>
+      <div className="banner-tag">
+        <BannerTag />
+      </div>
+
+        <Row className="hero">
           <Col span={12}>
             <div className="banner-content">
               <h1>Discover Your Dream Property with Estatein</h1>
@@ -111,17 +115,6 @@ export default function Home() {
                   <p>Years of Experience</p>
                 </div>
               </div>
-
-              {/* <div className="rotator">
-                <div className="inner-rotaor">
-                  <div class="rotator-img">
-                    <Arrow />
-                  </div>
-                  <div className="text">
-                    <p>✨Discover Your Dream Property with Estatein</p>
-                  </div>
-                </div>
-              </div> */}
             </div>
           </Col>
           <Col span={12}>
@@ -134,12 +127,12 @@ export default function Home() {
       {/* Hero Section End */}
 
       {/* Service Section Start */}
-      <div className="service-section">
-        <Row className="justify-between">
+      <div className="service-section flex">
+        <Row className="h-full w-full flex justify-between">
           {services.map((item, idx) => {
             return (
               <Col span={6} key={idx}>
-                <ServiceCard title={item.title} icon={item.icon} />
+                <ServiceCard  title={item.title} icon={item.icon} />
               </Col>
             );
           })}
@@ -150,25 +143,28 @@ export default function Home() {
 
       {/* Features Section Start */}
       <div className="features-section">
-        <StarsIcon />
-        <h2>Featured Properties</h2>
-        <Row className="justify-between">
-          <Col>
-            <p>
-              Explore our handpicked selection of featured properties. Each
-              listing offers a glimpse into exceptional homes and investments
-              available through Estatein. Click `View Details` for more
-              information.
-            </p>
-          </Col>
-          <Col>
-            <a href="#">View All Properties</a>
-          </Col>
-        </Row>
 
-        <div className="py-6">
-          <ProductSlider data={propertyData} />
-        </div>
+
+          <StarsIcon />
+          <h2>Featured Properties</h2>
+          <Row className="flex justify-between features-properties">
+            <Col className="w-3/4">
+              <p>
+                Explore our handpicked selection of featured properties. Each
+                listing offers a glimpse into exceptional homes and investments
+                available through Estatein. Click `View Details` for more
+                information.
+              </p>
+            </Col>
+            <Col className="w-1/4 flex justify-end">
+              <a className="feature-button" href="#">View All Properties</a>
+            </Col>
+          </Row>
+
+          <div className="py-6">
+            <ProductSlider data={propertyData} />
+          </div>
+          
       </div>
       {/* Features Section End */}
 
@@ -199,8 +195,8 @@ export default function Home() {
         <h2>Frequently Asked Questions</h2>
         <Row className="justify-between">
           <Col>
-            <p>
-            Find answers to common questions about Estatein`s services, property listings, and the real estate process. We`re here to provide clarity and assist you every step of the way.
+            <p style={{width: '960px'}}>
+              Find answers to common questions about Estatein`s services, property listings, and the real estate process. We`re here to provide clarity and assist you every step of the way.
             </p>
           </Col>
           <Col>
@@ -209,7 +205,7 @@ export default function Home() {
         </Row>
 
         <div className="py-6">
-          <BlogSlider data={blogData}/>
+          <BlogSlider data={blogData} />
         </div>
       </div>
       {/* Blog Section End */}

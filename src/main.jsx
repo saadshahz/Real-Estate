@@ -5,7 +5,7 @@ import Layout from './Layout.jsx'
 import './index.css'
 import Home from './Components/screens/Home/Home.jsx'
 import Service from './Components/screens/Service/Service.jsx'
-import Properties from './Components/screens/Properties/Properties.jsx'
+import Properties from './Components/screens/properties/Properties.jsx'
 import About from './Components/screens/About/About.jsx'
 import Contact from './Components/screens/Contact/Contact.jsx'
 
