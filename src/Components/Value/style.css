@@ -1,0 +1,15 @@
+.value-title {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+}
+
+.value-desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+}

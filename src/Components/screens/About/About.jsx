@@ -3,13 +3,15 @@ import { Col, Row } from "antd";
 import { useEffect, useState } from "react";
 import HomeBanner from "../../../assets/AboutHero.png";
 
+import Value from "../../Value/Value";
+
 import "./style.css";
 import StarsIcon from "../../../assets/svg/StarsIcon";
 import StarIcon from "./svg/StarIcon";
 import ExcelenceIcon from "./svg/ExcelenceIcon";
 import ClientIcon from "./svg/CLientIcon";
 import Twitter from "./svg/Twitter";
-import Send from "../../Footer/svg/Send";
+import Send from "./svg/Send";
 import Domain from "./svg/Domain";
 import Category from "./svg/Category";
 import Founder from "../About/Images/Founder.png";
@@ -66,6 +68,29 @@ export default function About() {
     },
   ];
 
+  const propertyManagement = [
+    {
+      title: 'Trust',
+      icons: <StarIcon />,
+      desc: 'Trust is the cornerstone of every successful real estate transaction.',
+    },
+    {
+      title: 'Excelence',
+      icons: <ExcelenceIcon />,
+      desc: 'We set the bar high for ourselves. From the properties we list to the services we provide.',
+    },
+    {
+      title: 'CLient-Centric',
+      icons: <ClientIcon />,
+      desc: 'Your dreams and needs are at the center of our universe. We listen, understand.',
+    },
+    {
+      title: 'Our Commitment',
+      icons: <StarIcon />,
+      desc: 'We are dedicated to providing you with the highest level of service, professionalism, and support.',
+    },
+  ]
+
   return (
     <>
       {/* Hero Section Start */}
@@ -74,7 +99,7 @@ export default function About() {
           <Col span={12}>
             <div className="banner-content" >
               <StarsIcon />
-              <h1 style={{ fontSize: "72px" }}>Our Journey</h1>
+              <h1>Our Journey</h1>
               <p style={{ color: "#4d4d4d" }}>
                 Our story is one of continuous growth and evolution. We started
                 as a small team with big dreams, determined to create a real
@@ -111,8 +136,9 @@ export default function About() {
       {/* Hero Section End */}
 
       {/* Values Section Start */}
-      <div className="values-section py-6">
-        <div className="container">
+
+      <section className='values-section'>
+        <main className='value'>
           <div className="left-section">
             <StarsIcon />
             <h2>Our Values</h2>
@@ -121,60 +147,21 @@ export default function About() {
               a small team with big dreams, determined to create a real estate
               platform that transcended the ordinary.
             </p>
+
           </div>
           <div className="right-section">
-            <Row className="row">
-              <Col className="col">
-                <Row className="title">
-                  <StarIcon />
-                  <h1>Trust</h1>
-                </Row>
-                <p className="para">
-                  Trust is the cornerstone of every successful real estate
-                  transaction.
-                </p>
-              </Col>
-              <div className="margin"></div>
-              <Col className="col">
-                <Row className="title">
-                  <ExcelenceIcon />
-                  <h1>Excellence</h1>
-                </Row>
-                <p className="para">
-                  We set the bar high for ourselves. From the properties we list
-                  to the services we provide.
-                </p>
-              </Col>
-            </Row>
-            <div className="margin"></div>
-            <Row className="row">
-              <Col className="col">
-                <Row className="title">
-                  <ClientIcon />
-                  <h1>Client-Centric</h1>
-                </Row>
-                <p className="para">
-                  Your dreams and needs are at the center of our universe. We
-                  listen, understand.
-                </p>
-              </Col>
-
-              <div className="margin"></div>
-
-              <Col className="col">
-                <Row className="title">
-                  <StarIcon />
-                  <h1>Our Commitment</h1>
-                </Row>
-                <p className="para">
-                  We are dedicated to providing you with the highest level of
-                  service, professionalism, and support.
-                </p>
-              </Col>
-            </Row>
+            {propertyManagement.map((item, idx) => {
+              return (
+                <div className='value-container' key={idx}>
+                  <Value title={item.title} icon={item.icons} desc={item.desc} />
+                </div>
+              );
+            })}
           </div>
-        </div>
-      </div>
+        </main>
+
+      </section>
+
       {/* Values Section End */}
 
       {/* Achievement Section Start */}
@@ -193,8 +180,8 @@ export default function About() {
             </Col>
           </Row>
 
-          <div className="py-8 flex gap-6">
-            <div className="blog-card achievement-card">
+          <div className="achievement-card-section py-8">
+            <div className="achievement-card">
               <h5 style={{ fontSize: "30px", fontWeight: "600" }}>
                 3+ Years of Excellence
               </h5>
@@ -204,7 +191,7 @@ export default function About() {
                 things real estate.
               </p>
             </div>
-            <div className="blog-card achievement-card">
+            <div className="achievement-card">
               <h5 style={{ fontSize: "30px", fontWeight: "600" }}>
                 Happy Clients
               </h5>
@@ -213,7 +200,7 @@ export default function About() {
                 Their success stories fuel our passion for what we do.
               </p>
             </div>
-            <div className="blog-card achievement-card">
+            <div className="achievement-card">
               <h5 style={{ fontSize: "30px", fontWeight: "600" }}>
                 Industry Recognition
               </h5>
@@ -243,7 +230,7 @@ export default function About() {
             </Col>
           </Row>
 
-          <div className="py-8 flex gap-6 cards-content">
+          <div className="py-8 cards-content">
             <div className="experience-card">
               <h6 style={{ fontSize: "20px", fontWeight: "500" }}>Step 01</h6>
               <div className="content">
@@ -380,73 +367,6 @@ export default function About() {
                   </div>
                 );
               })}
-
-            {/* <div className="profile-card">
-              <div className="profile-image-section">
-                <img className="image" src="./Images/Sarah.png" alt="Sarah" />
-              </div>
-              <div className="profile-info">
-                <div className="profile-social">
-                  <Twitter className="social-icon" />
-                </div>
-                <h5>Max Mitchell</h5>
-                <p>Founder</p>
-                <button className="message-button">
-                  <span role="img" aria-label="wave">
-                    Say Hello 👋
-                  </span>
-                  <div className="message-icon">
-                    <Send />
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            <div className="profile-card">
-              <div className="profile-image-section">
-                <img
-                  src="./Images/Founder.jpg" // Replace with the actual path to the image
-                  alt="Max Mitchell"
-                  className="profile-image"
-                />
-              </div>
-              <div className="profile-info">
-                <div className="profile-social">
-                  <Twitter className="social-icon" />
-                </div>
-                <h5>Max Mitchell</h5>
-                <p>Founder</p>
-                <button className="message-button">
-                  <span role="img" aria-label="wave">
-                    Say Hello 👋
-                  </span>
-                  <div className="message-icon">
-                    <Send />
-                  </div>
-                </button>
-              </div>
-            </div>
-
-            <div className="profile-card">
-              <div className="profile-image-section">
-                <img className="image" src="./Images/Sarah.png" alt="" />
-              </div>
-              <div className="profile-info">
-                <div className="profile-social">
-                  <Twitter className="social-icon" />
-                </div>
-                <h5>Max Mitchell</h5>
-                <p>Founder</p>
-                <button className="message-button">
-                  <span role="img" aria-label="wave">
-                    Say Hello 👋
-                  </span>
-                  <div className="message-icon">
-                    <Send />
-                  </div>
-                </button>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>

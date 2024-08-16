@@ -6,7 +6,21 @@
 .home-icon,
 .capture-icon,
 .property-icon,
-.sunrise-icon {
+.location-icon,
+.phone-icon,
+.social-icon,
+.email-icon,
+.sunrise-icon,
+.pie-chart-icon,
+.chart-icon,
+.balance-icon,
+.alert-icon,
+.sparkling-icon,
+.tenant-icon,
+.maintenance-icon,
+.strategies-icon,
+.roi-icon,
+.market-icon {
     width: 82px;
     height: 82px;
 }
@@ -28,6 +42,10 @@
     .home-icon,
     .capture-icon,
     .property-icon,
+    .location-icon,
+    .phone-icon,
+    .social-icon,
+    .email-icon,
     .sunrise-icon {
         width: 60px;
         height: 60px;
@@ -42,7 +60,7 @@
 
 }
 
-@media (max-widht: 767px) {
+@media (max-width: 799px) {
 
     .main-Logo {
         width: 93.33px;
@@ -52,6 +70,10 @@
     .home-icon,
     .capture-icon,
     .property-icon,
+    .location-icon,
+    .phone-icon,
+    .social-icon,
+    .email-icon,
     .sunrise-icon {
         width: 48px;
         height: 48px;

@@ -13,6 +13,22 @@
   z-index: 10;
 }
 
+.hero {
+  width: 100%;
+  height: 832px;
+  display: flex;
+}
+
+.hero .banner-content-section {
+  width: 50%;
+  height: 100%;
+}
+
+.hero .banner-image-section {
+  width: 50%;
+  height: 100%;
+}
+
 .banner-content {
   display: flex;
   flex-direction: column;
@@ -57,7 +73,6 @@
 
 .banner-content .banner-btn button:nth-child(2):hover {
   background-color: transparent;
-  margin-left: 10px;
   border: 1px solid #262626;
 }
 
@@ -138,6 +153,7 @@
 .service-section {
   padding: 20px 10px;
   background-color: #141414;
+  display: flex;
 }
 
 .service-section .ant-col-6 {
@@ -291,9 +307,178 @@
 
 @media (max-width: 799px) {
 
+  .hero-section {
+    width: 100%;
+    display: flex;
+  }
+
   .hero {
     display: flex;
     flex-direction: column-reverse;
+    width: 100%;
+    height: 1200px;
+    justify-content: space-between;
+  }
+
+  .hero .banner-image-section {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+
+  .banner-image-section .banner-image {
+    width: 90%;
+    height: 305px;
+    border-radius: 10px;
+  }
+
+  .banner-image img {
+    border-radius: 10px;
+  }
+
+  .hero .banner-content-section {
+    width: 100%;
+    height: 650px;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+  }
+
+  .banner-content-section .banner-content {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .banner-content h1 {
+    width: 90%;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+    margin: 45px 0 5px 0;
+  }
+
+  .banner-content p {
+    width: 90%;
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+    padding: 0;
+  }
+
+  .banner-tag {
+    height: 117px;
+    width: 117px;
+    top: 45%;
+    left: 20%;
+    transform: translate(-50%, -40%);
+  }
+
+  .banner-btn {
+    width: 90%;
+    height: 114px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  .banner-content .banner-btn button:nth-child(2) {
+    margin: 0;
+  }
+
+  .banner-content .feature {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(173px, 1fr));
+    height: 280px;
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  .banner-content .feature .card {
+    width: 95%;
+    height: 91px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .banner-content .feature .card h6 {
+    width: 90%;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .banner-content .feature .card p {
+    width: 90%;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .service-section {
+    height: 318px;
+    padding: 0;
+    display: grid;
+  }
+
+  .service-section .ant-col-6 {
+    padding: 0;
+  }
+
+  .service-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .features-section {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0;
+    align-items: center;
   }
   
+  .features-properties .para-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .features-properties .button-section {
+    display: none;
+  }
+
+  .features-section h2 {
+    width: 90%;
+    font-size: 28px;
+    padding: 0;
+  }
+
+  .features-section p {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .features-section a {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    transition: 0.5s;
+    font-size: 16px;
+  }
+
 }

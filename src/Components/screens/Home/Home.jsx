@@ -1,4 +1,4 @@
-import { Col, Row } from "antd";
+import { Col , Row } from "antd";
 import { useEffect, useState } from "react";
 import HomeBanner from "../../../assets/HomeBanner.png";
 import "./style.css";
@@ -89,7 +89,7 @@ export default function Home() {
       </div>
 
         <Row className="hero">
-          <Col span={12}>
+          <Col className="banner-content-section">
             <div className="banner-content">
               <h1>Discover Your Dream Property with Estatein</h1>
               <p>
@@ -97,8 +97,8 @@ export default function Home() {
                 Explore our listings to find the home that matches your dreams.
               </p>
               <div className="banner-btn">
-                <button>Learn More </button>
-                <button>Browse Properties </button>
+                <button className="more-info">Learn More </button>
+                <button className="properties">Browse Properties </button>
               </div>
 
               <div className="feature">
@@ -117,7 +117,7 @@ export default function Home() {
               </div>
             </div>
           </Col>
-          <Col span={12}>
+          <Col className="banner-image-section">
             <div className="banner-image">
               <img src={HomeBanner} alt="Banner" />
             </div>
@@ -127,11 +127,11 @@ export default function Home() {
       {/* Hero Section End */}
 
       {/* Service Section Start */}
-      <div className="service-section flex">
-        <Row className="h-full w-full flex justify-between">
+      <div className="service-section">
+        <Row className="service-row h-full w-full flex justify-evenly items-center">
           {services.map((item, idx) => {
             return (
-              <Col span={6} key={idx}>
+              <Col key={idx}>
                 <ServiceCard  title={item.title} icon={item.icon} />
               </Col>
             );
@@ -143,12 +143,10 @@ export default function Home() {
 
       {/* Features Section Start */}
       <div className="features-section">
-
-
           <StarsIcon />
           <h2>Featured Properties</h2>
           <Row className="flex justify-between features-properties">
-            <Col className="w-3/4">
+            <Col className="w-3/4 para-section">
               <p>
                 Explore our handpicked selection of featured properties. Each
                 listing offers a glimpse into exceptional homes and investments
@@ -156,20 +154,20 @@ export default function Home() {
                 information.
               </p>
             </Col>
-            <Col className="w-1/4 flex justify-end">
+            <Col className="w-1/4 flex justify-end button-section">
               <a className="feature-button" href="#">View All Properties</a>
             </Col>
           </Row>
 
-          <div className="py-6">
+          {/* <div className="py-6">
             <ProductSlider data={propertyData} />
-          </div>
+          </div> */}
           
       </div>
       {/* Features Section End */}
 
       {/* Reviews Section Start */}
-      <div className="features-section">
+      {/* <div className="features-section">
         <StarsIcon />
         <h2>What Our Clients Say</h2>
         <Row className="justify-between">
@@ -186,11 +184,11 @@ export default function Home() {
         <div className="py-6">
           <ReviewSlider data={reviewData} />
         </div>
-      </div>
+      </div> */}
       {/* Reviews Section End */}
 
       {/* Blog Section Start */}
-      <div className="features-section">
+      {/* <div className="features-section">
         <StarsIcon />
         <h2>Frequently Asked Questions</h2>
         <Row className="justify-between">
@@ -207,7 +205,7 @@ export default function Home() {
         <div className="py-6">
           <BlogSlider data={blogData} />
         </div>
-      </div>
+      </div> */}
       {/* Blog Section End */}
     </>
   );

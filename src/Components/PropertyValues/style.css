@@ -1,0 +1,32 @@
+.property-card {
+    color: #ffff;
+    background-color: #1A1A1A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 512px;
+    height: 266px;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 12px;
+    opacity: 0px;
+    flex-grow: 1;
+    border: 1px solid rgba(38, 38, 38, 1);
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    text-align: left;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+}
