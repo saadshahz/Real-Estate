@@ -2,20 +2,24 @@
   padding: 100px 162px;
   background-color: #1c1c1c;
 }
+
 .property-hero-section h1 {
   color: #fff;
   font-weight: 600;
   font-size: 60px;
 }
+
 .property-hero-section p {
   color: #999999;
   font-size: 18px;
 }
+
 .serach-filter-section {
   position: absolute;
   width: 80%;
   top: 420px;
 }
+
 .serach-filter-section .search-bar {
   border: 1px solid #262626;
   display: flex;
@@ -25,11 +29,13 @@
   padding: 10px;
   border-radius: 10px;
 }
+
 .serach-filter-section .search-bar input {
   width: 100%;
   background-color: transparent;
   color: #999999;
 }
+
 .serach-filter-section .search-bar input:focus-visible {
   outline: none;
 }
@@ -43,27 +49,33 @@
   width: 180px;
   border-radius: 10px;
 }
+
 .serach-filter-section .search-bar button svg {
   margin-right: 10px;
 }
+
 .serach-filter-section .ant-form-item {
   margin: 0 !important;
   width: 100%;
 }
+
 .serach-filter-section .ant-form-item .ant-select-selector {
   background-color: transparent;
   color: #999999;
   border: none;
 }
+
 .serach-filter-section .ant-form-item .ant-select {
   background-color: #141414;
   border: 1px solid #262626;
   padding: 20px 0;
   border-radius: 5px;
 }
+
 .serach-filter-section .ant-form-item .ant-select-selector select::placeholder {
   color: #999999;
 }
+
 .ant-select .ant-select-arrow {
   color: #999999;
 }
@@ -72,25 +84,278 @@
   background-color: #141414;
   padding: 130px 162px 70px 162px;
 }
+
 .property h2 {
   font-size: 40px;
   font-weight: 600;
   color: #fff;
 }
+
 .property p {
   font-size: 18px;
   color: #999999;
 }
-.book-property{
+
+.booking-section {
+  padding: 20px 162px 20px 162px;
   background-color: #141414;
-  padding: 70px 162px 70px 162px;
-}
-.book-property h2 {
-  font-size: 40px;
-  font-weight: 600;
   color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.book-property p {
+
+.booking-section .booking {
+  width: 100%;
+  height: 1238px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.booking .booking-content {
+  width: 100%;
+  height: 140px;
+  padding: 0px 300px 0px 0px;
+  gap: 14px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-content h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 72px;
+  text-align: left;
+}
+
+.booking-content p {
   font-size: 18px;
-  color: #999999;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
+}
+
+.booking .booking-container {
+  width: 100%;
+  height: 1018px;
+  padding: 100px;
+  gap: 50px;
+  border-radius: 12px;
+  border: 1px solid rgba(38, 38, 38, 1);
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.booking-container .inputs-row {
+  width: 100%;
+  height: 114px;
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  opacity: 0px;
+}
+
+.booking .budget-row {
+  width: 100%;
+  height: 114px;
+  gap: 50px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  opacity: 0px;
+}
+
+.budget-row .budget-box {
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.budget-box h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+.budget-box select {
+  padding: 20px;
+  gap: 12px;
+  height: 68px;
+  gap: 12px;
+  border-radius: 8px;
+  background: rgba(26, 26, 26, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+  opacity: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(102, 102, 102, 1);
+  outline: none;
+}
+
+.budget-row .referal-box {
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.referal-box h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+.referal-box .referal {
+  width: 100%;
+  height: 68px;
+  gap: 16px;
+  opacity: 0px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.referal .options {
+  width: 100%;
+  height: 100%;
+  padding: 22px 24px 22px 24px;
+  gap: 12px;
+  border-radius: 8px;
+  background: rgba(26, 26, 26, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+  opacity: 0px;
+  display: flex;
+}
+
+.options input {
+  gap: 12px;
+  background: rgba(26, 26, 26, 1);
+  opacity: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(102, 102, 102, 1);
+  outline: none;
+}
+
+.inputs-row .inputs-box {
+  width: 100%;
+  height: 100%;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputs-box h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+.inputs-box input {
+  height: 68px;
+  padding: 24px 20px 24px 20px;
+  gap: 12px;
+  border-radius: 8px;
+  background: rgba(26, 26, 26, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+  opacity: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(102, 102, 102, 1);
+  outline: none;
+}
+
+.inputs-box select {
+  padding: 20px;
+  gap: 12px;
+  height: 68px;
+  gap: 12px;
+  border-radius: 8px;
+  background: rgba(26, 26, 26, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+  opacity: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(102, 102, 102, 1);
+  outline: none;
+}
+
+form .message-row {
+  width: 100%;
+  height: 216px;
+  gap: 16px;
+  opacity: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.message-row h6 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+}
+
+.message-row textarea {
+  height: 170px;
+  padding: 24px 20px 24px 20px;
+  gap: 12px;
+  border-radius: 8px;
+  background: rgba(26, 26, 26, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
+  opacity: 0px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: left;
+  color: rgba(102, 102, 102, 1);
+  outline: none;
+}
+
+form .terms-row {
+  width: 100%;
+  height: 60px;
+  gap: 16px;
+  opacity: 0px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.terms-row .condition-section {
+  height: 60px;
+  gap: 10px;
+  opacity: 0px;
+  color: rgba(153, 153, 153, 1);
+  display: flex;
+  align-items: center;
+}
+
+.condition-section span {
+  text-decoration: underline;
+}
+
+.terms-row button {
+  width: 250px;
+  height: 60px;
+  gap: 67px;
+  border-radius: 8px;
+  opacity: 0px;
+  background-color: rgba(112, 59, 247, 1);
 }
