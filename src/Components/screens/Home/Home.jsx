@@ -1,4 +1,4 @@
-import { Col , Row } from "antd";
+import { Col, Row } from "antd";
 import { useEffect, useState } from "react";
 import HomeBanner from "../../../assets/HomeBanner.png";
 import "./style.css";
@@ -83,10 +83,10 @@ export default function Home() {
   return (
     <>
       {/* Hero Section Start */}
-      <div className="hero-section ">
-      <div className="banner-tag">
-        <BannerTag />
-      </div>
+      <div style={{marginTop: '100px'}} className="hero-section ">
+        <div className="banner-tag">
+          <BannerTag />
+        </div>
 
         <Row className="hero">
           <Col className="banner-content-section">
@@ -127,47 +127,46 @@ export default function Home() {
       {/* Hero Section End */}
 
       {/* Service Section Start */}
-      <div className="service-section">
-        <Row className="service-row h-full w-full flex justify-evenly items-center">
-          {services.map((item, idx) => {
-            return (
-              <Col key={idx}>
-                <ServiceCard  title={item.title} icon={item.icon} />
-              </Col>
-            );
-          })}
-        </Row>
-      </div>
+
+      <section className="service-section">
+        {services.map((item, idx) => {
+          return (
+            <div key={idx}>
+              <ServiceCard title={item.title} icon={item.icon} />
+            </div>
+          );
+        })}
+      </section>
 
       {/* Service Section End */}
 
       {/* Features Section Start */}
       <div className="features-section">
-          <StarsIcon />
-          <h2>Featured Properties</h2>
-          <Row className="flex justify-between features-properties">
-            <Col className="w-3/4 para-section">
-              <p>
-                Explore our handpicked selection of featured properties. Each
-                listing offers a glimpse into exceptional homes and investments
-                available through Estatein. Click `View Details` for more
-                information.
-              </p>
-            </Col>
-            <Col className="w-1/4 flex justify-end button-section">
-              <a className="feature-button" href="#">View All Properties</a>
-            </Col>
-          </Row>
+        <StarsIcon />
+        <h2>Featured Properties</h2>
+        <Row className="flex justify-between features-properties">
+          <Col className="w-3/4 para-section">
+            <p>
+              Explore our handpicked selection of featured properties. Each
+              listing offers a glimpse into exceptional homes and investments
+              available through Estatein. Click `View Details` for more
+              information.
+            </p>
+          </Col>
+          <Col className="w-1/4 flex justify-end button-section">
+            <a className="feature-button" href="#">View All Properties</a>
+          </Col>
+        </Row>
 
-          {/* <div className="py-6">
+        <div className="py-6">
             <ProductSlider data={propertyData} />
-          </div> */}
-          
+          </div>
+
       </div>
       {/* Features Section End */}
 
       {/* Reviews Section Start */}
-      {/* <div className="features-section">
+      <div className="features-section">
         <StarsIcon />
         <h2>What Our Clients Say</h2>
         <Row className="justify-between">
@@ -184,11 +183,11 @@ export default function Home() {
         <div className="py-6">
           <ReviewSlider data={reviewData} />
         </div>
-      </div> */}
+      </div>
       {/* Reviews Section End */}
 
       {/* Blog Section Start */}
-      {/* <div className="features-section">
+      <div className="features-section">
         <StarsIcon />
         <h2>Frequently Asked Questions</h2>
         <Row className="justify-between">
@@ -205,7 +204,7 @@ export default function Home() {
         <div className="py-6">
           <BlogSlider data={blogData} />
         </div>
-      </div> */}
+      </div>
       {/* Blog Section End */}
     </>
   );

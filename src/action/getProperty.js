@@ -21,7 +21,7 @@ export default function getProperty() {
         features: {
           no_of_bedroom: 4,
           no_of_bathroom: 2,
-          type: "Appartment",
+          type: "Banglow",
         },
         price: 500,
       },
@@ -32,7 +32,7 @@ export default function getProperty() {
         features: {
           no_of_bedroom: 3,
           no_of_bathroom: 2,
-          type: "Banglow",
+          type: "penthouse",
         },
         price: 500,
       },

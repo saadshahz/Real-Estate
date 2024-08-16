@@ -94,7 +94,7 @@ export default function About() {
   return (
     <>
       {/* Hero Section Start */}
-      <div className="hero-section about-hero">
+      <div style={{marginTop: '100px'}} className="hero-section about-hero">
         <Row>
           <Col span={12}>
             <div className="banner-content" >

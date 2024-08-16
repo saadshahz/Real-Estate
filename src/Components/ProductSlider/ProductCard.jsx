@@ -16,10 +16,12 @@ export default function ProductCard(props) {
       <div className="product-image">
         <img src={productCardDummy} alt="Product Card" />
       </div>
-      <div className="product-content">
+      <div className="product-content w-full">
+        <Row className="w-full h-24">
         <h5>{title}</h5>
         <p className="py-4">{truncatedText} ...Read More</p>
-        <Flex gap="middle">
+        </Row>
+        <Flex className="h-11" gap="middle">
           <span className="flex items-start ">
             <BedroomIcon /> {feature.no_of_bedroom}-Bedroom
           </span>
@@ -32,13 +34,13 @@ export default function ProductCard(props) {
             {feature.type}
           </span>
         </Flex>
-        <Row className="price flex">
+        <Row className="price h-16 flex justify-between items-center">
           <Col className="h-full flex flex-col">
             <span>Price</span>
             <p>$ {price}</p>
           </Col>
-          <Col className="h-full">
-            <a href={`/property/detail/${id}`}>View Property Details</a>
+          <Col className="h-full w-72 flex justify-center items-center">
+            <button href={`/property/detail/${id}`}>View Property Details</button>
           </Col>
         </Row>
       </div>

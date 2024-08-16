@@ -51,7 +51,7 @@ export default function Properties() {
 
   return (
     <>
-      <div className="property-hero-section">
+      <div style={{marginTop: '100px'}} className="property-hero-section">
         <h1 className="pb-2">Find Your Dream Property</h1>
         <p>
           Welcome to Estatein, where your dream property awaits in every corner

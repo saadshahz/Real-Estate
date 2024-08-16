@@ -54,7 +54,7 @@ export default function Contact() {
 
   return (
     <>
-      <section className="w-full bg-black">
+      <section style={{marginTop: '100px'}} className="w-full bg-black">
         <BannerSection title={banner[0].title} desc={banner[0].desc} />
       </section>
 
