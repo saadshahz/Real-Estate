@@ -13,3 +13,23 @@
     text-align: left;
     color: rgba(153, 153, 153, 1);
 }
+
+@media (max-width: 1440px) {
+
+    .value-title {
+        font-family: Urbanist;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .value-desc {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+}

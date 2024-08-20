@@ -21,7 +21,7 @@ export default function Review(props) {
 
             <div className="client-content">
                 <h5>{title}</h5>
-                <p className="py-4">{desc}</p>
+                <p>{desc}</p>
 
             </div>
             

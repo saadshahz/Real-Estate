@@ -18,7 +18,6 @@ export default function ProductSlider(props) {
     <>
       <Swiper
         slidesPerView={3}
-        spaceBetween={30}
         loop={true}
         className="mySwiper"
       >

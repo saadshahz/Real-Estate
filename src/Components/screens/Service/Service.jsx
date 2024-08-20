@@ -116,7 +116,7 @@ export default function Service() {
 
   return (
     <>
-      <section style={{marginTop: '100px'}} className="w-full bg-black">
+      <section className="service-hero">
         <BannerSection title={banner[0].title} desc={banner[0].desc} />
       </section>
 
@@ -131,57 +131,57 @@ export default function Service() {
       </section>
 
       <section className='property-value-section w-full'>
-        <StarsIcon />
         <main className='property-value'>
 
           <div className='property-content'>
+            <StarsIcon />
             <h1>Unlock Property Value</h1>
             <p>Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey</p>
           </div>
 
-          <div className='property-card-section flex' style={{ width: '100%', flexWrap: 'wrap', gap: '30px' }}>
+          <div className='property-card-section'>
 
             {propertyValue.map((item, idx) => {
               return (
-                <div key={idx}>
+                <article className='property-card' key={idx}>
                   <PropertyValue title={item.title} icon={item.icon} desc={item.desc} />
-                </div>
+                </article>
               );
             })}
 
-            <div className='big flex flex-col w-96'>
+            <article className='big'>
               <div className='w-full h-16 flex items-center justify-between'>
                 <h1>Unlock the Value of Your Property Today</h1>
                 <button className='property-button'>Learn More</button>
               </div>
               <p>Ready to unlock the true value of your property? Explore our Property Selling Service categories and let us help you achieve the best deal possible for your valuable asset.</p>
-            </div>
+            </article>
           </div>
         </main>
 
       </section>
 
-      <section className='property-value-section w-full'>
-        <StarsIcon />
+      <section className='property-value-section'>
 
         <main className='property-value'>
 
           <div className='property-content'>
+            <StarsIcon />
             <h1>Effortless Property Management</h1>
-            <p>Owning a property should be a pleasure, not a hassle. Estatein`s Property Management Service takes the stress out of property ownership, offering comprehensive solutions tailored to your needs. Explore the categories below to see how we can make property management effortless for you</p>
+            <p>Selling your property should be a rewarding experience, and at Estatein, we make sure it is. Our Property Selling Service is designed to maximize the value of your property, ensuring you get the best deal possible. Explore the categories below to see how we can help you at every step of your selling journey</p>
           </div>
 
-          <div className='property-card-section flex' style={{ width: '100%', flexWrap: 'wrap', gap: '30px' }}>
+          <div className='property-card-section'>
 
             {propertyManagement.map((item, idx) => {
               return (
-                <div key={idx}>
+                <article className='property-card' key={idx}>
                   <PropertyValue title={item.title} icon={item.icon} desc={item.desc} />
-                </div>
+                </article>
               );
             })}
 
-            <div className='big flex flex-col w-96'>
+            <div className='big'>
               <div className='w-full h-16 flex items-center justify-between'>
                 <h1>Experience Effortless Property Management</h1>
                 <button className='property-button'>Learn More</button>

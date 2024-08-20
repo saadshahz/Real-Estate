@@ -83,7 +83,7 @@ export default function Home() {
   return (
     <>
       {/* Hero Section Start */}
-      <div style={{marginTop: '100px'}} className="hero-section ">
+      <div className="hero-section ">
         <div className="banner-tag">
           <BannerTag />
         </div>
@@ -158,7 +158,7 @@ export default function Home() {
           </Col>
         </Row>
 
-        <div className="py-6">
+        <div className="feature-container py-6">
             <ProductSlider data={propertyData} />
           </div>
 
@@ -180,7 +180,7 @@ export default function Home() {
           </Col>
         </Row>
 
-        <div className="py-6">
+        <div className="feature-container py-6">
           <ReviewSlider data={reviewData} />
         </div>
       </div>
@@ -201,7 +201,7 @@ export default function Home() {
           </Col>
         </Row>
 
-        <div className="py-6">
+        <div className="feature-container py-6">
           <BlogSlider data={blogData} />
         </div>
       </div>

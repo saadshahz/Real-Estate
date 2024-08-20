@@ -1,3 +1,8 @@
+.contect-hero {
+    margin-top: 100px;
+    background-color: #141414;
+}
+
 .service-section {
     padding: 20px 10px;
     background-color: #141414;
@@ -67,11 +72,11 @@
     border-radius: 12px;
     opacity: 0px;
     background-color: rgba(26, 26, 26, 1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .filter-button button:first-child {
-    width: 158.67px;
-    height: 63px;
     padding: 18px 24px 18px 24px;
     gap: 8px;
     border-radius: 10px;
@@ -81,8 +86,6 @@
 }
 
 .filter-button button {
-    width: 158.67px;
-    height: 63px;
     padding: 18px 24px 18px 24px;
     gap: 8px;
     border-radius: 10px;
@@ -191,11 +194,11 @@
 }
 
 .form-section .form {
-    width: (100% - 162px);
+    width: 100% ;
     height: 1074px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .form .form-content {
@@ -354,7 +357,7 @@ form .terms-row {
 
 .terms-row button {
     width: 250px;
-    height: 60px;
+    height: 100%;
     gap: 67px;
     border-radius: 8px;
     opacity: 0px;
@@ -414,8 +417,13 @@ form .terms-row {
     height: 100%;
     gap: 20px;
     border-radius: 10px;
-    display: flex;
-    flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.gallery-image .column .row2 img {
+    width: 100%;
+    height: 100%;
 }
 
 .gallery .gallery-content {
@@ -423,6 +431,8 @@ form .terms-row {
     height: 280px;
     gap: 20px;
     opacity: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .gallery-content .column {
@@ -455,10 +465,484 @@ form .terms-row {
     text-align: left;
 }
 
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (max-width: 1880px) {
+
+    .form-section {
+        padding: 20px 140px;
+    }
+
+    .location-section {
+        padding: 20px 140px;
+    }
+
+    .gallery-section {
+        padding: 20px 140px;
+    }
+
+    
+}
+
+@media (max-width: 1770px) {
+    
+    .form-section {
+        padding: 20px 120px;
+    }
+
+    .location-section {
+        padding: 20px 120px;
+    }
+
+    .gallery-section {
+        padding: 20px 120px;
+    }
+
+}
+
+@media (max-width: 1660px) {
+    
+    .form-section {
+        padding: 20px 100px;
+    }
+
+    .location-section {
+        padding: 20px 100px;
+    }
+
+    .gallery-section {
+        padding: 20px 100px;
+    }
+
+}
+
+@media (max-width: 1550px) {
+
+    .form-section {
+        padding: 20px 90px;
+    }
+
+    .location-section {
+        padding: 20px 90px;
+    }
+
+    .gallery-section {
+        padding: 20px 90px;
+    }
+    
+}
+
+@media (max-width: 1440px) {
+
+    .contect-hero {
+        margin-top: 77px;
+        background-color: #141414;
+    }
 
     .service-section {
         padding: 10px 10px;
+    }
+
+    .form-section {
+        height: auto;
+        padding: 20px 80px;
+    }
+
+    .form-section .form {
+        width: 100%;
+        height: 819px;
+    }
+
+    .form .form-content {
+        width: 100%;
+        height: 115px;
+        padding: 0px 150px 0px 0px;
+        gap: 10px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-content h1 {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .form-content p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .form .form-container {
+        width: 100%;
+        height: 644px;
+        padding: 80px;
+        gap: 30px;
+    }
+
+    form .inputs-row {
+        width: 100%;
+        height: 90px;
+        gap: 30px;
+    }
+
+    .inputs-row .inputs-box {
+        width: 100%;
+        height: 100%;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs-box h6 {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .inputs-box input {
+        height: 52px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 8px;
+        background: rgba(26, 26, 26, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(102, 102, 102, 1);
+        outline: none;
+    }
+
+    .inputs-box select {
+        height: 52px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 8px;
+        background: rgba(26, 26, 26, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(102, 102, 102, 1);
+        outline: none;
+    }
+
+    form .message-row {
+        width: 100%;
+        height: 162px;
+        gap: 16px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message-row h6 {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .message-row textarea {
+        height: 122px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 8px;
+        background: rgba(26, 26, 26, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        color: rgba(102, 102, 102, 1);
+        outline: none;
+    }
+
+    form .terms-row {
+        width: 100%;
+        height: 52px;
+        gap: 16px;
+        opacity: 0px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .terms-row .condition-section {
+        height: 60px;
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .condition-section span {
+        text-decoration: underline;
+    }
+
+    .terms-row button {
+        width: 192px;
+        gap: 67px;
+        border-radius: 8px;
+        opacity: 0px;
+        background-color: rgba(112, 59, 247, 1);
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+    }
+
+    .location-section {
+        height: auto;
+        padding: 20px 80px;
+    }
+
+    .location-section .location {
+        width: 100%;
+        height: 656px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .location .location-content {
+        width: 100%;
+        height: 140px;
+        padding: 0px 250px 0px 0px;
+        gap: 14px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-content h1 {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .location-content p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .location .place-location {
+        width: 100%;
+        height: 481px;
+        gap: 40px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .place-location .filter-button {
+        width: 413px;
+        height: 69px;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .filter-button button:first-child {
+        padding: 14px 20px;
+        gap: 8px;
+    }
+
+    .filter-button button {
+        padding: 14px 20px;
+        gap: 8px;
+    }
+
+    .place-location .filter-container {
+        width: 100%;
+        height: 372px;
+        gap: 20px;
+        opacity: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .filter-container .location-container {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .location-container .heading-section {
+        width: 100%;
+        height: 145px;
+        gap: 10px;
+    }
+
+    .heading-section .titles {
+        width: 100%;
+        height: 63px;
+        gap: 6px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titles span:first-child {
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: -0.006em;
+        text-align: left;
+    }
+
+    .titles span:last-child {
+        font-family: Urbanist;
+        font-size: 23px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .heading-section .description {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: -0.006em;
+        text-align: left;
+    }
+
+    .location-container .feature-section {
+        width: 100%;
+        height: 41px;
+        gap: 8px;
+        opacity: 0px;
+    }
+
+    .feature-section span {
+        padding: 10px 16px;
+        gap: 6px;
+        border-radius: 28px;
+        opacity: 0px;
+    }
+
+    .location-container .location-button {
+        width: 100%;
+        height: 46px;
+        padding: 14px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        border-radius: 10px;
+        opacity: 0px;
+        background-color: rgba(112, 59, 247, 1);
+        font-size: 18px;
+    }
+
+    .gallery-section {
+        height: auto;
+        padding: 20px 80px;
+    }
+
+    .gallery-section .gallery {
+        width: 100%;
+        height: 763px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px;
+        gap: 20px;
+        border-radius: 12px;
+    }
+
+    .gallery .gallery-image {
+        width: 100%;
+        height: 403px;
+        gap: 20px;
+        opacity: 0px;
+        display: flex;
+    }
+
+    .gallery-image .column {
+        width: 50%;
+        height: 100%;
+        gap: 20px;
+        opacity: 0px;
+        border-radius: 10px;
+        display: grid;
+    }
+
+    .gallery-image .column .row {
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        border-radius: 10px;
+    }
+
+    .gallery-image .column .row2 {
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        border-radius: 10px;
+
+    }
+
+    .gallery .gallery-content {
+        width: 100%;
+        height: 100%;
+        gap: 20px;
+        opacity: 0px;
+    }
+
+    .gallery-content .column {
+        width: 100%;
+        height: 100%;
+        opacity: 0px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery-content .column .content {
+        width: 100%;
+        height: 167px;
+    }
+
+    .gallery-content .column .content h6 {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .gallery-content .column .content p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
     }
 
 }
