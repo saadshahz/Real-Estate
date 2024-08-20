@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import "./style.css";
-import SearchIcon from "../../../assets/svg/SearchIcon";
+import SearchIcon from "../../../assets/svg/SearchIcon.jsx";
 import { Flex, Form, Select, Row, Col } from "antd";
-import getProperty from "../../../action/getProperty";
-import ProductSlider from "../../ProductSlider/ProductSlider";
+import getProperty from "../../../action/getProperty.js";
+import ProductSlider from "../../ProductSlider/ProductSlider.jsx";
 import StarsIcon from "../../../assets/svg/StarsIcon.jsx";
 import Email from '../Contact/svg/Email.jsx';
 import Phone from '../Contact/svg/Phone.jsx';

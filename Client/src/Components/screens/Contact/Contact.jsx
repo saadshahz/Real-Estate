@@ -2,7 +2,7 @@
 import { Row, Col } from 'antd';
 import './style.css';
 
-import BannerSection from "../../Banner/BannerSection";
+import BannerSection from "../../Banner/BannerSection.jsx";
 import Socials from '../../../assets/svg/Socials.jsx';
 import Phone from '../../../assets/svg/Phone.jsx';
 import Email from '../../../assets/svg/Email.jsx';
