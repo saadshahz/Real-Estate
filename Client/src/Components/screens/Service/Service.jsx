@@ -2,7 +2,7 @@
 import { Col } from 'antd';
 import './style.css'
 
-import BannerSection from "../../Banner/BannerSection";
+import BannerSection from "../../Banner/BannerSection.jsx";
 import HomeIcon from "../../../assets/svg/HomeIcon.jsx";
 import CaptureIcon from "../../../assets/svg/CaptureIcon.jsx";
 import PropertyIcon from "../../../assets/svg/PropertyIcon.jsx";

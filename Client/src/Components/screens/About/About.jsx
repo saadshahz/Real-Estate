@@ -14,8 +14,8 @@ import Twitter from "./svg/Twitter";
 import Send from "./svg/Send";
 import Domain from "./svg/Domain";
 import Category from "./svg/Category";
-import Founder from "../About/Images/Founder.png";
-import Sarah from "../About/Images/Sarah.png";
+import Founder from "./Images/Founder.png";
+import Sarah from "./Images/Sarah.png";
 export default function About() {
   const [customer, setCustomer] = useState(1);
   const [client, setClient] = useState(1);
