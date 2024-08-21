@@ -1,6 +1,13 @@
+body {
+  background-color: #141414;
+}
+
 .property-hero-section {
+  margin-top: 100px;
   padding: 100px 162px;
-  background-color: #1c1c1c;
+  background: linear-gradient(95.93deg, #262626 -26.82%, rgba(38, 38, 38, 0) 40.46%);
+  background-color: rgba(26, 26, 26, 1);
+  font-style: italic;
 }
 
 .property-hero-section h1 {
@@ -110,7 +117,7 @@
   height: 1238px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .booking .booking-content {
@@ -354,8 +361,308 @@ form .terms-row {
 .terms-row button {
   width: 250px;
   height: 60px;
+  font-family: Urbanist;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
   gap: 67px;
   border-radius: 8px;
   opacity: 0px;
   background-color: rgba(112, 59, 247, 1);
+}
+
+@media (max-width: 1440px) {
+
+  .property-hero-section {
+    margin-top: 77px;
+    padding: 100px 80px;
+
+  }
+
+  .property-hero-section h1 {
+    font-size: 48px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: left;
+  }
+
+  .property-hero-section p {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+    color: rgba(153, 153, 153, 1);
+  }
+
+  .serach-filter-section {
+    position: absolute;
+    width: 80%;
+    top: 380px;
+  }
+
+  .property {
+    margin-top: 120px;
+    padding: 0px 80px;
+  }
+
+  .booking-section {
+    padding: 20px 80px;
+  }
+
+  .booking-section .booking {
+    width: 100%;
+    height: 879px;
+  }
+
+  .booking .booking-content {
+    width: 100%;
+    height: 115px;
+    padding: 0px 250px 0px 0px;
+    gap: 14px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booking-content h1 {
+    font-family: Urbanist;
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 57px;
+    text-align: left;
+  }
+
+  .booking-content p {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .booking .booking-container {
+    width: 100%;
+    height: 704px;
+    padding: 50px;
+    gap: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .booking-container .inputs-row {
+    width: 100%;
+    height: 90px;
+    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    opacity: 0px;
+  }
+
+  .booking .budget-row {
+    width: 100%;
+    height: 90px;
+    gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    opacity: 0px;
+  }
+
+  .budget-row .budget-box {
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .budget-box h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .budget-box select {
+    padding: 20px;
+    gap: 12px;
+    height: 68px;
+    gap: 12px;
+    border-radius: 8px;
+    background: rgba(26, 26, 26, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    opacity: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(102, 102, 102, 1);
+    outline: none;
+  }
+
+  .budget-row .referal-box {
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .referal-box h6 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .referal-box .referal {
+    width: 100%;
+    height: 68px;
+    gap: 16px;
+    opacity: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .referal .options {
+    width: 100%;
+    height: 100%;
+    padding: 16px 20px;
+    gap: 12px;
+    border-radius: 8px;
+    background: rgba(26, 26, 26, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    opacity: 0px;
+    display: flex;
+  }
+
+  .options input {
+    gap: 12px;
+    background: rgba(26, 26, 26, 1);
+    opacity: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(102, 102, 102, 1);
+    outline: none;
+  }
+
+  .inputs-row .inputs-box {
+    width: 100%;
+    height: 100%;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .inputs-box h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .inputs-box input {
+    height: 52px;
+    padding: 16px 20px;
+    gap: 12px;
+    opacity: 0px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+  }
+
+  .inputs-box select {
+    padding: 20px;
+    gap: 12px;
+    height: 68px;
+    gap: 12px;
+    border-radius: 8px;
+    background: rgba(26, 26, 26, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    opacity: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(102, 102, 102, 1);
+    outline: none;
+  }
+
+  form .message-row {
+    width: 100%;
+    height: 162px;
+    gap: 16px;
+    opacity: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .message-row h6 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .message-row textarea {
+    height: 170px;
+    padding: 24px 20px 24px 20px;
+    gap: 12px;
+    border-radius: 8px;
+    background: rgba(26, 26, 26, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
+    opacity: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+    color: rgba(102, 102, 102, 1);
+    outline: none;
+  }
+
+  form .terms-row {
+    width: 100%;
+    height: 60px;
+    gap: 16px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .terms-row .condition-section {
+    height: 60px;
+    gap: 10px;
+    opacity: 0px;
+    color: rgba(153, 153, 153, 1);
+    display: flex;
+    align-items: center;
+  }
+
+  .condition-section span {
+    text-decoration: underline;
+  }
+
+  .terms-row button {
+    width: 250px;
+    height: 60px;
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    gap: 67px;
+    border-radius: 8px;
+    opacity: 0px;
+    background-color: rgba(112, 59, 247, 1);
+  }
+
+
 }

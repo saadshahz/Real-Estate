@@ -80,7 +80,7 @@ export default function About() {
       desc: 'We set the bar high for ourselves. From the properties we list to the services we provide.',
     },
     {
-      title: 'CLient-Centric',
+      title: 'Client-Centric',
       icons: <ClientIcon />,
       desc: 'Your dreams and needs are at the center of our universe. We listen, understand.',
     },
@@ -94,51 +94,44 @@ export default function About() {
   return (
     <>
       {/* Hero Section Start */}
-      <div style={{marginTop: '100px'}} className="hero-section about-hero">
-        <Row>
-          <Col span={12}>
-            <div className="banner-content" >
-              <StarsIcon />
-              <h1>Our Journey</h1>
-              <p style={{ color: "#4d4d4d" }}>
-                Our story is one of continuous growth and evolution. We started
-                as a small team with big dreams, determined to create a real
-                estate platform that transcended the ordinary. Over the years,
-                we`ve expanded our reach, forged valuable partnerships, and
-                gained the trust of countless clients.
-              </p>
 
-              <div className="feature">
-                <div className="card">
-                  <h6>{customer}+</h6>
-                  <p>Happy Customers</p>
-                </div>
-                <div className="card">
-                  <h6>10k+</h6>
-                  <p>Properties For Clients</p>
-                </div>
-                <div className="card">
-                  <h6>16+</h6>
-                  <p>Years of Experience</p>
-                </div>
-              </div>
+      <section className="about-hero-section">
+        <div className="about-banner-content" >
+          <div className="content">
+            <StarsIcon />
+            <h1>Our Journey</h1>
+            <p style={{ color: "#4d4d4d" }}>
+              Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary. Over the years, we`ve expanded our reach, forged valuable partnerships, and gained the trust of countless clients.
+            </p>
+          </div>
+          <div className="feature">
+            <div className="card">
+              <h6>{customer}+</h6>
+              <p>Happy Customers</p>
             </div>
-          </Col>
-          <Col span={12}>
-            <div className="banner-image">
-              <div className="image-section">
-                <img src={HomeBanner} alt="Banner" />
-              </div>
+            <div className="card">
+              <h6>10k+</h6>
+              <p>Properties For Clients</p>
             </div>
-          </Col>
-        </Row>
-      </div>
+            <div className="card">
+              <h6>16+</h6>
+              <p>Years of Experience</p>
+            </div>
+          </div>
+        </div>
+        <div className="about-image-section">
+          <div className="image-section">
+            <img src={HomeBanner} alt="Home Banner" />
+          </div>
+        </div>
+      </section>
+
       {/* Hero Section End */}
 
       {/* Values Section Start */}
 
       <section className='values-section'>
-        <main className='value'>
+        <main className='values'>
           <div className="left-section">
             <StarsIcon />
             <h2>Our Values</h2>
@@ -152,7 +145,7 @@ export default function About() {
           <div className="right-section">
             {propertyManagement.map((item, idx) => {
               return (
-                <div className='value-container' key={idx}>
+                <div className='values-container' key={idx}>
                   <Value title={item.title} icon={item.icons} desc={item.desc} />
                 </div>
               );
@@ -169,42 +162,38 @@ export default function About() {
       <div className="achievement-section">
         <div className="container">
           <StarsIcon />
-          <h2>Frequently Asked Questions</h2>
+          <h2>Our Achievements</h2>
           <Row className="justify-between row">
             <Col>
               <p>
-                Find answers to common questions about Estatein`s services,
-                property listings, and the real estate process. We`re here to
-                provide clarity and assist you every step of the way.
+                Our story is one of continuous growth and evolution. We started as a small team with big dreams, determined to create a real estate platform that transcended the ordinary.
               </p>
             </Col>
           </Row>
 
           <div className="achievement-card-section py-8">
             <div className="achievement-card">
-              <h5 style={{ fontSize: "30px", fontWeight: "600" }}>
+              <h5>
                 3+ Years of Excellence
               </h5>
-              <p className="py-4">
-                With over 3 years in the industry, we`ve amassed a wealth of
-                knowledge and experience, becoming a go-to resource for all
-                things real estate.
+              <p>
+                With over 3 years in the industry, we`ve amassed a wealth of knowledge and experience, becoming a go-to resource for all things real estate.
               </p>
             </div>
             <div className="achievement-card">
-              <h5 style={{ fontSize: "30px", fontWeight: "600" }}>
+              <h5>
                 Happy Clients
               </h5>
-              <p className="py-4">
+              <p>
                 Our greatest achievement is the satisfaction of our clients.
                 Their success stories fuel our passion for what we do.
               </p>
             </div>
             <div className="achievement-card">
-              <h5 style={{ fontSize: "30px", fontWeight: "600" }}>
+              <h5>
                 Industry Recognition
               </h5>
-              <p className="py-4">
+              <p>
                 We`ve earned the respect of our peers and industry leaders, with
                 accolades and awards that reflect our commitment to excellence.
               </p>
@@ -232,12 +221,12 @@ export default function About() {
 
           <div className="py-8 cards-content">
             <div className="experience-card">
-              <h6 style={{ fontSize: "20px", fontWeight: "500" }}>Step 01</h6>
+              <h6>Step 01</h6>
               <div className="content">
-                <h5 style={{ fontSize: "26px", fontWeight: "600" }}>
+                <h5>
                   Discover a World of Possibilities
                 </h5>
-                <p style={{ color: "#4d4d4d" }} className="py-4">
+                <p style={{ color: "#4d4d4d" }}>
                   Your journey begins with exploring our carefully curated
                   property listings. Use our intuitive search tools to filter
                   properties based on your preferences, including location,
@@ -247,12 +236,12 @@ export default function About() {
             </div>
 
             <div className="experience-card">
-              <h6 style={{ fontSize: "20px", fontWeight: "500" }}>Step 02</h6>
+              <h6>Step 02</h6>
               <div className="content">
-                <h5 style={{ fontSize: "26px", fontWeight: "600" }}>
+                <h5>
                   Narrowing Down Your Choices
                 </h5>
-                <p style={{ color: "#4d4d4d" }} className="py-4">
+                <p style={{ color: "#4d4d4d" }}>
                   Once you`ve found properties that catch your eye, save them to
                   your account or make a shortlist. This allows you to compare
                   and revisit your favorites as you make your decision.
@@ -261,12 +250,12 @@ export default function About() {
             </div>
 
             <div className="experience-card">
-              <h6 style={{ fontSize: "20px", fontWeight: "500" }}>Step 03</h6>
+              <h6>Step 03</h6>
               <div className="content">
-                <h5 style={{ fontSize: "26px", fontWeight: "600" }}>
+                <h5>
                   Personalized Guidance
                 </h5>
-                <p style={{ color: "#4d4d4d" }} className="py-4">
+                <p style={{ color: "#4d4d4d" }}>
                   Have questions about a property or need more information? Our
                   dedicated team of real estate experts is just a call or
                   message away.
@@ -275,12 +264,12 @@ export default function About() {
             </div>
 
             <div className="experience-card">
-              <h6 style={{ fontSize: "20px", fontWeight: "500" }}>Step 04</h6>
+              <h6>Step 04</h6>
               <div className="content">
-                <h5 style={{ fontSize: "26px", fontWeight: "600" }}>
+                <h5>
                   See It for Yourself
                 </h5>
-                <p style={{ color: "#4d4d4d" }} className="py-4">
+                <p style={{ color: "#4d4d4d" }} >
                   Arrange viewings of the properties you`re interested in. We`ll
                   coordinate with the property owners and accompany you to
                   ensure you get a firsthand look at your potential new home.
@@ -289,12 +278,12 @@ export default function About() {
             </div>
 
             <div className="experience-card">
-              <h6 style={{ fontSize: "20px", fontWeight: "500" }}>Step 05</h6>
+              <h6>Step 05</h6>
               <div className="content">
-                <h5 style={{ fontSize: "26px", fontWeight: "600" }}>
+                <h5>
                   Making Informed Decisions
                 </h5>
-                <p style={{ color: "#4d4d4d" }} className="py-4">
+                <p style={{ color: "#4d4d4d" }}>
                   Before making an offer, our team will assist you with due
                   diligence, including property inspections, legal checks, and
                   market analysis. We want you to be fully informed and
@@ -304,12 +293,12 @@ export default function About() {
             </div>
 
             <div className="experience-card">
-              <h6 style={{ fontSize: "20px", fontWeight: "500" }}>Step 06</h6>
+              <h6>Step 06</h6>
               <div className="content">
-                <h5 style={{ fontSize: "26px", fontWeight: "600" }}>
+                <h5>
                   Getting the Best Deal
                 </h5>
-                <p style={{ color: "#4d4d4d" }} className="py-4">
+                <p style={{ color: "#4d4d4d" }}>
                   We`ll help you negotiate the best terms and prepare your
                   offer. Our goal is to secure the property at the right price
                   and on favorable terms.
@@ -349,12 +338,14 @@ export default function About() {
                         className="image"
                       />
                     </div>
-                    <div className="profile-info">
-                      <div className="profile-social">
+                    {/* <div className="profile-social">
                         <a href={item.twitter} ><Twitter className="social-icon" /></a>
+                      </div> */}
+                    <div className="profile-info">
+                      <div className="content-info">
+                        <h5>{item.title}</h5>
+                        <p>{item.role}</p>
                       </div>
-                      <h5>{item.title}</h5>
-                      <p className="pb-2" >{item.role}</p>
                       <button className="message-button">
                         <span role="img" aria-label="wave">
                           Say Hello 👋

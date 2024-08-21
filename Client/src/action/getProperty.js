@@ -19,9 +19,9 @@ export default function getProperty() {
         title: "Metropolitan Haven",
         desc: "Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.",
         features: {
-          no_of_bedroom: 4,
+          no_of_bedroom: 3,
           no_of_bathroom: 2,
-          type: "Banglow",
+          type: "Villa",
         },
         price: 500,
       },
@@ -32,7 +32,7 @@ export default function getProperty() {
         features: {
           no_of_bedroom: 3,
           no_of_bathroom: 2,
-          type: "penthouse",
+          type: "Pent",
         },
         price: 500,
       },

@@ -46,7 +46,17 @@
     .phone-icon,
     .social-icon,
     .email-icon,
-    .sunrise-icon {
+    .sunrise-icon,
+    .pie-chart-icon,
+    .chart-icon,
+    .balance-icon,
+    .alert-icon,
+    .sparkling-icon,
+    .tenant-icon,
+    .maintenance-icon,
+    .strategies-icon,
+    .roi-icon,
+    .market-icon {
         width: 60px;
         height: 60px;
     }

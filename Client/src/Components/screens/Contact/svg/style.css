@@ -1,6 +1,17 @@
-.locationIcon ,
-.phone ,
+.locationIcon,
+.phone,
 .email {
     width: 24px;
     height: 24px;
+}
+
+@media (max-width: 1440px) {
+
+    .locationIcon,
+    .phone,
+    .email {
+        width: 20px;
+        height: 20px;
+    }
+
 }

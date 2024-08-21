@@ -1,4 +1,4 @@
-// import React from 'react'
+import { useState } from 'react'
 import { Row, Col } from 'antd';
 import './style.css';
 
@@ -24,6 +24,27 @@ import image6 from './Images/Image6.png';
 
 
 export default function Contact() {
+
+  const [selectedFilter, setSelectedFilter] = useState('All');
+
+  const handleFilterChange = (filter) => {
+    setSelectedFilter(filter);
+  };
+
+  const activeButton = {
+    gap: '8px',
+    borderRadius: '10px',
+    border: '1px solid rgba(38, 38, 38, 1)',
+    backgroundColor: 'rgba(20, 20, 20, 1)',
+  };
+
+  const nonActiveButton = {
+    gap: '8px',
+    borderRadius: '10px',
+    border: '1px solid rgba(38, 38, 38, 1)',
+    backgroundColor: 'transparent',
+  };
+
 
   const banner = [
     {
@@ -54,7 +75,7 @@ export default function Contact() {
 
   return (
     <>
-      <section style={{marginTop: '100px'}} className="w-full bg-black">
+      <section className="contect-hero w-full">
         <BannerSection title={banner[0].title} desc={banner[0].desc} />
       </section>
 
@@ -123,7 +144,7 @@ export default function Contact() {
                 <input type="checkbox" name="true" id="ture" />
                 <label htmlFor="true">I agree with <span> Terms of Use</span> and <span>Privacy Policy</span>.</label>
               </Col>
-                <button>Send your Message</button>
+              <button>Send your Message</button>
             </Row>
           </form>
         </main>
@@ -138,55 +159,68 @@ export default function Contact() {
           </div>
           <div className='place-location'>
             <Row className='filter-button'>
-              <button>All</button>
-              <button>Regional</button>
-              <button>International</button>
+              <button
+                style={selectedFilter === 'All' ? activeButton : nonActiveButton}
+                onClick={() => handleFilterChange('All')}
+              >All</button>
+              <button
+                style={selectedFilter === 'Regional' ? activeButton : nonActiveButton}
+                onClick={() => handleFilterChange('Regional')}>Regional</button>
+              <button 
+                style={selectedFilter === 'International' ? activeButton : nonActiveButton}
+                onClick={() => handleFilterChange('International')}>International</button>
             </Row>
             <Row className='filter-container'>
-              <div className='location-container'>
-                <Row className='heading-section'>
-                  <Col className='titles'>
-                    <span>Main Headquarters</span>
-                    <span>123 Estatein Plaza, City Center, Metropolis</span>
-                  </Col>
-                  <p className='description'>Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.</p>
-                </Row>
-                <Row className='feature-section'>
+              {selectedFilter === 'All' || selectedFilter === 'International' ? (
+                <div className='location-container'>
+                  <Row className='heading-section'>
+                    <Col className='titles'>
+                      <span>Main Headquarters</span>
+                      <span>123 Estatein Plaza, City Center, Metropolis</span>
+                    </Col>
+                    <p className='description'>Our main headquarters serve as the heart of Estatein. Located in the bustling city center, this is where our core team of experts operates, driving the excellence and innovation that define us.</p>
+                  </Row>
+                  <Row className='feature-section'>
+                    <Row className='feature-section'>
+                      <span className="flex items-start ">
+                        <EmailIcon /> info@estatein.com
+                      </span>
+                      <span className="flex items-start ">
+                        <PhoneIcon /> +1 (123) 628-7890
+                      </span>
+                      <span className="flex items-start ">
+                        <LocationIcon /> Metropolis
+                      </span>
+                    </Row>
+                  </Row>
+                  <button className='location-button'>Get Direction</button>
+                </div>
+              ) : null}
+
+              {selectedFilter === 'All' || selectedFilter === 'Regional' ? (
+                <div className='location-container'>
+                  <Row className='heading-section'>
+                    <Col className='titles'>
+                      <span>Regional Offices</span>
+                      <span>456 Urban Avenue, Downtown District, Metropolis</span>
+                    </Col>
+                    <p className='description'>Estatein`s presence extends to multiple regions, each with its own dynamic real estate landscape. Discover our regional offices, staffed by local experts who understand the nuances of their respective markets.</p>
+                  </Row>
                   <Row className='feature-section'>
                     <span className="flex items-start ">
                       <EmailIcon /> info@estatein.com
                     </span>
                     <span className="flex items-start ">
-                      <PhoneIcon /> +1 (123) 628-7890
+                      <PhoneIcon /> +1(123) 456 7890
                     </span>
                     <span className="flex items-start ">
                       <LocationIcon /> Metropolis
                     </span>
                   </Row>
-                </Row>
-                <button className='location-button'>Get Direction</button>
-              </div>
-              <div className='location-container'>
-                <Row className='heading-section'>
-                  <Col className='titles'>
-                    <span>Regional Offices</span>
-                    <span>456 Urban Avenue, Downtown District, Metropolis</span>
-                  </Col>
-                  <p className='description'>Estatein`s presence extends to multiple regions, each with its own dynamic real estate landscape. Discover our regional offices, staffed by local experts who understand the nuances of their respective markets.</p>
-                </Row>
-                <Row className='feature-section'>
-                  <span className="flex items-start ">
-                    <EmailIcon /> info@estatein.com
-                  </span>
-                  <span className="flex items-start ">
-                    <PhoneIcon /> +1(123) 456 7890
-                  </span>
-                  <span className="flex items-start ">
-                    <LocationIcon /> Metropolis
-                  </span>
-                </Row>
-                <button className='location-button'>Get Direction</button>
-              </div>
+                  <button className='location-button'>Get Direction</button>
+                </div>
+              ) : null}
+
             </Row>
           </div>
         </main>
@@ -198,31 +232,31 @@ export default function Contact() {
           <Row className='gallery-image'>
             <Col className='column'>
               <Row className='row'>
-                <img src={image1} alt="" />
+                <img src={image1} alt="image-1" />
               </Row>
               <Row className='row'>
-                <img src={image2} alt="" />
+                <img src={image2} alt="image-2" />
               </Row>
             </Col>
             <Col className='column'>
               <Row className='row'>
-                <img src={image3} alt="" />
+                <img src={image3} alt="image-3" />
               </Row>
               <Row className='row2'>
-                <img src={image4} alt="" />
-                <img src={image5} alt="" />
+                <img src={image4} alt="image-4" />
+                <img src={image5} alt="image-5" />
               </Row>
             </Col>
           </Row>
           <Row className='gallery-content'>
             <Col className='column'>
-            <StarIcon />
-            <div className='content'>
-              <h6>Explore Estatein`s World</h6>
-              <p>Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better.</p>
-            </div>
+              <StarIcon />
+              <div className='content'>
+                <h6>Explore Estatein`s World</h6>
+                <p>Step inside the world of Estatein, where professionalism meets warmth, and expertise meets passion. Our gallery offers a glimpse into our team and workspaces, inviting you to get to know us better.</p>
+              </div>
             </Col>
-            <img src={image6} alt="" />
+            <img src={image6} alt="image-6" />
           </Row>
         </main>
       </section>

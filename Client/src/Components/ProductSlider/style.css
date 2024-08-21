@@ -1,5 +1,6 @@
 .product-card {
   height: 692px;
+  width: 96%;
   padding: 40px;
   gap: 30px;
   border: 1px solid #262626;
@@ -40,10 +41,6 @@
   color: #fff;
 }
 
-.product-card .product-content span svg {
-  margin-right: 10px;
-}
-
 .product-card .product-content .price span {
   padding: 0;
   border-radius: 0;
@@ -78,102 +75,150 @@
   border: 1px solid #4d4d4d;
 }
 
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (max-width: 1800px) {
 
   .product-card {
-    height: auto;
-    width: 400px;
-    padding: 30px;
-    border-radius: 12px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .product-card img {
-    width: 100%;
-    height: 255px;
-    border-radius: 10px;
-  }
-  
-  .product-card .product-content {
-    width: 100%;
-    height: 214px;
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
-  }
-  
-  .product-card .product-content h5 {
-    width: 100%;
-    font-size: 20px;
-    font-weight: 500;
-    color: #fff;
-  }
-  
-  .product-card .product-content p {
-    font-size: 16px;
-    color: #4d4d4d;
-    padding: 0;
-    width: 100%;
-    margin: 4px 0;
-  }
-  
-  .product-card .product-content span {
-    height: 33px;
-    padding: 6px 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 28px;
-    border: 1px solid #4d4d4d;
-    background-color: #1a1a1a;
-    font-size: 14px;
-    color: #fff;
-  }
-  
-  .product-card .product-content span svg {
-    margin-right: 2px;
+    padding: 30px;
   }
 
-  .product-card .product-content .price {
-    width: 353px;
-    height: 49px;
-    padding: 0;
-    justify-content: space-between;
-    margin: 20px 0 0 0;
+  .product-card .product-content {
+    height: 300px;
   }
-  
-  .product-card .product-content .price span {
-    padding: 0;
-    border-radius: 0;
-    border: none;
-    background-color: transparent;
+
+  .product-content .icons {
+    justify-content: space-evenly;
+  }
+
+  .product-card .product-content span {
+    padding: 0 12px;
+    align-items: center;
+  }
+
+}
+
+@media (max-width: 1600px) {
+
+  .product-card {
+    justify-content: space-between;
+    padding: 30px;
+    /* height: 549px; */
+  }
+
+}
+
+@media (max-width: 1500px) {
+
+  .product-card {
+    height: 549px;
+  }
+
+  .product-card img {
+    height: 255px;
+  }
+
+  .product-card .product-content {
+    height: 214px;
+    gap: 24px;
+  }
+
+  .product-content h5 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .product-content p {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .product-content .icons {
+    height: 33px;
+    justify-content: start;
+  }
+
+  .product-card .product-content span {
+    padding: 6px 10px;
+    gap: 4px;
+    border-radius: 28px;
+    opacity: 0px;
     font-size: 14px;
-    color: #4d4d4d;
-    text-align: start;
-    margin: 0;
     line-height: 21px;
   }
-  
-  .product-card .product-content .price p {
-    padding: 0;
-    font-size: 20px;
-    color: #fff;
-    font-weight: 500;
-    margin: 0;
-    line-height: 30px;
-  }
-  
-  .product-card .product-content a {
-    width: 227px;
+
+  .product-card .product-content button {
+    width: 227.33px;
     height: 49px;
-    padding: 17px 20px; 
-    text-align: center;
-    border-radius: 10px;
-    display: block;
-    background-color: #703bf7;
-    color: #fff;
+    opacity: 0px;
+  }
+
+}
+
+@media (max-width: 1440px) {
+
+  .mySwiper {
+    display: flex;
+    gap: 20px;
+  }
+
+  .product-card {
+    width: 96%;
+    height: 549px;
+    padding: 20px;
+    gap: 20px;
+    opacity: 0px;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .product-card img {
+    height: 255px;
+  }
+
+  .product-card .product-content {
+    height: 214px;
+    gap: 24px;
+    opacity: 0px;
+
+  }
+
+  .product-content h5 {
+    font-family: Urbanist;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .product-content p {
+    font-family: Urbanist;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+  }
+
+  .product-card .product-content .price span {
     font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  .product-card .product-content .price p {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+  }
+
+  .product-card .product-content .button-section {
+    width: 60%;
+    height: 100%;
   }
 
 }

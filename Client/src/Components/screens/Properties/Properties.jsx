@@ -51,7 +51,7 @@ export default function Properties() {
 
   return (
     <>
-      <div style={{marginTop: '100px'}} className="property-hero-section">
+      <div className="property-hero-section">
         <h1 className="pb-2">Find Your Dream Property</h1>
         <p>
           Welcome to Estatein, where your dream property awaits in every corner
@@ -81,7 +81,7 @@ export default function Properties() {
                   placeholder="Search Property..."
                 />
               </Form.Item>
-              <button type="primary" htmlType="submit">
+              <button type="submit">
                 {" "}
                 <SearchIcon /> Find Property
               </button>
@@ -94,9 +94,9 @@ export default function Properties() {
                     style={{
                       width: "100%",
                     }}
-                    // onChange={(e) => {
-                    //   setLocation(e.target.value);
-                    // }}
+                    onChange={(e) => {
+                      setLocation(e.target.value);
+                    }}
                     onSelect={(value) => {
                       form.setFieldValue(value);
                     }}
@@ -154,7 +154,7 @@ export default function Properties() {
           </Form>
         </div>
       </div>
-      <div className="property p-4 ">
+      <div className="property ">
         <StarsIcon />
         <h2>Discover a World of Possibilities</h2>
         <p className="pb-4">

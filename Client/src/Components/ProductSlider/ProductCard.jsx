@@ -19,9 +19,9 @@ export default function ProductCard(props) {
       <div className="product-content w-full">
         <Row className="w-full h-24">
         <h5>{title}</h5>
-        <p className="py-4">{truncatedText} ...Read More</p>
+        <p >{truncatedText} ...Read More</p>
         </Row>
-        <Flex className="h-11" gap="middle">
+        <Flex className="icons h-11 gap-2">
           <span className="flex items-start ">
             <BedroomIcon /> {feature.no_of_bedroom}-Bedroom
           </span>
@@ -39,7 +39,7 @@ export default function ProductCard(props) {
             <span>Price</span>
             <p>$ {price}</p>
           </Col>
-          <Col className="h-full w-72 flex justify-center items-center">
+          <Col className="button-section h-full w-72 flex justify-end items-center">
             <button href={`/property/detail/${id}`}>View Property Details</button>
           </Col>
         </Row>

@@ -1,31 +1,70 @@
-.about-hero {
-    height: 50vh;
+.about-hero-section {
+    background-color: #141414;
+    color: #fff;
+    margin-top: 100px;
+    width: 100%;
+    height: 70vh;
     display: flex;
 }
 
-.about-hero .banner-content {
+.about-hero-section .about-banner-content {
+    width: 50%;
     height: 100%;
+    padding: 0 3.75rem 0 12.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 60px;
 }
 
-.banner-content h1 {
+.about-banner-content .content h1 {
     font-size: 48px;
+    font-weight: 600;
+    line-height: 72px;
+    text-align: left;
 }
 
-.banner-content p {
+.about-banner-content .content p {
     font-size: 18px;
 }
 
-.banner-image {
+.about-banner-content .feature {
+    width: 100%;
+    height: 121px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.about-banner-content .feature .card {
+    border: 1px solid #262626;
+    border-radius: 12px;
+    background-color: #1a1a1a;
+    padding: 16px 24px;
+}
+
+.about-banner-content .feature .card h6 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.about-banner-content .feature .card p {
+    padding: 0;
+    font-size: 18px;
+    color: #999;
+}
+
+.about-hero-section .about-image-section {
+    height: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    width: 100%;
 }
 
-.image-section {
-    width: 80%;
-    height: 80%;
+.about-image-section .image-section {
+    width: 85%;
+    height: 70%;
     border-radius: 12px;
     border: 1px solid rgba(38, 38, 38, 1);
     display: flex;
@@ -40,7 +79,6 @@
     width: 100%;
     height: 100%;
     border-radius: 12px;
-
 }
 
 .values-section {
@@ -53,16 +91,18 @@
     align-items: center;
 }
 
-.values-section .value {
-    width: (100% - 162px);
+.values-section .values {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
 
-.values-section .value .left-section {
+.values-section .values .left-section {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     gap: 0;
-    width: 40%;
+    width: 29%;
 }
 
 .left-section h2 {
@@ -78,57 +118,27 @@
 
 .right-section {
     width: 60%;
-    display: flex;
-    height: px;
     padding: 60px;
     gap: 30px;
     border-radius: 12px;
     border: 1px solid #4d4d4d;
     opacity: 0px;
-    flex-direction: column;
     box-shadow: 0px 0px 0px 10px rgba(25, 25, 25, 1);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 
-.right-section .row {
+.right-section .values-container {
     width: 100%;
-    height: 50%;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.right-section .row .col {
-    width: 349px;
-    gap: 20px;
+    height: 100%;
     border-radius: 12px;
+    background-color: rgba(20, 20, 20, 1);
+    border: 1px solid rgba(38, 38, 38, 1);
     opacity: 0px;
-    /* padding: 10px 10px; */
-}
-
-.right-section .row .col .title {
-    height: 75px;
-    font-size: 24px;
-    font-weight: 600;
+    padding: 40px;
     display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.right-section .row .col .title h1 {
-    margin-left: 20px;
-}
-
-.margin {
-    width: 100%;
-    height: 1px;
-    background-color: #4d4d4d;
-}
-
-.right-section .row .margin {
-    width: 2px;
-    height: 160px;
-    background-color: #4d4d4d;
-    margin-right: 20px;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .achievement-section {
@@ -165,13 +175,28 @@
 
 .achievement-card {
     height: 256px;
-    padding: 50px;
+    padding: 40px;
     box-shadow: 0px 0px 0px 8px rgba(25, 25, 25, 1);
     display: flex;
     flex-direction: column;
+    gap: 30px;
+    border-radius: 12px;
+}
+
+.achievement-card h5 {
+    font-family: Urbanist;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 45px;
+    text-align: left;
 }
 
 .achievement-card p {
+    font-family: Urbanist;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
     width: 100%;
 }
 
@@ -218,7 +243,7 @@
     gap: 10px;
     opacity: 0px;
     border-left: 1px solid rgba(112, 59, 247, 1);
-    
+
 }
 
 .experience-card .content {
@@ -231,14 +256,14 @@
     /* border: 1px solid linear-gradient(120.79deg, #703BF7 -49.01%, #4d4d4d 13.65%);
     border-image-source: linear-gradient(0deg, #262626, #262626),
         linear-gradient(117.89deg, #703BF7 0%, rgba(112, 59, 247, 0) 24%); */
-        /* border: 1px solid linear-gradient(120.79deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 13.65%);         */
+    /* border: 1px solid linear-gradient(120.79deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 13.65%);         */
     border-left: 1px solid linear-gradient(120.79deg, rgba(112, 59, 247, 1) -49.01%, #4d4d4d 13.65%);
     border-top: solid linear-gradient(120.79deg, rgba(112, 59, 247, 1) -49.01%, #4d4d4d 13.65%);
     /* border-right: 1px solid #4d4d4d;
     border-bottom: 1px solid #4d4d4d; */
 }
 
-.conten p {
+.content p {
     width: 100%;
 }
 
@@ -341,7 +366,7 @@ h3 {
     justify-content: space-between;
     font-size: 1em;
     cursor: pointer;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .message-icon {
@@ -455,9 +480,9 @@ h3 {
 .client-container .comment-section {
     width: 100%;
     height: 155px;
-    padding: 30px ;
+    padding: 30px;
     gap: 14px;
-    border-radius: 12px ;
+    border-radius: 12px;
     border: 1px solid rgba(38, 38, 38, 1);
     opacity: 0px;
     display: flex;
@@ -467,7 +492,7 @@ h3 {
 
 .client-container .comment-section h6 {
     color: rgba(153, 153, 153, 1);
-    
+
 
 }
 
@@ -475,4 +500,497 @@ h3 {
     color: white;
     font-size: 18px;
     width: 100%;
+}
+
+@media (max-width: 1440px) {
+
+    .about-hero-section {
+        margin-top: 77px;
+        height: 90vh;
+    }
+
+    .about-hero-section .about-banner-content {
+        padding: 0 40px 0 80px;
+        gap: 32px;
+    }
+
+    .about-banner-content .content h1 {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .about-banner-content .content p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .about-banner-content .feature {
+        width: 100%;
+        height: 111px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+    }
+
+    .about-banner-content .feature .card {
+        border: 1px solid #262626;
+        border-radius: 12px;
+        background-color: #1a1a1a;
+        padding: 14px;
+    }
+
+    .about-banner-content .feature .card h6 {
+        font-size: 30px;
+        font-weight: 700;
+        line-height: 45px;
+        text-align: left;
+    }
+
+    .about-banner-content .feature .card p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .about-image-section .image-section {
+        width: 80%;
+        height: 60%;
+    }
+
+    .values-section {
+        padding: 20px 80px;
+        height: 70vh;
+    }
+
+    .values-section .values {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .values-section .values .left-section {
+        width: 35%;
+    }
+
+    .left-section h2 {
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+
+    }
+
+    .values-section p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .values .right-section {
+        width: 55%;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .values .right-section .values-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    .achievement-section {
+        height: 80vh;
+        padding: 20px 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .achievement-section .container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+    }
+
+    .achievement-section h2 {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .achievement-section p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .achievement-card-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .achievement-card {
+        height: 212px;
+        padding: 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        border-radius: 12px;
+    }
+
+    .achievement-card h5 {
+        font-family: Urbanist;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .achievement-card p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .experience-section {
+        padding: 20px 80px;
+    }
+
+    .experience-section .container {
+        margin-top: 40px;
+        width: 100%;
+        display: block;
+    }
+
+    .experience-section h2 {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .experience-section p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .cards-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 40px;
+    }
+
+    .experience-card {
+        height: 274px;
+        gap: 0px;
+        opacity: 0px;
+
+    }
+
+    .experience-card h6 {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .experience-card .content {
+        height: 222px;
+        padding: 40px;
+        display: grid;
+        gap: 16px;
+        border-radius: 0px 10px 10px 10px;
+        opacity: 0px;
+        border: 1px solid linear-gradient(120.79deg, #703BF7 -49.01%, rgba(112, 59, 247, 0) 13.65%);
+        border-image-source: linear-gradient(0deg, #262626, #262626), linear-gradient(117.89deg, #703BF7 0%, rgba(112, 59, 247, 0) 24%);
+    }
+
+    .content h5 {
+        font-family: Urbanist;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .content p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    .team-section {
+        padding: 20px 80px;
+    }
+
+    .team-section .container {
+        width: 100%;
+        display: block;
+        height: 80%;
+        margin-top: 20px;
+    }
+
+    .team-section h2 {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .team-section p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .team-section .cards-content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+        gap: 20px;
+    }
+
+    .profile-card {
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+        width: 100%;
+        padding: 24px;
+        border-radius: 12px;
+    }
+
+    .profile-image-section {
+        width: 100%;
+        height: 220px;
+        border-radius: 12px;
+    }
+
+    .image {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 132px;
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+    }
+
+    .profile-info .content-info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .profile-info .content-info p {
+        text-align: center;
+    }
+
+    .profile-social {
+        width: 60px;
+        height: 40px;
+        background-color: rgba(112, 59, 247, 1);
+        border-radius: 43px;
+        margin-bottom: 0;
+        position: relative;
+        top: -80px;
+        z-index: 5;
+    }
+
+    h2 {
+        margin: 10px 0 5px 0;
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+
+    h3 {
+        margin: 0 0 20px 0;
+        font-weight: normal;
+        color: rgba(153, 153, 153, 1);
+    }
+
+    .message-button {
+        width: 100%;
+        background-color: #333333;
+        border: none;
+        border-radius: 50px;
+        padding: 10px 20px;
+        color: #ffffff;
+        font-size: 1em;
+    }
+
+    .message-icon {
+        margin-left: 10px;
+        background-color: rgba(112, 59, 247, 1);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .valued-client-section {
+        padding: 20px 80px;
+        background-color: #141414;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .valued-client-section .container {
+        width: 100%;
+        display: block;
+        height: 80%;
+        margin-top: 20px;
+    }
+
+    .valued-client-section h2 {
+        font-family: Urbanist;
+        font-size: 38px;
+        font-weight: 600;
+        line-height: 57px;
+        text-align: left;
+    }
+
+    .valued-client-section p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .client-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .client-container {
+        height: 415px;
+        padding: 40px;
+        gap: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .client-container .heading-section {
+        height: 67px;
+    }
+
+    .heading-section p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .heading-section h5 {
+        font-family: Urbanist;
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .client-container .domain-section {
+        width: 100%;
+        height: 51px;
+        gap: 20px;
+    }
+
+    .domain-section .margin {
+        width: 1px;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .client-container .domain-section .features {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .client-container .domain-section .features h5 {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .client-container .domain-section .head {
+        display: flex;
+    }
+
+    .head span {
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .client-container .comment-section {
+        width: 100%;
+        height: 157px;
+        padding: 24px;
+        gap: 10px;
+    }
+
+    .client-container .comment-section h6 {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .client-container .comment-section p {
+        font-family: Urbanist;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+
 }
