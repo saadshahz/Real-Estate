@@ -1,0 +1,32 @@
+.points {
+    width: 100%;
+    padding: 18px 24px 18px 24px;
+    gap: 10px;
+    border-left: 1px solid rgba(112, 59, 247, 1);
+    background: linear-gradient(90deg, #1A1A1A 0%, rgba(26, 26, 26, 0) 100%);
+    opacity: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.points p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+    text-align: left;
+}
+
+@media (max-width: 1440px) {
+
+    .points {
+        padding: 14px 16px;
+    }
+
+    .points p {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 24px;
+        text-align: left;
+    }
+
+}

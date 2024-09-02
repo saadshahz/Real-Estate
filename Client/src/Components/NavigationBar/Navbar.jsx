@@ -26,6 +26,16 @@ export default function Navbar() {
         border: '1px solid transparent',
     };
 
+    const activeButton = {
+        backgroundColor: '#8f64fa',
+        border: '1px solid #703bf7'
+    };
+
+    const inactiveButton = {
+        backgroundColor: '#703bf7',
+        border: '1px solid #703bf7'
+    };
+
     return (
         <>
             {/* <header className="banner">
@@ -69,7 +79,8 @@ export default function Navbar() {
                     <NavLink to="/contact" style={({ isActive }) => (isActive ? activeStyle : inactiveStyle)} className="links">Contact Us</NavLink>
                 </div>
                 <div className='button-section'>
-                    <NavLink to='/contact' className="contact-button">Contact Us</NavLink>
+                    <NavLink to='/contact' className="contact-button"
+                    style={({ isActive }) => (isActive ? activeButton : inactiveButton)}>Contact Us</NavLink>
                 </div>
             </nav>
 

@@ -533,7 +533,7 @@ h3 {
         height: 111px;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        gap: 16px;
+        gap: 10px;
     }
 
     .about-banner-content .feature .card {

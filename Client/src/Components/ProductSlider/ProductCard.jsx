@@ -1,5 +1,6 @@
 import { Col, Flex, Row } from "antd";
-// import React from "react";
+import { Link } from 'react-router-dom';
+
 import productCardDummy from "../../assets/productCardDummy.png";
 import BedroomIcon from "../../assets/svg/BedroomIcon";
 import VillaIcon from "../../assets/svg/VillaIcon";
@@ -40,7 +41,7 @@ export default function ProductCard(props) {
             <p>$ {price}</p>
           </Col>
           <Col className="button-section h-full w-72 flex justify-end items-center">
-            <button href={`/property/detail/${id}`}>View Property Details</button>
+            <Link to={`/property/detail/${id}`}>View Property Details</Link>
           </Col>
         </Row>
       </div>
