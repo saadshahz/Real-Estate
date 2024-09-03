@@ -26,25 +26,25 @@ export default function Home() {
   const [blogData, setBlogData] = useState();
 
   useEffect(() => {
-
     // This is dummy functon to get dummy data
     const res = getProperty();
     setPropertyData(res);
   }, []);
 
   useEffect(() => {
+    fetchReview();
+  }, [reviewData]);
 
-    // This is dummy function to get dummy reviews
-    const rev = getReview();
-    setReviewData(rev);
-  }, [])
+  const fetchReview = async () => {
+    const res = await getReview();
+    setReviewData(res);
+  };
 
   useEffect(() => {
-
     // This is dummy function to get dummy blogs
     const blog = getBlogs();
     setBlogData(blog);
-  }, [])
+  }, []);
 
   useEffect(() => {
     if (customer < 200) {
@@ -154,14 +154,15 @@ export default function Home() {
             </p>
           </Col>
           <Col className="w-1/4 flex justify-end button-section">
-            <a className="feature-button" href="#">View All Properties</a>
+            <a className="feature-button" href="#">
+              View All Properties
+            </a>
           </Col>
         </Row>
 
         <div className="feature-container py-6">
-            <ProductSlider data={propertyData} />
-          </div>
-
+          <ProductSlider data={propertyData} />
+        </div>
       </div>
       {/* Features Section End */}
 
@@ -172,7 +173,9 @@ export default function Home() {
         <Row className="justify-between">
           <Col>
             <p>
-              Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
+              Read the success stories and heartfelt testimonials from our
+              valued clients. Discover why they chose Estatein for their real
+              estate needs.
             </p>
           </Col>
           <Col>
@@ -192,8 +195,10 @@ export default function Home() {
         <h2>Frequently Asked Questions</h2>
         <Row className="justify-between">
           <Col>
-            <p style={{width: '960px'}}>
-              Find answers to common questions about Estatein`s services, property listings, and the real estate process. We`re here to provide clarity and assist you every step of the way.
+            <p style={{ width: "960px" }}>
+              Find answers to common questions about Estatein`s services,
+              property listings, and the real estate process. We`re here to
+              provide clarity and assist you every step of the way.
             </p>
           </Col>
           <Col>
