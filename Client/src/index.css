@@ -6,13 +6,15 @@
 body {
   font-family: "Urbanist", sans-serif;
   font-style: normal;
+  scroll-behavior: smooth;
 }
 /* width of the entire scrollbar */
 body::-webkit-scrollbar {
   width: 5px;
 }
 body::-webkit-scrollbar:hover {
-  border: 1px solid rgba(26, 26, 26, 1);
+  border: 1px solid rgb(112, 59, 247);
+  background:  rgba(26, 26, 26, 1);
 }
 
 body::-webkit-scrollbar-track {
@@ -21,6 +23,6 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background: rgba(26, 26, 26, 1);
+  background: rgb(112, 59, 247);
   border-radius: 20px; 
 }
