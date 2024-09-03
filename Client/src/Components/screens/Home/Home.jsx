@@ -82,87 +82,88 @@ export default function Home() {
   ];
   return (
     <>
-      {/* Hero Section Start */}
-      <div className="hero-section ">
-        <div className="banner-tag">
-          <BannerTag />
+
+      <main id='page-1'>
+        {/* Hero Section Start */}
+        <div className="hero-section ">
+          <div className="banner-tag">
+            <BannerTag />
+          </div>
+
+          <Row className="hero">
+            <Col className="banner-content-section">
+              <div className="banner-content">
+                <h1>Discover Your Dream Property with Estatein</h1>
+                <p>
+                  Your journey to finding the perfect property begins here.
+                  Explore our listings to find the home that matches your dreams.
+                </p>
+                <div className="banner-btn">
+                  <button className="more-info">Learn More </button>
+                  <button className="properties">Browse Properties </button>
+                </div>
+
+                <div className="feature">
+                  <div className="card">
+                    <h6>{customer}+</h6>
+                    <p>Happy Customers</p>
+                  </div>
+                  <div className="card">
+                    <h6>10k+</h6>
+                    <p>Properties For Clients</p>
+                  </div>
+                  <div className="card">
+                    <h6>16+</h6>
+                    <p>Years of Experience</p>
+                  </div>
+                </div>
+              </div>
+            </Col>
+            <Col className="banner-image-section">
+              <div className="banner-image">
+                <img src={HomeBanner} alt="Banner" />
+              </div>
+            </Col>
+          </Row>
         </div>
+        {/* Hero Section End */}
 
-        <Row className="hero">
-          <Col className="banner-content-section">
-            <div className="banner-content">
-              <h1>Discover Your Dream Property with Estatein</h1>
+        {/* Service Section Start */}
+
+        <section className="service-section">
+          {services.map((item, idx) => {
+            return (
+              <div key={idx}>
+                <ServiceCard title={item.title} icon={item.icon} />
+              </div>
+            );
+          })}
+        </section>
+
+        {/* Service Section End */}
+
+        {/* Features Section Start */}
+        <div className="features-section">
+          <StarsIcon />
+          <h2>Featured Properties</h2>
+          <Row className="flex justify-between features-properties">
+            <Col className="w-3/4 para-section">
               <p>
-                Your journey to finding the perfect property begins here.
-                Explore our listings to find the home that matches your dreams.
+                Explore our handpicked selection of featured properties. Each
+                listing offers a glimpse into exceptional homes and investments
+                available through Estatein. Click `View Details` for more
+                information.
               </p>
-              <div className="banner-btn">
-                <button className="more-info">Learn More </button>
-                <button className="properties">Browse Properties </button>
-              </div>
-
-              <div className="feature">
-                <div className="card">
-                  <h6>{customer}+</h6>
-                  <p>Happy Customers</p>
-                </div>
-                <div className="card">
-                  <h6>10k+</h6>
-                  <p>Properties For Clients</p>
-                </div>
-                <div className="card">
-                  <h6>16+</h6>
-                  <p>Years of Experience</p>
-                </div>
-              </div>
-            </div>
-          </Col>
-          <Col className="banner-image-section">
-            <div className="banner-image">
-              <img src={HomeBanner} alt="Banner" />
-            </div>
-          </Col>
-        </Row>
-      </div>
-      {/* Hero Section End */}
-
-      {/* Service Section Start */}
-
-      <section className="service-section">
-        {services.map((item, idx) => {
-          return (
-            <div key={idx}>
-              <ServiceCard title={item.title} icon={item.icon} />
-            </div>
-          );
-        })}
-      </section>
-
-      {/* Service Section End */}
-
-      {/* Features Section Start */}
-      <div className="features-section">
-        <StarsIcon />
-        <h2>Featured Properties</h2>
-        <Row className="flex justify-between features-properties">
-          <Col className="w-3/4 para-section">
-            <p>
-              Explore our handpicked selection of featured properties. Each
-              listing offers a glimpse into exceptional homes and investments
-              available through Estatein. Click `View Details` for more
-              information.
-            </p>
-          </Col>
-          <Col className="w-1/4 flex justify-end button-section">
-            <a className="feature-button" href="#">
-              View All Properties
-            </a>
-          </Col>
-        </Row>
+            </Col>
+            <Col className="w-1/4 flex justify-end button-section">
+              <a className="feature-button" href="#">View All Properties</a>
+            </Col>
+          </Row>
 
         <div className="feature-container py-6">
-          <ProductSlider data={propertyData} />
-        </div>
+            <ProductSlider data={propertyData} />
+          </div>
+
       </div>
       {/* Features Section End */}
 
@@ -173,9 +174,7 @@ export default function Home() {
         <Row className="justify-between">
           <Col>
             <p>
-              Read the success stories and heartfelt testimonials from our
-              valued clients. Discover why they chose Estatein for their real
-              estate needs.
+              Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
             </p>
           </Col>
           <Col>
@@ -183,11 +182,11 @@ export default function Home() {
           </Col>
         </Row>
 
-        <div className="feature-container py-6">
-          <ReviewSlider data={reviewData} />
+          <div className="feature-container py-6">
+            <ReviewSlider data={reviewData} />
+          </div>
         </div>
-      </div>
-      {/* Reviews Section End */}
+        {/* Reviews Section End */}
 
       {/* Blog Section Start */}
       <div className="features-section">
@@ -195,10 +194,8 @@ export default function Home() {
         <h2>Frequently Asked Questions</h2>
         <Row className="justify-between">
           <Col>
-            <p style={{ width: "960px" }}>
-              Find answers to common questions about Estatein`s services,
-              property listings, and the real estate process. We`re here to
-              provide clarity and assist you every step of the way.
+            <p style={{width: '960px'}}>
+              Find answers to common questions about Estatein`s services, property listings, and the real estate process. We`re here to provide clarity and assist you every step of the way.
             </p>
           </Col>
           <Col>
@@ -206,11 +203,12 @@ export default function Home() {
           </Col>
         </Row>
 
-        <div className="feature-container py-6">
-          <BlogSlider data={blogData} />
+          <div className="feature-container py-6">
+            <BlogSlider data={blogData} />
+          </div>
         </div>
-      </div>
-      {/* Blog Section End */}
+        {/* Blog Section End */}
+      </main>
     </>
   );
 }

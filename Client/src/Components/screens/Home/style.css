@@ -139,14 +139,14 @@
 }
 
 .features-section h2 {
-  font-size: 42px;
+  font-size: 48px;
   font-weight: 600;
   padding-bottom: 10px;
 }
 
 .features-section p {
-  color: #4d4d4d;
-  font-size: 16px;
+  color: rgba(153, 153, 153, 1);
+  font-size: 18px;
 }
 
 .features-section a {
@@ -256,7 +256,7 @@
     width: 129px;
   }
 
-  
+
   .features-section h2 {
     font-size: 38px;
     font-weight: 600;
@@ -271,7 +271,7 @@
     line-height: 24px;
     text-align: left;
   }
-  
+
   .feature-container {
     display: flex;
     gap: 20px;
