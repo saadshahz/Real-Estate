@@ -13,7 +13,6 @@ import ProductCard from "./Review.jsx";
 export default function ReviewSlider(props) {
 
   const { data } = { ...props };
-
   return (
     <>
       <Swiper
@@ -27,11 +26,12 @@ export default function ReviewSlider(props) {
             return (
               <SwiperSlide key={idx}>
                 <ProductCard
-                  title={item.title}
-                  desc={item.desc}
-                  name={item.clientsInfo.name}
-                  country={item.clientsInfo.country}
-                  city={item.clientsInfo.city}
+                  title={item.author}
+                  desc={item.description}
+                  name={item.author}
+                  rating= {item.rating}
+                  country={item.country}
+                  city={item.city}
                 />{" "}
               </SwiperSlide>
             );

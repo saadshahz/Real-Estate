@@ -26,25 +26,25 @@ export default function Home() {
   const [blogData, setBlogData] = useState();
 
   useEffect(() => {
-
     // This is dummy functon to get dummy data
     const res = getProperty();
     setPropertyData(res);
   }, []);
 
   useEffect(() => {
+    fetchReview();
+  }, [reviewData]);
 
-    // This is dummy function to get dummy reviews
-    const rev = getReview();
-    setReviewData(rev);
-  }, [])
+  const fetchReview = async () => {
+    const res = await getReview();
+    setReviewData(res);
+  };
 
   useEffect(() => {
-
     // This is dummy function to get dummy blogs
     const blog = getBlogs();
     setBlogData(blog);
-  }, [])
+  }, []);
 
   useEffect(() => {
     if (customer < 200) {
