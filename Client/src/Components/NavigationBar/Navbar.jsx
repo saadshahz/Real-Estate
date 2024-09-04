@@ -4,17 +4,16 @@ import { NavLink } from 'react-router-dom';
 
 import './style.css'
 
-// import Cancel from './svg/Cancel'
 import Logo from '../../assets/svg/Logo.jsx'
 import MenuBar from './svg/Menu.jsx';
 import MainMenuClose from './svg/MainMenuClose.jsx';
 
 export default function Navbar() {
 
-    const [sidebarVisible, setSidebarVisible] = useState(false);
+    const [isVisible, setIsVisible] = useState(false);
 
     const toggleSidebar = () => {
-        setSidebarVisible(prev => !prev);
+        setIsVisible(!isVisible);
     };
 
     const activeStyle = {
@@ -68,7 +67,7 @@ export default function Navbar() {
                 <div className='menu-icon' onClick={toggleSidebar}>
                     <MenuBar />
                 </div>
-                <div className={`sidebar ${sidebarVisible ? 'visible' : 'hidden'}`}>
+                <div className={`sidebar ${isVisible ? 'visible' : 'hidden'}`}>
                     <div className='menu-close-icon' onClick={toggleSidebar}>
                         <MainMenuClose />
                     </div>

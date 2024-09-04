@@ -6,7 +6,7 @@
 
 .service-section {
     padding: 20px 10px;
-    background-color: #1A1A1A;
+    background-color: rgba(20, 20, 20, 1);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -288,6 +288,16 @@
         text-align: left;
     }
 
+    .big .heading button {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        padding: 14px 20px 14px 20px;
+        gap: 8px;
+        border-radius: 8px;
+        opacity: 0px;
+    }
+
     .value-section {
         padding: 20px 80px;
         background-color: #141414;
@@ -389,6 +399,226 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .service-section {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .property-value-section {
+        padding: 20px 16px;
+    }
+
+    .property-value {
+        width: 100%;
+        height: auto;
+        display: grid;
+        gap: 40px;
+    }
+
+    .property-content {
+        width: 100%;
+        height: auto;
+        gap: 8px;
+    }
+
+    .property-content h1 {
+        width: 100%;
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .property-content p {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-card-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .big {
+        height: auto;
+        padding: 24px;
+        border-radius: 10px;
+        display: grid;
+        gap: 20px;
+        grid-column: span 2;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .big .heading {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .big .heading h1 {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .big .heading button {
+        width: 100%;
+        padding: 14px 20px;
+        gap: 8px;
+    }
+
+    .value-section {
+        width: 100%;
+        height: auto;
+        padding: 20px 16px;
+    }
+
+    .value-section .value {
+        width: 100%;
+        display: grid;
+        gap: 40px;
+    }
+
+    .value .left-section {
+        width: 100%;
+        height: auto;
+        gap: 30px;
+        opacity: 0px;
+        padding: 0;
+    }
+
+    .left-section .left-above {
+        width: 100%;
+        height: auto;
+        gap: 8px;
+        opacity: 0px;
+    }
+
+    .left-above h2 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .left-above p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .left-section .left-below {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+        gap: 20px;
+        border-radius: 12px;
+        opacity: 0px;
+        display: flex;
+    }
+
+    .left-below h6 {
+        font-family: Urbanist;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 30px;
+        text-align: left;
+
+    }
+
+    .left-below p {
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+
+    }
+
+    .left-below button {
+        padding: 14px 20px 14px 20px;
+        gap: 8px;
+        border-radius: 8px;
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+    }
+
+    .value .right-section {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 12px;
+        opacity: 0px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        background-color: rgba(26, 26, 26, 1);
+    }
+
+    .right-section .value-container {
+        width: 100%;
+        height: 100%;
+        border-radius: 12px;
+        background-color: rgba(20, 20, 20, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+        padding: 24px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .property-card-section {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .big {
+        height: auto;
+        padding: 24px;
+        border-radius: 10px;
+        display: grid;
+        gap: 20px;
+        grid-column: 1;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .value .right-section {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 12px;
+        opacity: 0px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        background-color: rgba(26, 26, 26, 1);
     }
 
 }

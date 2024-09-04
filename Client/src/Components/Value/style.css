@@ -33,3 +33,23 @@
     }
 
 }
+
+@media (max-width: 900px) {
+
+    .value-title {
+        font-family: Urbanist;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .value-desc {
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+}

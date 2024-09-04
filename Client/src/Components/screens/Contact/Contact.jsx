@@ -73,7 +73,7 @@ export default function Contact() {
       icon: <Location />,
     },
     {
-      title: "Instagram  LinkedIn  Facebook",
+      title: "Instagram LinkedIn",
       icon: <Socials />,
     },
   ];
@@ -218,7 +218,7 @@ export default function Contact() {
                         <EmailIcon /> info@estatein.com
                       </span>
                       <span className="flex items-start ">
-                        <PhoneIcon /> +1(123) 456 7890
+                        <PhoneIcon /> +1 (123) 456 7890
                       </span>
                       <span className="flex items-start ">
                         <LocationIcon /> Metropolis

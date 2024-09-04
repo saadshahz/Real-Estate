@@ -17,15 +17,16 @@
 .hero {
   width: 100%;
   height: 100%;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .hero .banner-content-section {
-  width: 50%;
+  width: 100%;
 }
 
 .hero .banner-image-section {
-  width: 50%;
+  width: 100%;
   height: 100%;
 }
 
@@ -82,7 +83,7 @@
 
 .banner-content .feature {
   width: 100%;
-  height: 121px;
+  height: auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -107,7 +108,7 @@
 }
 
 .hero-section .banner-image {
-  background-image: url("../../assets/banner-bg.png");
+  /* background-image: url("./svg/"); */
   background-size: 100% 100%;
   object-fit: cover;
   background-position: center;
@@ -120,36 +121,60 @@
 }
 
 .service-section {
+  background-color: rgba(20, 20, 20, 1);
   padding: 20px 10px;
-  background-color: #141414;
   display: flex;
+  box-shadow: 0px 0px 0px 10px rgba(25, 25, 25, 1);
+  border: 1px solid rgba(38, 38, 38, 1);
 }
 
 .service-section .ant-col-6 {
   padding: 10px;
 }
 
-.features-section,
-.review-section,
-.blog-section,
-.values-section {
+.feature-section {
   padding: 20px 162px;
   background-color: #141414;
   color: #fff;
+  display: grid;
+  gap: 30px;
 }
 
-.features-section h2 {
+.feature-section .feature-content {
+  width: 100%;
+  display: flex;
+}
+
+.feature-section .feature-content .feature-detailed {
+  width: 85%;
+}
+
+.feature-section .feature-content .feature-detailed h2 {
+  font-family: Urbanist;
   font-size: 48px;
   font-weight: 600;
-  padding-bottom: 10px;
+  line-height: 72px;
+  text-align: left;
 }
 
-.features-section p {
-  color: rgba(153, 153, 153, 1);
+.feature-section p {
+  font-family: Urbanist;
   font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  text-align: left;
+  color: rgba(153, 153, 153, 1);
 }
 
-.features-section a {
+.feature-section .feature-content .feature-button-section {
+  width: 15%;
+  height: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+}
+
+.feature-section .feature-content .feature-button-section a {
   padding: 10px 20px;
   border-radius: 5px;
   background: rgba(26, 26, 26, 1);
@@ -158,15 +183,10 @@
   font-size: 16px;
 }
 
-.features-section a:hover {
+.feature-section a:hover {
   border: 1px solid #703bf7;
   background-color: #703bf7;
   color: #fff;
-}
-
-.feature-container {
-  display: flex;
-  gap: 30px;
 }
 
 @media (max-width: 1800px) {
@@ -190,7 +210,7 @@
 
 @media (max-width: 1600px) {
 
-  .features-section,
+  .feature-section,
   .review-section,
   .blog-section,
   .values-section {
@@ -203,7 +223,7 @@
 
   .hero-section {
     margin-top: 77px;
-    height: 622px;
+    height: auto;
   }
 
   .banner-content {
@@ -256,24 +276,212 @@
     width: 129px;
   }
 
-
-  .features-section h2 {
-    font-size: 38px;
-    font-weight: 600;
-    line-height: 57px;
-    text-align: left;
-
+  .service-section {
+    display: grid;
   }
 
-  .features-properties p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    text-align: left;
+}
+
+
+@media (max-width: 900px) {
+
+  .hero-section {
+    background-color: #141414;
+    margin-top: 67px;
+    padding: 20px 16px;
   }
 
-  .feature-container {
+  .banner-tag {
+    height: 117px;
+    width: 117px;
     display: flex;
-    gap: 20px;
+    position: absolute;
+    top: 47%;
+    left: 18%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
   }
+
+  .hero {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 60px;
+    background-color: #141414;
+  }
+
+  .hero .banner-content-section {
+    width: 100%;
+    display: grid;
+  }
+
+  .hero .banner-image-section {
+    width: 100%;
+    height: 100%;
+  }
+
+  .banner-content {
+    height: 100%;
+    color: #fff;
+    background-color: #141414;
+    padding: 0;
+    gap: 40px;
+  }
+
+  .banner-content div {
+    display: grid;
+    gap: 10px;
+  }
+
+  .banner-content h1 {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 33.6px;
+    text-align: left;
+  }
+
+  .banner-content p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  .banner-content .banner-btn {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .banner-content .banner-btn button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: 1px solid #262626;
+    transition: 0.5s;
+    font-size: 16px;
+  }
+
+  .banner-content .banner-btn button:hover {
+    border: 1px solid #703bf7;
+    background-color: #703bf7;
+  }
+
+  .banner-content .banner-btn button:nth-child(2) {
+    background-color: #703bf7;
+    border: 1px solid #703bf7;
+  }
+
+  .banner-content .banner-btn button:nth-child(2):hover {
+    background-color: transparent;
+    border: 1px solid #262626;
+  }
+
+  .banner-content .feature {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .banner-content .feature .card {
+    padding: 14px;
+    gap: 2px;
+  }
+
+  .banner-content .feature .card:last-child {
+    grid-column: span 2;
+  }
+
+  .banner-content .feature .card h6 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 36px;
+    text-align: center;
+  }
+
+  .banner-content .feature .card p {
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: center;
+  }
+
+  .hero-section .banner-image {
+    background-size: 100% 100%;
+    object-fit: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+
+  .hero-section .banner-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+    background-image: url(./svg/Abstract\ Design.svg) no-repeat;
+  }
+
+  .service-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
+  .feature-section {
+    padding: 20px 16px;
+    background-color: #141414;
+    color: #fff;
+    display: grid;
+    gap: 30px;
+  }
+
+  .feature-section .feature-content {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+  }
+
+  .feature-section .feature-content .feature-detailed {
+    width: 100%;
+    gap: 5px;
+  }
+
+  .feature-section .feature-content .feature-detailed h2 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 42px;
+    text-align: left;
+  }
+
+  .feature-section p {
+    font-family: Urbanist;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    text-align: left;
+  }
+
+  .feature-section .feature-content .feature-button-section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .feature-section .feature-content .feature-button-section .feature-button {
+    padding: 10px;
+    height: max-content;
+    border-radius: 5px;
+    background: rgba(26, 26, 26, 1);
+    border: 1px solid #262626;
+    transition: 0.5s;
+    font-size: 16px;
+  }
+
+
+
 }

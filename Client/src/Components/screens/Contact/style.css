@@ -5,7 +5,7 @@
 
 .service-section {
     padding: 20px 10px;
-    background-color: #141414;
+    background-color: rgba(20, 20, 20, 1); 
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
@@ -96,7 +96,7 @@
 
 .place-location .filter-container {
     width: 100%;
-    height: 472px;
+    height: auto;
     gap: 30px;
     opacity: 0px;
     display: grid;
@@ -195,7 +195,6 @@
 
 .form-section .form {
     width: 100%;
-    height: 1074px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -219,7 +218,6 @@
 }
 
 .form-content p {
-    font-family: Urbanist;
     font-size: 18px;
     font-weight: 500;
     line-height: 27px;
@@ -229,12 +227,6 @@
 
 .form .form-container {
     width: 100%;
-    height: 854px;
-}
-
-.form-container {
-    width: 100%;
-    height: 854px;
     padding: 100px;
     gap: 50px;
     border-radius: 12px;
@@ -947,10 +939,444 @@ form .terms-row {
     }
 
     .gallery-content .column .content p {
-        font-family: Urbanist;
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .contect-hero {
+        margin-top: 68px;
+    }
+
+    .service-section {
+        padding: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .form-section {
+        padding: 20px 16px;
+        background-color: #141414;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .form-section .form {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        gap: 40px;
+    }
+
+    .form .form-content {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        gap: 14px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .form-content h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .form-content p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .form .form-container {
+        width: 100%;
+        height: fit-content;
+        padding: 20px;
+        gap: 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    form .inputs-row {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: 1fr;
+        opacity: 0px;
+    }
+
+    .inputs-row .inputs-box {
+        width: 100%;
+        height: 100%;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inputs-box h6 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .inputs-box input {
+        height: 52px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 8px;
+        background: rgba(26, 26, 26, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .inputs-box select {
+        height: 52px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 8px;
+        background: rgba(26, 26, 26, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    form .message-row {
+        width: 100%;
+        height: auto;
+        gap: 16px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .message-row h6 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .message-row textarea {
+        height: 90px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    form .terms-row {
+        width: 100%;
+        height: auto;
+        gap: 16px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .terms-row .condition-section {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        opacity: 0px;
+        color: rgba(153, 153, 153, 1);
+        display: flex;
+        align-items: center;
+    }
+
+    .condition-section span {
+        text-decoration: underline;
+    }
+
+    .terms-row button {
+        width: 100%;
+        padding: 14px 34px;
+        gap: 0;
+        border-radius: 8px;
+        opacity: 0px;
+        background-color: rgba(112, 59, 247, 1);
+    }
+
+    .location-section {
+        height: auto;
+        padding: 20px 16px;
+    }
+
+    .location-section .location {
+        width: 100%;
+        height: auto;
+        gap: 40px;
+    }
+
+    .location .location-content {
+        width: 100%;
+        height: auto;
+        padding: 0px;
+        gap: 14px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location-content h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .location-content p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .location .place-location {
+        width: 100%;
+        height: auto;
+        gap: 30px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .place-location .filter-button {
+        width: 100%;
+        height: 69px;
+        padding: 10px;
+        gap: 10px;
+        border-radius: 12px;
+        opacity: 0px;
+        background-color: rgba(26, 26, 26, 1);
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .filter-button button:first-child {
+        padding: 14px 20px;
+        gap: 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(38, 38, 38, 1);
+        background-color: rgba(20, 20, 20, 1);
+        opacity: 0px;
+    }
+
+    .filter-button button {
+        padding: 14px 20px;
+        gap: 8px;
+        border-radius: 10px;
+        border: 1px solid rgba(38, 38, 38, 1);
+        background-color: rgba(26, 26, 26, 1);
+        opacity: 0px;
+    }
+
+    .place-location .filter-container {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .filter-container .location-container {
+        width: 100%;
+        height: auto;
+        padding: 24px;
+        gap: 24px;
+    }
+
+    .location-container .heading-section {
+        width: 100%;
+        height: auto;
+        gap: 14px;
+        opacity: 0px;
+    }
+
+    .heading-section .titles {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titles span:first-child {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: -0.006em;
+        text-align: left;
+    }
+
+    .titles span:last-child {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .heading-section .description {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        letter-spacing: -0.006em;
+        text-align: left;
+    }
+
+    .location-container .feature-section {
+        width: 100%;
+        height: auto;
+        gap: 8px;
+    }
+
+    .feature-section span {
+        padding: 10px 16px;
+        gap: 4px;
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .location-container .location-button {
+        width: 100%;
+        height: 60px;
+        padding: 18px 24px 18px 24px;
+        gap: 10px;
+        border-radius: 10px;
+        opacity: 0px;
+        background-color: rgba(112, 59, 247, 1);
+        font-size: 18px;
+    }
+
+    .gallery-section {
+        height: auto;
+        padding: 20px 16px;
+    }
+
+    .gallery-section .gallery {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 24px;
+        gap: 55px;
+        border-radius: 12px;
+    }
+
+    .gallery .gallery-image {
+        width: 100%;
+        height: auto;
+        gap: 10px;
+        opacity: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gallery-image .column {
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        opacity: 0px;
+        border-radius: 10px;
+        display: grid;
+        margin: 0;
+    }
+
+    .gallery-image .column .row {
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        border-radius: 10px;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .gallery-image .column .row2 {
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-image .column .row2 img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .gallery .gallery-content {
+        width: 100%;
+        height: auto;
+        gap: 20px;
+        opacity: 0px;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gallery-content .column {
+        width: 100%;
+        height: 100%;
+        opacity: 0px;
+        margin: 0;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .gallery-content .column .content {
+        width: 100%;
+        height: auto;
+    }
+
+    .gallery-content .column .content h6 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .gallery-content .column .content p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
         text-align: left;
     }
 

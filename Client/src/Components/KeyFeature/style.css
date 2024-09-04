@@ -30,3 +30,18 @@
     }
 
 }
+
+@media (max-width: 900px) {
+
+    .points {
+        padding: 10px 12px;
+    }
+
+    .points p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+}

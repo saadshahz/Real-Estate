@@ -10,13 +10,16 @@
     align-items: center;
     flex-direction: column;
     width: 100%;
-    height: 212px;
+    height: 100%;
+    border: 1px solid rgba(38, 38, 38, 1);
 }
 
 .service-card p {
     padding: 20px 0;
     font-size: 18px;
     font-weight: 500;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
 }
 
 .icon {
@@ -29,7 +32,7 @@
     width: 16px;
 }
 
-@media (min-width: 800px) and (max-width: 1440px) {
+@media (max-width: 1440px) {
 
     .service-card {
         width: 100%;
@@ -48,11 +51,9 @@
     }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 90px) {
 
     .service-card {
-        width: 96%;
-        height: 96%;
         padding: 20px 14px;
         gap: 8px;
         opacity: 0px;
@@ -62,6 +63,7 @@
         font-size: 14px;
         font-weight: 500;
         padding: 0;
+        text-align: center;
     }
 
 }

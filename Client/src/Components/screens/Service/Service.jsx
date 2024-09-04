@@ -98,7 +98,7 @@ export default function Service() {
     {
       title: "Market Insight",
       icon: <Market />,
-      desc: "OStay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions"
+      desc: "Stay ahead of market trends with our expert Market Analysis. We provide in-depth insights into real estate market conditions"
     }, {
       title: "ROI Assessment",
       icon: <ROI />,
@@ -152,7 +152,7 @@ export default function Service() {
               })}
 
               <article className='big'>
-                <div className='w-full h-16 flex items-center justify-between'>
+                <div className='heading w-full flex items-center justify-between'>
                   <h1>Unlock the Value of Your Property Today</h1>
                   <button className='property-button'>Learn More</button>
                 </div>
@@ -184,7 +184,7 @@ export default function Service() {
               })}
 
               <div className='big'>
-                <div className='w-full h-16 flex items-center justify-between'>
+                <div className='heading w-full flex items-center justify-between'>
                   <h1>Experience Effortless Property Management</h1>
                   <button className='property-button'>Learn More</button>
                 </div>

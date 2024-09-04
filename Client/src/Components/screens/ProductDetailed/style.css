@@ -527,6 +527,10 @@
 
 @media (max-width: 1440px) {
 
+    .property-information-section {
+        margin-top: 80px;
+    }
+
     .property-information-section,
     .property-pricing-section {
         padding: 20px 80px;
@@ -887,6 +891,574 @@
         line-height: 21px;
         text-align: left;
         padding: 6px 12px;
+    }
+
+}
+
+@media (max-width: 900px) {
+
+    .property-information-section {
+        padding: 20px 16px;
+        gap: 20px;
+    }
+
+    .property-information-section .property-image-section {
+        width: 100%;
+        display: flex;
+        gap: 30px;
+    }
+
+    .property-image-section .image-section {
+        width: 100%;
+        padding: 20px;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .image-section .property-image {
+        border-radius: 12px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .image-section .property-image img:nth-child(odd) {
+        display: none;
+    }
+
+    .property-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 12px;
+    }
+
+    .image-section .image-details {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .image-section .image-details img:nth-child(2) {
+        display: none;
+    }
+
+    .property-image-section .property-info {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 10px;
+    }
+
+    .property-info .intro {
+        width: 90%;
+        height: auto;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .intro .location {
+        padding: 8px;
+        gap: 4px;
+        border-radius: 6px;
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-info .pricing {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .pricing span {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .property-information-section .property-description {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .property-description .description-box {
+        width: 100%;
+        height: max-content;
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .description-box .description {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .description-box .description h6 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .description-box .description p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-description .features-box {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .property-description .features-box div {
+        display: grid;
+        gap: 10px;
+    }
+
+    .property-description .features-box div span {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-description .features-box div p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .property-description .property-keyFeature {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .property-description .property-keyFeature h6 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .property-description .property-keyFeature .key-feature {
+        gap: 18px;
+    }
+
+    .inquiry-section {
+        padding: 20px 16px;
+    }
+
+    .inquiry-section .inquiry {
+        width: 100%;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .inquiry .inquiry-left-section {
+        display: flex;
+        width: 100%;
+    }
+
+    .inquiry-left-section h2 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .inquiry-left-section p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .inquiry .inquiry-right-section {
+        width: 100%;
+    }
+
+    .inquiry-right-section .form-container {
+        height: auto;
+        padding: 20px;
+        display: grid;
+        gap: 20px;
+        border: 1px solid rgba(38, 38, 38, 1);
+        border-radius: 12px;
+    }
+
+    .inquiry-right-section .form-container .inputs-row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .inquiry-right-section .form-container .location-row {
+        width: 100%;
+        height: 100%;
+        gap: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inquiry-right-section .form-container .location-row h6 {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+    }
+
+    .inquiry-right-section .form-container .location-row .location-input {
+        height: 52px;
+        padding: 16px 20px;
+        gap: 12px;
+        border-radius: 8px;
+        background: rgba(26, 26, 26, 1);
+        border: 1px solid rgba(38, 38, 38, 1);
+        opacity: 0px;
+    }
+
+    .inquiry-right-section .form-container .location-row .location-input input {
+        padding: 14px 0px;
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 20px;
+        text-align: left;
+        text-align: left;
+        color: rgba(102, 102, 102, 1);
+        background: rgba(26, 26, 26, 1);
+        outline: none;
+    }
+
+    .inquiry-right-section .form-container .terms-row {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .property-pricing-section {
+        padding: 20px 16px;
+        gap: 40px;
+    }
+
+    .property-pricing-section .heading-section {
+        width: 100%;
+        display: grid;
+        gap: 10px;
+    }
+
+    .property-pricing-section .heading-section h1 {
+        font-size: 28px;
+        font-weight: 600;
+        line-height: 42px;
+        text-align: left;
+    }
+
+    .property-pricing-section .heading-section p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing {
+        display: grid;
+        gap: 30px;
+    }
+
+    .property-pricing-section .property-pricing .alert-box {
+        background: rgba(26, 26, 26, 1);
+        padding: 24px 20px;
+        gap: 20px;
+        border-radius: 12px;
+        border: 1px solid rgba(38, 38, 38, 1);
+        display: grid;
+        align-items: center;
+    }
+
+    .property-pricing-section .property-pricing .alert-box .note {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing .alert-box .margin {
+        height: 1px;
+        width: 100%;
+        border: 1px solid rgba(38, 38, 38, 1);
+    }
+
+    .property-pricing-section .property-pricing .alert-box p {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing {
+        font-family: Urbanist;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing span {
+        font-size: 24px;
+        font-weight: 600;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion {
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion .margin {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(38, 38, 38, 1);
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion .heading {
+        width: 100%;
+        max-height: 49px;
+        gap: 40px;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion .heading h6 {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion .heading button {
+        padding: 14px 20px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion .legal-section,
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion .insurance-section {
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .portion .legal-section div,
+    .portion .insurance-section div {
+        display: grid;
+        gap: 10px;
+    }
+
+    .portion .legal-section div h6,
+    .portion .insurance-section div h6 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .portion .legal-section div p,
+    .portion .insurance-section div p {
+        font-family: Urbanist;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+        gap: 12px;
+    }
+
+    .portion .legal-section div p span,
+    .portion .insurance-section div p span {
+        padding: 6px 12px;
+        gap: 4px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-pricing-section .property-pricing .pricing-details .pricing-portions .portion .another-charges-section {
+        width: 100%;
+        display: grid;
+    }
+
+    .portion .another-charges-section div {
+        display: grid;
+        gap: 16px;
+    }
+
+    .portion .another-charges-section div h6 {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .portion .another-charges-section div p {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+        gap: 12px;
+    }
+
+    .portion .another-charges-section div p span {
+        padding: 6px 12px;
+        gap: 4px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .addon-css div p span {
+        display: none;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .property-description .features-box {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .property-info {
+        flex-direction: column;
+    }
+
+    .property-info .intro {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .intro .location {
+        padding: 8px;
+        gap: 4px;
+        border-radius: 6px;
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-info .pricing {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .pricing span {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+
+}
+
+@media (max-width: 400px) {
+
+    .property-info .intro {
+        width: 100%;
+        height: auto;
+        display: flex;
+        gap: 10px;
+        align-items: start;
+        flex-direction: column;
+    }
+
+    .intro h2 {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .intro .location {
+        padding: 8px;
+        gap: 4px;
+        border-radius: 6px;
+        opacity: 0px;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+    }
+
+    .property-info .pricing {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
+        text-align: left;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .pricing span {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
     }
 
 }

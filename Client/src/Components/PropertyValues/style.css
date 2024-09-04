@@ -1,5 +1,5 @@
 .property-card {
-    height: 266px;
+    height: auto;
     color: #ffff;
     background-color: #1A1A1A;
     display: flex;
@@ -32,7 +32,7 @@
 @media (max-width: 1440px) {
 
     .property-card {
-        height: 208px;
+        height: auto;
         padding: 40px;
         gap: 20px;
         border-radius: 12px;
@@ -52,6 +52,31 @@
         font-size: 16px;
         font-weight: 500;
         line-height: 24px;
+        text-align: left;
+    }
+
+}
+
+@media (max-width: 1440px) {
+
+    .property-card {
+        padding: 24px;
+        gap: 10px;
+        border-radius: 12px;
+        opacity: 0px;
+    }
+
+    .title {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        text-align: left;
+    }
+
+    .desc {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 21px;
         text-align: left;
     }
 

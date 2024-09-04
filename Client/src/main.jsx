@@ -4,10 +4,10 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout.jsx'
 import './index.css'
 import Home from './Components/screens/Home/Home.jsx'
-import Service from './Components/screens/ProductDetailed/ProductDetailed.jsx'
+import Service from './Components/screens/Service/Service.jsx'
 import Properties from './Components/screens/Properties/Properties.jsx'
 import About from './Components/screens/About/About.jsx'
-import Contact from './Components/screens/Contact/Contact.jsx'
+import Contact from './Components/screens/ProductDetailed/ProductDetailed.jsx'
 
 const router = createBrowserRouter([
   {

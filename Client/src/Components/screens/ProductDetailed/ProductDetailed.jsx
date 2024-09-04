@@ -348,7 +348,7 @@ export default function ProductDetailed() {
                     </div>
                   </Row>
                   <span className="margin"></span>
-                  <Row className="insurance-section">
+                  <Row className="insurance-section addon-css">
                     <div>
                       <h6>Mortgage Payment</h6>
                       <p>Varies based on terms and interest rate <span>If applicable</span></p>
@@ -367,25 +367,26 @@ export default function ProductDetailed() {
         {/* Propert Information Section End */}
 
         {/* Blog Section Start */}
-        <section className="features-section">
-          <StarsIcon />
-          <h2>Frequently Asked Questions</h2>
-          <Row className="justify-between">
-            <Col>
-              <p style={{ width: '960px' }}>
-                Find answers to common questions about Estatein`s services, property listings, and the real estate process. We`re here to provide clarity and assist you every step of the way.
+        <section className="feature-section">
+          <div className="feature-content">
+            <aside className="feature-detailed">
+              <StarsIcon />
+              <h2>Frequently Asked Questions</h2>
+              <p>
+                Find answers to common questions about Estatein’s services, property listings, and the real estate process. We’re here to provide clarity and assist you every step of the way.
               </p>
-            </Col>
-            <Col>
-              <a href="#">View All FAQ`s</a>
-            </Col>
-          </Row>
-
-          <div className="feature-container py-6">
-            <BlogSlider data={blogData} />
+            </aside>
+            <aside className="feature-button-section">
+              <a className="feature-button" href="#">View All FAQ’s</a>
+            </aside>
           </div>
-        </section>
-        {/* Blog Section End */}
+
+          {/* <div className="feature-container">
+            <ProductSlider data={propertyData} />
+          </div> */}
+
+          </section>
+          {/* Blog Section End */}
       </main>
     </>
   )

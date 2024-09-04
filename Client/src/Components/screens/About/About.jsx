@@ -14,8 +14,13 @@ import ClientIcon from "./svg/CLientIcon";
 import Send from "./svg/Send";
 import Domain from "./svg/Domain";
 import Category from "./svg/Category";
+
+// images
 import Founder from "./Images/Founder.png";
 import Sarah from "./Images/Sarah.png";
+import David from "./Images/David.png";
+import Turner from "./Images/Turner.png"
+
 export default function About() {
   const [customer, setCustomer] = useState(1);
   const [client, setClient] = useState(1);
@@ -55,14 +60,14 @@ export default function About() {
     {
       key: "3",
       title: "David Brown",
-      image: Founder,
-      role: "Head of Property Management",
+      image: David,
+      role: "Head of Management",
       twitter: "www.twitter.com",
     },
     {
       key: "4",
       title: "Michael Turner",
-      image: Founder,
+      image: Turner,
       role: "Legal Counsel",
       twitter: "www.twitter.com",
     },
@@ -160,7 +165,7 @@ export default function About() {
 
         {/* Achievement Section Start */}
 
-        <div className="achievement-section">
+        <section className="achievement-section">
           <div className="container">
             <StarsIcon />
             <h2>Our Achievements</h2>
@@ -201,24 +206,26 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
         {/* Achievement Section End */}
 
         {/* Experience Section Start */}
 
-        <div className="experience-section">
+        <section className="experience-section">
           <div className="container">
-            <StarsIcon />
-            <h2>Navigating the Estatein Experience</h2>
-            <Row className="justify-between row">
-              <Col>
-                <p>
-                  At Estatein, we`ve designed a straightforward process to help
-                  you find and purchase your dream property with ease. Here`s a
-                  step-by-step guide to how it all works.
-                </p>
-              </Col>
-            </Row>
+            <div>
+              <StarsIcon />
+              <h2>Navigating the Estatein Experience</h2>
+              <Row className="justify-between row">
+                <Col>
+                  <p>
+                    At Estatein, we`ve designed a straightforward process to help
+                    you find and purchase your dream property with ease. Here`s a
+                    step-by-step guide to how it all works.
+                  </p>
+                </Col>
+              </Row>
+            </div>
 
             <div className="py-8 cards-content">
               <div className="experience-card">
@@ -308,12 +315,12 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Experience Section End */}
         {/* Team Section Start */}
 
-        <div className="team-section">
+        <section className="team-section">
           <div className="container">
             <StarsIcon />
             <h2>Meet the Estatein Team</h2>
@@ -327,7 +334,7 @@ export default function About() {
               </Col>
             </Row>
 
-            <div className="py-8  cards-content">
+            <div className="cards-content">
               {team &&
                 team.map((item, idx) => {
                   return (
@@ -339,9 +346,6 @@ export default function About() {
                           className="image"
                         />
                       </div>
-                      {/* <div className="profile-social">
-                        <a href={item.twitter} ><Twitter className="social-icon" /></a>
-                      </div> */}
                       <div className="profile-info">
                         <div className="content-info">
                           <h5>{item.title}</h5>
@@ -361,22 +365,20 @@ export default function About() {
                 })}
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Team Section End */}
 
         {/* Valued Client Section Start */}
 
-        <div className="valued-client-section">
+        <section className="valued-client-section">
           <div className="container">
             <StarsIcon />
-            <h2>Meet the Estatein Team</h2>
+            <h2>Our Valued Clients</h2>
             <Row className="justify-between row">
               <Col>
                 <p>
-                  At Estatein, our success is driven by the dedication and
-                  expertise of our team. Get to know the people behind our mission
-                  to make your real estate dreams a reality.
+                  At Estatein, we have had the privilege of working with a diverse range of clients across various industries. Here are some of the clients we`ve had the pleasure of serving
                 </p>
               </Col>
             </Row>
@@ -469,7 +471,7 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
+        </section>
 
         {/* Valued Client Section End */}
       </main>
