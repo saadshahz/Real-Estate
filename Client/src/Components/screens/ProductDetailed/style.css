@@ -240,12 +240,16 @@
 
 .inquiry-right-section .form-container {
     height: auto;
+    display: grid;
     padding: 50px;
     gap: 50px;
+    border: 1px solid rgba(38, 38, 38, 1);
+    border-radius: 12px;
 }
 
 .inquiry-right-section .form-container .inputs-row {
     display: grid;
+    gap: 30px;
     grid-template-columns: repeat(2, 1fr);
 }
 
@@ -1111,7 +1115,7 @@
 
     .inquiry-right-section .form-container .inputs-row {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .inquiry-right-section .form-container .location-row {
@@ -1156,6 +1160,11 @@
         width: 100%;
         display: grid;
         grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .inquiry-right-section .form-container .terms-row button {
+        width: 100%;
     }
 
     .property-pricing-section {
@@ -1360,6 +1369,11 @@
 }
 
 @media (max-width: 600px) {
+
+    .inquiry-right-section .form-container .inputs-row {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 
     .property-description .features-box {
         grid-template-columns: repeat(2, 1fr);

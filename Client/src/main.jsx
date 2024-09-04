@@ -2,12 +2,17 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import Layout from './Layout.jsx'
+
+// Importing CSS Files
 import './index.css'
+
+// Our Page Component 
 import Home from './Components/screens/Home/Home.jsx'
 import Service from './Components/screens/Service/Service.jsx'
 import Properties from './Components/screens/Properties/Properties.jsx'
 import About from './Components/screens/About/About.jsx'
 import Contact from './Components/screens/ProductDetailed/ProductDetailed.jsx'
+import PropertyDetails from './Components/screens/ProductDetailed/ProductDetailed.jsx'
 
 const router = createBrowserRouter([
   {
@@ -16,7 +21,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: '',
-        element:<Home />,
+        element: <Home />,
       },
       {
         path: 'service',
@@ -33,7 +38,11 @@ const router = createBrowserRouter([
       {
         path: 'contact',
         element: <Contact />,
-      }
+      },
+      {
+        path: '/properties/detail/:id',
+        element: <PropertyDetails />,
+      },
     ]
   }
 ])

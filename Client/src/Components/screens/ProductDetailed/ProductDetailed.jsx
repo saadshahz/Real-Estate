@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import { Row, Col } from "antd"
 import { useForm } from "react-hook-form";
 
@@ -6,12 +6,12 @@ import { useForm } from "react-hook-form";
 import './style.css';
 
 // components
-import BlogSlider from "../../Blogs/BlogSlider.jsx";
+// import BlogSlider from "../../Blogs/BlogSlider.jsx";
 import Keys from "../../KeyFeature/Keys.jsx";
 
 // API
 import getProperty from "../../../action/getProperty.js";
-import getBlogs from "../../../action/getBlogs.js";
+// import getBlogs from "../../../action/getBlogs.js";
 
 // icons
 import StarsIcon from "../../../assets/svg/StarsIcon.jsx";
@@ -35,18 +35,18 @@ import Image10 from './Images/Image10.png'
 export default function ProductDetailed() {
 
   const { register, handleSubmit } = useForm();
-  const [blogData, setBlogData] = useState();
+  // const [blogData, setBlogData] = useState();
 
   const onSubmit = (data) => {
     console.log(data);
   }
 
-  useEffect(() => {
+  // useEffect(() => {
 
-    // This is dummy function to get dummy blogs
-    const blog = getBlogs();
-    setBlogData(blog);
-  }, [])
+  //   // This is dummy function to get dummy blogs
+  //   const blog = getBlogs();
+  //   setBlogData(blog);
+  // }, [])
 
   const keys = [
     {
