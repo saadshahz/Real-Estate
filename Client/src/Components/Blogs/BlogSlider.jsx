@@ -1,4 +1,4 @@
-import { useEffect , useState } from "react";
+// import { useEffect , useState } from "react";
 import "./style.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -14,34 +14,10 @@ export default function BlogSlider(props) {
 
   const { data } = { ...props };
 
-  const [slidesPerView, setSlidesPerView] = useState(3);
-
-  useEffect(() => {
-    const updateSlidesPerView = () => {
-      const width = window.innerWidth;
-      if (width >= 1024) {
-        setSlidesPerView(2);
-      } else if (width >= 768) {
-        setSlidesPerView(2);
-      } else if (width >= 640) {
-        setSlidesPerView(1);
-      } else {
-        setSlidesPerView(1);
-      }
-    };
-
-    updateSlidesPerView(); // Set initial value
-    window.addEventListener('resize', updateSlidesPerView);
-
-    return () => {
-      window.removeEventListener('resize', updateSlidesPerView);
-    };
-  }, []);
-
   return (
     <>
       <Swiper
-        slidesPerView={slidesPerView}
+        slidesPerView={3}
         loop={true}
         className="mySwiper"
       >

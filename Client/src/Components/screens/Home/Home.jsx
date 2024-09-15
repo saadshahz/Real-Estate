@@ -188,9 +188,9 @@ export default function Home() {
             </aside>
           </div>
 
-          {/* <div className="feature-container">
-            <ProductSlider data={propertyData} />
-          </div> */}
+          <div className="feature-container">
+            <ReviewSlider data={reviewData} />
+          </div>
 
         </section>
 
@@ -213,9 +213,9 @@ export default function Home() {
             </aside>
           </div>
 
-          {/* <div className="feature-container">
-            <ProductSlider data={propertyData} />
-          </div> */}
+          <div className="feature-container">
+            <BlogSlider data={blogData} />
+          </div>
 
         </section>
 
