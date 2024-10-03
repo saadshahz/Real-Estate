@@ -24,7 +24,7 @@ export default function BlogSlider(props) {
         {data &&
           data.map((item, idx) => {
             return (
-              <SwiperSlide key={idx}>
+              <SwiperSlide key={idx} style={{width: '340px !important'}}>
                 <Blogs
                   title={item.title}
                   desc={item.desc}

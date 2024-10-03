@@ -163,9 +163,9 @@ export default function Home() {
             </aside>
           </div>
 
-          {/* <div className="feature-container">
+          <div className="feature-container  py-4">
             <ProductSlider data={propertyData} />
-          </div> */}
+          </div>
 
         </section>
 
@@ -188,7 +188,7 @@ export default function Home() {
             </aside>
           </div>
 
-          <div className="feature-container">
+          <div className="feature-container py-4">
             <ReviewSlider data={reviewData} />
           </div>
 
@@ -213,7 +213,7 @@ export default function Home() {
             </aside>
           </div>
 
-          <div className="feature-container">
+          <div className="feature-container  py-4">
             <BlogSlider data={blogData} />
           </div>
 

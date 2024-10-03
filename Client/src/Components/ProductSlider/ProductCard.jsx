@@ -10,7 +10,7 @@ export default function ProductCard(props) {
   const { title, desc, feature, price, id } = { ...props };
   
   const words = desc.split(" ");
-  const truncatedText = words.slice(0, 12).join(" ");
+  const truncatedText = words.slice(0, 20).join(" ");
 
   return (
     <div className="product-card">
@@ -23,8 +23,8 @@ export default function ProductCard(props) {
         <p >{truncatedText} ...Read More</p>
         </Row>
         <Flex className="icons h-11 gap-2">
-          <span className="flex items-start ">
-            <BedroomIcon /> {feature.no_of_bedroom}-Bedroom
+          <span className="flex items-center ">
+            <BedroomIcon className={"mr-4"}/> {feature.no_of_bedroom}-Bedroom
           </span>
           <span className="flex items-center ">
             <BathroomIcon />

@@ -1,11 +1,10 @@
 // import { useState , useEffect } from "react";
-import "./style.css";
+import "./product.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
 import "swiper/css";
-import "./style.css";
 
 // import required modules
 import ProductCard from "./ProductCard";

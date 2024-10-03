@@ -136,7 +136,7 @@
   padding: 20px 162px;
   background-color: #141414;
   color: #fff;
-  display: grid;
+  /* display: grid; */
   gap: 30px;
 }
 
