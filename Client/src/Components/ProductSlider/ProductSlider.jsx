@@ -1,36 +1,29 @@
-// import { useState , useEffect } from "react";
+
 import "./product.css";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
-// Import Swiper styles
 import "swiper/css";
 
-// import required modules
 import ProductCard from "./ProductCard";
 
 export default function ProductSlider(props) {
-
   const { data } = { ...props };
-
   return (
     <>
-      <Swiper
-        slidesPerView={3}
-        loop={true}
-        className="mySwiper"
-      >
+      <Swiper slidesPerView={3} loop={true} className="mySwiper">
         {data &&
           data.map((item, idx) => {
             return (
               <SwiperSlide key={idx}>
                 <ProductCard
                   title={item.title}
-                  desc={item.desc}
-                  feature={item.features}
+                  desc={item.description}
                   price={item.price}
-                  id={item.id}
-                />{" "}
+                  type={item.type}
+                  no_of_bathroom={item.no_of_bathroom}
+                  no_of_bedroom={item.no_of_bedroom}
+                  id={item._id}
+                />
               </SwiperSlide>
             );
           })}

@@ -8,25 +8,10 @@ import EmtyStarIcon from "../../assets/svg/EmtyStarIcon.jsx";
 
 export default function Review(props) {
   const { title, desc, name, city, country, rating } = { ...props };
-
-  const ratingData = Array(rating).fill(null);
-
-  useEffect(() => {
-    ratingData.map((idx) => {
-        return console.log(idx, "dsada");
-      });
-  }, [rating])
-  
   
   return (
     <div className="review-card">
       <div className="reviews-check">
-        {/* <Stars />
-                <Stars />
-                <Stars />
-                <Stars />
-                <Stars /> */}
-        {/* {`${<Stars />}`.repeat(rating)} */}
         {Array(5).fill(null).map((_,indx) => {
             if (indx <= rating){
                 return <Stars />;

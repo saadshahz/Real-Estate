@@ -1,54 +1,11 @@
-
-export default function getProperty() {
+import getMethod from "../../fetchCalls/getMethod";
+const getProperty = async () => {
   try {
-    const data = [
-      {
-        id: 1,
-        title: "Seaside Serenity Villa",
-        desc: "Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.",
-        features: {
-          no_of_bedroom: 3,
-          no_of_bathroom: 2,
-          type: "Villa",
-        },
-        price: 500,
-      },
-      {
-        id: 2,
-        title: "Metropolitan Haven",
-        desc: "Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.",
-        features: {
-          no_of_bedroom: 3,
-          no_of_bathroom: 2,
-          type: "Villa",
-        },
-        price: 500,
-      },
-      {
-        id: 3,
-        title: "Seaside Serenity Villa",
-        desc: "Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.",
-        features: {
-          no_of_bedroom: 3,
-          no_of_bathroom: 2,
-          type: "Pent",
-        },
-        price: 500,
-      },
-      {
-        id: 4,
-        title: "Rustic Retreat Cottage",
-        desc: "Discover your own piece of paradise with the Seaside Serenity Villa. T With an open floor plan, breathtaking ocean views from every room, and direct access to a pristine sandy beach, this property is the epitome of coastal living.",
-        features: {
-          no_of_bedroom: 4,
-          no_of_bathroom: 2,
-          type: "House",
-        },
-        price: 500,
-      },
-    ];
+    const data = await getMethod("/property");
     return data;
   } catch (error) {
     return error;
   }
-}
+};
+
+export default getProperty;

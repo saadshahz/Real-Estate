@@ -27,13 +27,17 @@ export default function Home() {
 
   useEffect(() => {
     // This is dummy functon to get dummy data
-    const res = getProperty();
-    setPropertyData(res);
   }, []);
 
   useEffect(() => {
     fetchReview();
-  }, [reviewData]);
+    fetchProperty();
+  }, [reviewData, propertyData]);
+
+  const fetchProperty = async () => {
+    const res = await getProperty();
+    setPropertyData(res);
+  };
 
   const fetchReview = async () => {
     const res = await getReview();
@@ -82,8 +86,7 @@ export default function Home() {
   ];
   return (
     <>
-
-      <main id='page-1'>
+      <main id="page-1">
         {/* Hero Section Start */}
         <div className="hero-section ">
           <div className="banner-tag">
@@ -97,7 +100,8 @@ export default function Home() {
                   <h1>Discover Your Dream Property with Estatein</h1>
                   <p>
                     Your journey to finding the perfect property begins here.
-                    Explore our listings to find the home that matches your dreams.
+                    Explore our listings to find the home that matches your
+                    dreams.
                   </p>
                 </div>
                 <div className="banner-btn">
@@ -159,20 +163,20 @@ export default function Home() {
               </p>
             </aside>
             <aside className="feature-button-section">
-              <a className="feature-button" href="#">View All Properties</a>
+              <a className="feature-button" href="#">
+                View All Properties
+              </a>
             </aside>
           </div>
 
           <div className="feature-container  py-4">
             <ProductSlider data={propertyData} />
           </div>
-
         </section>
 
         {/* Features Section End */}
 
         {/* Reviews Section Start */}
-
 
         <section className="feature-section">
           <div className="feature-content">
@@ -180,20 +184,22 @@ export default function Home() {
               <StarsIcon />
               <h2>What Our Clients Say</h2>
               <p>
-                Read the success stories and heartfelt testimonials from our valued clients. Discover why they chose Estatein for their real estate needs.
+                Read the success stories and heartfelt testimonials from our
+                valued clients. Discover why they chose Estatein for their real
+                estate needs.
               </p>
             </aside>
             <aside className="feature-button-section">
-              <a className="feature-button" href="#">View All FAQ’s</a>
+              <a className="feature-button" href="#">
+                View All FAQ’s
+              </a>
             </aside>
           </div>
 
           <div className="feature-container py-4">
             <ReviewSlider data={reviewData} />
           </div>
-
         </section>
-
 
         {/* Reviews Section End */}
 
@@ -205,22 +211,25 @@ export default function Home() {
               <StarsIcon />
               <h2>Frequently Asked Questions</h2>
               <p>
-              Find answers to common questions about Estatein’s services, property listings, and the real estate process. We’re here to provide clarity and assist you every step of the way.
+                Find answers to common questions about Estatein’s services,
+                property listings, and the real estate process. We’re here to
+                provide clarity and assist you every step of the way.
               </p>
             </aside>
             <aside className="feature-button-section">
-              <a className="feature-button" href="#">View All FAQ’s</a>
+              <a className="feature-button" href="#">
+                View All FAQ’s
+              </a>
             </aside>
           </div>
 
           <div className="feature-container  py-4">
             <BlogSlider data={blogData} />
           </div>
-
         </section>
 
         {/* Blog Section End */}
-      </main >
+      </main>
     </>
   );
 }

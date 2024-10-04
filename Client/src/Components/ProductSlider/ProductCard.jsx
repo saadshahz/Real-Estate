@@ -1,5 +1,5 @@
 import { Col, Flex, Row } from "antd";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 import productCardDummy from "../../assets/productCardDummy.png";
 import BedroomIcon from "../../assets/svg/BedroomIcon";
@@ -7,8 +7,17 @@ import VillaIcon from "../../assets/svg/VillaIcon";
 import BathroomIcon from "../../assets/svg/BathroomIcon";
 
 export default function ProductCard(props) {
-  const { title, desc, feature, price, id } = { ...props };
-  
+  const {
+    title,
+    desc,
+    feature,
+    price,
+    id,
+    type,
+    no_of_bathroom,
+    no_of_bedroom,
+  } = { ...props };
+
   const words = desc.split(" ");
   const truncatedText = words.slice(0, 20).join(" ");
 
@@ -19,20 +28,20 @@ export default function ProductCard(props) {
       </div>
       <div className="product-content w-full">
         <Row className="w-full h-24">
-        <h5>{title}</h5>
-        <p >{truncatedText} ...Read More</p>
+          <h5>{title}</h5>
+          <p>{truncatedText} ...Read More</p>
         </Row>
         <Flex className="icons h-11 gap-2">
           <span className="flex items-center ">
-            <BedroomIcon className={"mr-4"}/> {feature.no_of_bedroom}-Bedroom
+            <BedroomIcon className={"mr-4"} /> {no_of_bedroom}-Bedroom
           </span>
           <span className="flex items-center ">
             <BathroomIcon />
-            {feature.no_of_bathroom}-Bathroom
+            {no_of_bathroom}-Bathroom
           </span>
           <span className="flex items-center ">
             <VillaIcon />
-            {feature.type}
+            {type}
           </span>
         </Flex>
         <Row className="price h-16 flex justify-between items-center">
