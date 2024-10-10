@@ -1,9 +1,11 @@
 // import React from 'react'
 
 const getMethod = async (url) => {
-  const response = await fetch(`http://localhost:8000${url}`, {
+
+  const response = await fetch(`http://localhost:3001/${url}`, {
     method: "GET",
   });
+
   if (response.ok) {
 
     const result = await response.json();
@@ -11,4 +13,4 @@ const getMethod = async (url) => {
   }
 }
 
-export default getMethod
+export default getMethod;

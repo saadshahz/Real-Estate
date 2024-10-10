@@ -29,14 +29,20 @@ export default function Home() {
     // This is dummy functon to get dummy data
   }, []);
 
+  // useEffect(() => {
+  //   // fetchReview();
+  //   // fetchProperty();
+  // }, [reviewData, propertyData]);
+
   useEffect(() => {
-    fetchReview();
     fetchProperty();
-  }, [reviewData, propertyData]);
+    fetchReview();
+  }, []);
 
   const fetchProperty = async () => {
     const res = await getProperty();
     setPropertyData(res);
+    // console.log(res, "res")
   };
 
   const fetchReview = async () => {
@@ -44,27 +50,28 @@ export default function Home() {
     setReviewData(res);
   };
 
-  useEffect(() => {
-    // This is dummy function to get dummy blogs
-    const blog = getBlogs();
-    setBlogData(blog);
-  }, []);
 
-  useEffect(() => {
-    if (customer < 200) {
-      setCustomer(customer + 1);
-    }
-  }, [customer]);
-  useEffect(() => {
-    if (client < 10) {
-      setClient(client + 1);
-    }
-  }, [client]);
-  useEffect(() => {
-    if (experience < 16) {
-      setExperience(experience + 1);
-    }
-  }, [experience]);
+  // useEffect(() => {
+  //   // This is dummy function to get dummy blogs
+  //   const blog = getBlogs();
+  //   setBlogData(blog);
+  // }, []);
+
+  // useEffect(() => {
+  //   if (customer < 200) {
+  //     setCustomer(customer + 1);
+  //   }
+  // }, [customer]);
+  // useEffect(() => {
+  //   if (client < 10) {
+  //     setClient(client + 1);
+  //   }
+  // }, [client]);
+  // useEffect(() => {
+  //   if (experience < 16) {
+  //     setExperience(experience + 1);
+  //   }
+  // }, [experience]);
 
   const services = [
     {
