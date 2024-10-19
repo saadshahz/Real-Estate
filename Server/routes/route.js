@@ -11,6 +11,6 @@ router.post("/reviews/new", AddReview);
 router.get("/reviews", getReview);
 
 router.get("/property", getProperty);
-router.get("/property/:id", getPropertyById);
+router.get("/properties/detail/:id", getPropertyById);
 
 export default router;

@@ -533,9 +533,9 @@
 
     .property-information-section {
         margin-top: 80px;
+        padding: 20px 80px;
     }
 
-    .property-information-section,
     .property-pricing-section {
         padding: 20px 80px;
     }

@@ -19,7 +19,7 @@ export default function ProductCard(props) {
   } = { ...props };
 
   const words = desc.split(" ");
-  const truncatedText = words.slice(0, 20).join(" ");
+  const truncatedText = words.slice(0, 10).join(" ");
 
   return (
     <div className="product-card">
@@ -33,7 +33,7 @@ export default function ProductCard(props) {
         </Row>
         <Flex className="icons h-11 gap-2">
           <span className="flex items-center ">
-            <BedroomIcon className={"mr-4"} /> {no_of_bedroom}-Bedroom
+            <BedroomIcon className={"mr-4"} /> {no_of_bedroom}-Room
           </span>
           <span className="flex items-center ">
             <BathroomIcon />
@@ -50,7 +50,7 @@ export default function ProductCard(props) {
             <p>$ {price}</p>
           </Col>
           <Col className="button-section h-full w-72 flex justify-end items-center">
-            <Link to={`/property/detail/${id}`}>View Property Details</Link>
+            <Link to={`/properties/detail/${id}`}>View Property Details</Link>
           </Col>
         </Row>
       </div>

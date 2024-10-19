@@ -3,7 +3,7 @@ import { Col, Row } from "antd";
 import Avatar from "../../assets/user-avatar.png";
 import Stars from "./svg/Star.jsx";
 import "./Reviews.css";
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import EmtyStarIcon from "../../assets/svg/EmtyStarIcon.jsx";
 
 export default function Review(props) {

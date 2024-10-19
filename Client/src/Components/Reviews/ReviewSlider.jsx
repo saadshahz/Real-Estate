@@ -1,4 +1,3 @@
-import React from "react";
 import "./Reviews.css";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -12,6 +11,7 @@ import ProductCard from "./Review.jsx";
 export default function ReviewSlider(props) {
 
   const { data } = { ...props };
+  console.log(data);
   return (
     <>
       <Swiper

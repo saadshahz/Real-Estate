@@ -1,18 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import { RouterProvider, createBrowserRouter } from 'react-router-dom'
-import Layout from './Layout.jsx'
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import Layout from './Layout.jsx';
 
 // Importing CSS Files
-import './index.css'
+import './index.css';
 
 // Our Page Component 
-import Home from './Components/screens/Home/Home.jsx'
-import Service from './Components/screens/Service/Service.jsx'
-import Properties from './Components/screens/Properties/Properties.jsx'
-import About from './Components/screens/About/About.jsx'
-import Contact from './Components/screens/ProductDetailed/ProductDetailed.jsx'
-import PropertyDetails from './Components/screens/ProductDetailed/ProductDetailed.jsx'
+import Home from './Components/screens/Home/Home.jsx';
+import Service from './Components/screens/Service/Service.jsx';
+import Properties from './Components/screens/Properties/Properties.jsx';
+import About from './Components/screens/About/About.jsx';
+import Contact from './Components/screens/Contact/Contact.jsx';
+import PropertyDetails from './Components/screens/ProductDetailed/ProductDetailed.jsx';
 
 const router = createBrowserRouter([
   {
