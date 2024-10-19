@@ -16,7 +16,7 @@ export default function BlogSlider(props) {
 
   return (
     <>
-      <Swiper
+      {/* <Swiper
         slidesPerView={3}
         loop={true}
         className="mySwiper"
@@ -32,7 +32,7 @@ export default function BlogSlider(props) {
               </SwiperSlide>
             );
           })}
-      </Swiper>
+      </Swiper> */}
     </>
   );
 }
