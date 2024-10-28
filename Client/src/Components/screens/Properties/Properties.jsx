@@ -24,9 +24,16 @@ export default function Properties() {
   };
 
   useEffect(() => {
-    const res = getProperty();
-    setProperty(res);
+    fetchProperty();
   }, []);
+
+  const fetchProperty = async () => {
+    const res = await getProperty();
+    setProperty(res);
+    // console.log(res, "res")
+  };
+
+
 
   const options = [
     {
@@ -98,7 +105,7 @@ export default function Properties() {
                 </button>
               </div>
 
-              <div className="fiter-bar py-4 w-full">
+              {/* <div className="fiter-bar py-4 w-full">
                 <Flex gap="middle" dir="row">
                   <Form.Item name="location">
                     <Select
@@ -161,7 +168,7 @@ export default function Properties() {
                     />
                   </Form.Item>
                 </Flex>
-              </div>
+              </div> */}
             </Form>
           </div>
         </div>
