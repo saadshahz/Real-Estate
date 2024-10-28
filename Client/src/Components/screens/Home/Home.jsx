@@ -26,9 +26,6 @@ export default function Home() {
   const [blogData, setBlogData] = useState();
 
   useEffect(() => {
-<<<<<<< HEAD
-    fetchReview();
-=======
     // This is dummy functon to get dummy data
   }, []);
 
@@ -38,7 +35,6 @@ export default function Home() {
   // }, [reviewData, propertyData]);
 
   useEffect(() => {
->>>>>>> a19e5d7bb197a7c3e57314f7ec757a4600904639
     fetchProperty();
     fetchReview();
   }, []);
