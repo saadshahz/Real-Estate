@@ -88,8 +88,7 @@ export default function Properties() {
                   name="searchtext"
                   rules={[
                     {
-                      required: true,
-                      message: "Please input your username!",
+                      required: false,
                     },
                   ]}
                 >
@@ -100,75 +99,10 @@ export default function Properties() {
                   />
                 </Form.Item>
                 <button type="submit">
-                  {" "}
-                  <SearchIcon /> Find Property
+                  <span ><SearchIcon /></span> 
+                  <span className="btn-text" >Find Property</span> 
                 </button>
               </div>
-
-              {/* <div className="fiter-bar py-4 w-full">
-                <Flex gap="middle" dir="row">
-                  <Form.Item name="location">
-                    <Select
-                      style={{
-                        width: "100%",
-                      }}
-                      onChange={(e) => {
-                        setLocation(e.target.value);
-                      }}
-                      onSelect={(value) => {
-                        form.setFieldValue(value);
-                      }}
-                      placeholder="Location..."
-                      options={options}
-                    />
-                  </Form.Item>
-                  <Form.Item name="property_type">
-                    <Select
-                      style={{
-                        width: "100%",
-                      }}
-                      // onChange={(e) => {
-                      //   setLocation(e.target.value);
-                      // }}
-                      onSelect={(value) => {
-                        form.setFieldValue(value);
-                      }}
-                      placeholder="Property Type..."
-                      options={options}
-                    />
-                  </Form.Item>
-                  <Form.Item name="price_range">
-                    <Select
-                      style={{
-                        width: "100%",
-                      }}
-                      // onChange={(e) => {
-                      //   setLocation(e.target.value);
-                      // }}
-                      onSelect={(value) => {
-                        form.setFieldValue(value);
-                      }}
-                      placeholder="Pricing Range..."
-                      options={options}
-                    />
-                  </Form.Item>
-                  <Form.Item name="property_size">
-                    <Select
-                      style={{
-                        width: "100%",
-                      }}
-                      // onChange={(e) => {
-                      //   setLocation(e.target.value);
-                      // }}
-                      onSelect={(value) => {
-                        form.setFieldValue(value);
-                      }}
-                      placeholder="Property Size..."
-                      options={options}
-                    />
-                  </Form.Item>
-                </Flex>
-              </div> */}
             </Form>
           </div>
         </div>

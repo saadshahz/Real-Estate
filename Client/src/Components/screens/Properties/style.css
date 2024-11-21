@@ -5,7 +5,11 @@ body {
 .property-hero-section {
   margin-top: 100px;
   padding: 100px 162px;
-  background: linear-gradient(95.93deg, #262626 -26.82%, rgba(38, 38, 38, 0) 40.46%);
+  background: linear-gradient(
+    95.93deg,
+    #262626 -26.82%,
+    rgba(38, 38, 38, 0) 40.46%
+  );
   background-color: rgba(26, 26, 26, 1);
   font-style: italic;
 }
@@ -38,7 +42,7 @@ body {
 }
 
 .serach-filter-section .search-bar input {
-  width: 100%;
+  width: 85%;
   background-color: transparent;
   color: #999999;
 }
@@ -53,8 +57,12 @@ body {
   padding: 10px 15px;
   color: #fff;
   background-color: #703bf7;
-  width: 180px;
+  width: 15%;
   border-radius: 10px;
+  transition: 0.3s;
+}
+.serach-filter-section .search-bar button:hover {
+  background-color: #4b2b9d;
 }
 
 .serach-filter-section .search-bar button svg {
@@ -375,11 +383,9 @@ input::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1440px) {
-
   .property-hero-section {
     margin-top: 77px;
     padding: 100px 80px;
-
   }
 
   .property-hero-section h1 {
@@ -666,11 +672,12 @@ input::-webkit-inner-spin-button {
     line-height: 24px;
     text-align: left;
   }
-
-
 }
 
 @media (max-width: 900px) {
+  .serach-filter-section {
+    top: 400px;
+  }
 
   .booking-section {
     padding: 20px 16px;
@@ -778,7 +785,7 @@ input::-webkit-inner-spin-button {
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
-    text-align: left
+    text-align: left;
   }
 
   .referal-box .referal {
@@ -897,12 +904,31 @@ input::-webkit-inner-spin-button {
     opacity: 0px;
     background-color: rgba(112, 59, 247, 1);
   }
-
-
 }
+@media (max-width: 850px) {
+  .btn-text {
+    display: none;
+  }
+  .serach-filter-section {
+    top: 430px;
+  }
+}
+@media (max-width: 700px) {
 
+  .serach-filter-section {
+    top: 500px;
+  }
+}
+@media (max-width: 700px) {
+
+  .serach-filter-section {
+    top: 500px;
+  }
+}
 @media (max-width: 600px) {
-  
+  .serach-filter-section {
+    top: 530px;
+  }
   .booking-container .inputs-row {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -914,5 +940,10 @@ input::-webkit-inner-spin-button {
   form .terms-row {
     grid-template-columns: 1fr;
   }
+}
+@media (max-width: 500px) {
 
+  .serach-filter-section {
+    top: 560px;
+  }
 }
